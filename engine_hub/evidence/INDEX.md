@@ -18,3 +18,5 @@
 资源事件：[诊断](resource-diagnosis-20261009.json)、[重启前节点心跳](prereboot-node-memory-20261009.json)。受限 WeKnora 启动卡点：[栈证据](guarded-weknora-startup-stall.json)。
 
 其它 live/guarded/browser JSON 中的 FAIL 原样保留；部分为验证器错误，部分为预算拒绝/就绪竞争/接口边界，均不得计作通过。运行日志、数据库、身份和全部连续采样保存在忽略的 `.local`；正式摘要/截图/矩阵在 Git。
+
+私人交付：[内容提交与可见性核验](private-delivery-r1.json)。最终 metadata HEAD 以实际本地/远端核对为准。

@@ -1,5 +1,5 @@
 {
-  "at": "2026-10-08T17:46:17.175254+00:00",
+  "at": "2026-10-08T17:51:23.578563+00:00",
   "kernel_limits": {
     "memory.max": "1073741824",
     "memory.high": "939524096",
@@ -7,7 +7,7 @@
     "pids.max": "192",
     "cpu_enforcement": "single_core_sched_affinity; cpu controller unavailable"
   },
-  "samples": 752,
+  "samples": 807,
   "interval_seconds": 5,
   "peak_owned_mib": 886.19,
   "peak_owned_tasks": 72,
@@ -17,5 +17,6 @@
   "admission_refusals": 1,
   "affinity_escape_samples": 0,
   "last_memory_events": "low 0\nhigh 429\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n",
-  "scope": "Owned runtime and four controlled containers in shared slice; watchdog separately limited. Primary existing Codex/user desktop applications are not claimed as this slice."
+  "scope": "Owned runtime and four controlled containers in shared slice; watchdog separately limited. Primary existing Codex/user desktop applications are not claimed as this slice.",
+  "kernel_peak_owned_mib": 896.7
 }

@@ -1,5 +1,5 @@
 {
-  "status": "LOCAL_FUNCTIONAL_VERIFIED_PRIVATE_DELIVERY_PENDING",
+  "status": "LOCAL_FUNCTIONAL_VERIFIED_PRIVATE_DELIVERED",
   "upstream": "4a0639397d1d4eb14965d9e88f39aecffa9ef345",
   "private_remote_created_and_verified": true,
   "local_checks": {
@@ -14,8 +14,8 @@
     "F21: second physical host",
     "F30: internal Manager environment"
   ],
-  "next": "Freeze source/evidence, stage exclusion scan, commit/push PRIVATE and compare SHAs",
-  "updated_at": "2026-10-08T17:36:03.586159+00:00",
+  "next": "Continue only against provided domain/second-host/internal inputs; preserve resource envelope and existing state",
+  "updated_at": "2026-10-08T17:49:57.460353+00:00",
   "runtime": "Stopped by WSL restart; evidence and state retained",
   "resource_diagnosis": "evidence/resource-diagnosis-20261009.json",
   "resource_policy": {
@@ -29,8 +29,9 @@
   "pending": [
     "F11",
     "F21",
-    "F30",
-    "F32 pending push"
+    "F30"
   ],
-  "current_runtime": "UI/reference/assets/own WeKnora running; Gateway nodes can be stopped/activated within budget"
+  "current_runtime": "UI/reference/assets and guarded WeKnora; Gateway nodes cold and activated only within admission",
+  "content_commit": "cb17e3364f58f4fbd53ccb2d78c82d39b4d38543",
+  "private_repo": "https://github.com/zcimon57-svj/hermes-webui-engine-hub"
 }

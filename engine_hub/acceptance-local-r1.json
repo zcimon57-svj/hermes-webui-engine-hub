@@ -441,15 +441,18 @@
       "requirement": "R01",
       "name": "Maintained private fork delivery",
       "pass_criteria": "No production monkeypatch, explicit versioned code; role/browser/node/asset checks pass; staged list excludes secrets/cache; PRIVATE and local/remote SHA verified",
-      "readiness": "READY_FOR_PRIVATE_PUSH",
-      "status": "NOT_RUN",
-      "evidence": [],
+      "readiness": "DELIVERED_PRIVATE",
+      "status": "PASS",
+      "evidence": [
+        "evidence/private-delivery-r1.json"
+      ],
       "owner_role": "本轮执行者",
-      "next_input": "完成暂存核对、私人推送和双 SHA 核验"
+      "next_input": "完成暂存核对、私人推送和双 SHA 核验",
+      "scope": "Private content commit and full upstream history verified; secrets/cache/databases excluded"
     }
   ],
   "gates": {
-    "LOCAL_FUNCTIONAL": "VERIFIED_PENDING_PRIVATE_DELIVERY",
+    "LOCAL_FUNCTIONAL": "VERIFIED_AND_PRIVATELY_DELIVERED",
     "DOMAIN_QUALITY": "NOT_ACCEPTED_F11_AND_REAL_DISTRIBUTION_PENDING",
     "INTERNAL_DEPLOYMENT": "NOT_RUN_F21_F30"
   },
