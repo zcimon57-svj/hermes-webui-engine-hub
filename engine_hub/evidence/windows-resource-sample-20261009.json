@@ -1,0 +1,139 @@
+{
+    "cpu_top":  [
+                    {
+                        "name":  "WindowsTerminal",
+                        "id":  26532,
+                        "cpu_pct":  2.08,
+                        "ws_mib":  176.8
+                    },
+                    {
+                        "name":  "explorer",
+                        "id":  11084,
+                        "cpu_pct":  0.72,
+                        "ws_mib":  220.4
+                    },
+                    {
+                        "name":  "wpscloudsvr",
+                        "id":  31120,
+                        "cpu_pct":  0.72,
+                        "ws_mib":  9.3
+                    },
+                    {
+                        "name":  "wps",
+                        "id":  23116,
+                        "cpu_pct":  0.52,
+                        "ws_mib":  16.6
+                    },
+                    {
+                        "name":  "wps",
+                        "id":  5404,
+                        "cpu_pct":  0.39,
+                        "ws_mib":  28.1
+                    },
+                    {
+                        "name":  "powershell",
+                        "id":  29880,
+                        "cpu_pct":  0.39,
+                        "ws_mib":  90.1
+                    },
+                    {
+                        "name":  "sing-box",
+                        "id":  20564,
+                        "cpu_pct":  0.33,
+                        "ws_mib":  68.7
+                    },
+                    {
+                        "name":  "ChatGPT",
+                        "id":  24952,
+                        "cpu_pct":  0.26,
+                        "ws_mib":  265.8
+                    },
+                    {
+                        "name":  "ChatGPT",
+                        "id":  12444,
+                        "cpu_pct":  0.13,
+                        "ws_mib":  310.1
+                    },
+                    {
+                        "name":  "wsl",
+                        "id":  24704,
+                        "cpu_pct":  0.13,
+                        "ws_mib":  13.4
+                    },
+                    {
+                        "name":  "Typora",
+                        "id":  13352,
+                        "cpu_pct":  0.07,
+                        "ws_mib":  36.2
+                    },
+                    {
+                        "name":  "kdhjagent",
+                        "id":  10380,
+                        "cpu_pct":  0.07,
+                        "ws_mib":  17.2
+                    }
+                ],
+    "memory_groups":  [
+                          {
+                              "name":  "vmmemWSL",
+                              "count":  1,
+                              "ws_mib":  5246.5
+                          },
+                          {
+                              "name":  "ChatGPT",
+                              "count":  17,
+                              "ws_mib":  2297.5
+                          },
+                          {
+                              "name":  "chrome",
+                              "count":  22,
+                              "ws_mib":  1103.6
+                          },
+                          {
+                              "name":  "svchost",
+                              "count":  92,
+                              "ws_mib":  1075.8
+                          },
+                          {
+                              "name":  "powershell",
+                              "count":  5,
+                              "ws_mib":  382.4
+                          },
+                          {
+                              "name":  "codex",
+                              "count":  2,
+                              "ws_mib":  255.3
+                          },
+                          {
+                              "name":  "MsMpEng",
+                              "count":  1,
+                              "ws_mib":  254.2
+                          },
+                          {
+                              "name":  "explorer",
+                              "count":  1,
+                              "ws_mib":  220.4
+                          },
+                          {
+                              "name":  "Typora",
+                              "count":  6,
+                              "ws_mib":  196.9
+                          },
+                          {
+                              "name":  "msedgewebview2",
+                              "count":  6,
+                              "ws_mib":  185.7
+                          },
+                          {
+                              "name":  "WindowsTerminal",
+                              "count":  1,
+                              "ws_mib":  176.7
+                          },
+                          {
+                              "name":  "conhost",
+                              "count":  20,
+                              "ws_mib":  150.9
+                          }
+                      ],
+    "sample_seconds":  3
+}

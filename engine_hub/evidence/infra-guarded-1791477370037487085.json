@@ -1,0 +1,30 @@
+{
+  "embedding": {
+    "container": "/eh158r-embedding",
+    "image_id": "sha256:da047cb8f9d1d98e5c070f5300ba9f7274e33b8fc0e5be5ed88740aed1b95ba9",
+    "configured_image": "python:3.11-slim",
+    "memory_limit": 67108864,
+    "pids_limit": 64
+  },
+  "postgres": {
+    "container": "/eh158r-postgres",
+    "image_id": "sha256:fac7b3743a4cf5b86478a6947fa58bfc5a596bc344bffc73909c4962613454d9",
+    "configured_image": "paradedb/paradedb:v0.22.2-pg17",
+    "memory_limit": 134217728,
+    "pids_limit": 64
+  },
+  "redis": {
+    "container": "/eh158r-redis",
+    "image_id": "sha256:b8653d876dd6ebd43d0e41cbe216d59ec8a1f4ee5f5aa2db30778221cb8d7fc1",
+    "configured_image": "redis:7.0-alpine",
+    "memory_limit": 33554432,
+    "pids_limit": 64
+  },
+  "weknora": {
+    "container": "/eh158r-weknora",
+    "image_id": "sha256:687374a4d457b15e2afc0d1f61935ae41e11becadcd26d76aba1a1f903fe47c1",
+    "configured_image": "weknora-ops-app:d97ad7a4",
+    "memory_limit": 335544320,
+    "pids_limit": 64
+  }
+}

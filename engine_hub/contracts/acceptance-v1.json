@@ -1,0 +1,333 @@
+{
+  "schema": "hermes-webui-fork-acceptance/1",
+  "revision": 1,
+  "state": "IMPLEMENTATION_NOT_STARTED",
+  "cases": [
+    {
+      "id": "F01",
+      "requirement": "R01",
+      "name": "Single URL and UI",
+      "pass_criteria": "Three role logins access one origin; permitted engines, nodes, sessions, Runs and reports visible",
+      "readiness": "READY",
+      "status": "NOT_RUN",
+      "evidence": [],
+      "owner_role": "See EXECUTION-v1.md responsibility boundaries"
+    },
+    {
+      "id": "F02",
+      "requirement": "R01",
+      "name": "Six-node regression",
+      "pass_criteria": "All six actual nodes route correctly; fixed instance/engine and observed node agree; original default-node bleed denied",
+      "readiness": "READY",
+      "status": "NOT_RUN",
+      "evidence": [],
+      "owner_role": "See EXECUTION-v1.md responsibility boundaries"
+    },
+    {
+      "id": "F03",
+      "requirement": "R01",
+      "name": "Explicit state and resource boundaries",
+      "pass_criteria": "Separate homes/workspaces/API keys; cross-node paths and wrong keys denied; thread/concurrency bounds prevent helper explosion; host/network limits stated",
+      "readiness": "READY",
+      "status": "NOT_RUN",
+      "evidence": [],
+      "owner_role": "See EXECUTION-v1.md responsibility boundaries"
+    },
+    {
+      "id": "F04",
+      "requirement": "R02",
+      "name": "Trusted rule routing",
+      "pass_criteria": "Instance or trusted binding chooses allowed engine/space; route and reason/version recorded",
+      "readiness": "READY",
+      "status": "NOT_RUN",
+      "evidence": [],
+      "owner_role": "See EXECUTION-v1.md responsibility boundaries"
+    },
+    {
+      "id": "F05",
+      "requirement": "R02",
+      "name": "Analysis routing and ambiguity",
+      "pass_criteria": "Classifier adapter exists; fixed ambiguous cases ask; allowed candidates only; no default-engine fallthrough",
+      "readiness": "READY",
+      "status": "NOT_RUN",
+      "evidence": [],
+      "owner_role": "See EXECUTION-v1.md responsibility boundaries"
+    },
+    {
+      "id": "F06",
+      "requirement": "R02",
+      "name": "Real routing quality",
+      "pass_criteria": "Authorized real model plus labelled engine/ambiguity set; per-class mistakes and unsafe cross-scope attempts recorded",
+      "readiness": "NEEDS_MODEL_AND_LABELLED_SET",
+      "status": "NOT_RUN",
+      "evidence": [],
+      "owner_role": "See EXECUTION-v1.md responsibility boundaries"
+    },
+    {
+      "id": "F07",
+      "requirement": "R02",
+      "name": "Conversation route continuity",
+      "pass_criteria": "Followup stays in original allowed space; explicit engine switch creates safe new state or audited reassignment",
+      "readiness": "READY",
+      "status": "NOT_RUN",
+      "evidence": [],
+      "owner_role": "See EXECUTION-v1.md responsibility boundaries"
+    },
+    {
+      "id": "F08",
+      "requirement": "R03",
+      "name": "Node/case learning draft isolation",
+      "pass_criteria": "Writable drafts/Memory/session/workspace separated; ordinary tool path cannot consume another private draft",
+      "readiness": "READY",
+      "status": "NOT_RUN",
+      "evidence": [],
+      "owner_role": "See EXECUTION-v1.md responsibility boundaries"
+    },
+    {
+      "id": "F09",
+      "requirement": "R03",
+      "name": "Per-engine candidate pipeline",
+      "pass_criteria": "Allowed feedback -> draft -> candidate -> eval -> review -> publish; failures and source scope retained; unpublished content not shared",
+      "readiness": "READY",
+      "status": "NOT_RUN",
+      "evidence": [],
+      "owner_role": "See EXECUTION-v1.md responsibility boundaries"
+    },
+    {
+      "id": "F10",
+      "requirement": "R03",
+      "name": "Shared approved same-engine release",
+      "pass_criteria": "Both Cassandra/Redis nodes adopt approved version; local writable state still distinct; other engines unchanged",
+      "readiness": "READY",
+      "status": "NOT_RUN",
+      "evidence": [],
+      "owner_role": "See EXECUTION-v1.md responsibility boundaries"
+    },
+    {
+      "id": "F11",
+      "requirement": "R03",
+      "name": "Learning semantic quality",
+      "pass_criteria": "Real model/evidence/replay set with domain truth proves candidates correct, or NEEDS_ENV; manual candidates cannot pass this row",
+      "readiness": "NEEDS_MODEL_AND_DOMAIN_SET",
+      "status": "NOT_RUN",
+      "evidence": [],
+      "owner_role": "See EXECUTION-v1.md responsibility boundaries"
+    },
+    {
+      "id": "F12",
+      "requirement": "R03",
+      "name": "Concurrent publish and withdrawal",
+      "pass_criteria": "One winner for same base, stale candidate refused; old reports immutable; revoked source/cache cannot silently remain eligible",
+      "readiness": "READY",
+      "status": "NOT_RUN",
+      "evidence": [],
+      "owner_role": "See EXECUTION-v1.md responsibility boundaries"
+    },
+    {
+      "id": "F13",
+      "requirement": "R04",
+      "name": "Distinct identities and sessions",
+      "pass_criteria": "Three distinct users, no shared operator password model; role bound to verified server identity",
+      "readiness": "READY",
+      "status": "NOT_RUN",
+      "evidence": [],
+      "owner_role": "See EXECUTION-v1.md responsibility boundaries"
+    },
+    {
+      "id": "F14",
+      "requirement": "R04",
+      "name": "Admin",
+      "pass_criteria": "Config change and extended sanitized diagnostics succeed; no plaintext secrets; all actions audited",
+      "readiness": "READY",
+      "status": "NOT_RUN",
+      "evidence": [],
+      "owner_role": "See EXECUTION-v1.md responsibility boundaries"
+    },
+    {
+      "id": "F15",
+      "requirement": "R04",
+      "name": "Viewer",
+      "pass_criteria": "Can read permitted info; create/ask/reply/edit/config/run/asset mutations all reject even via direct API or boot autosave",
+      "readiness": "READY",
+      "status": "NOT_RUN",
+      "evidence": [],
+      "owner_role": "See EXECUTION-v1.md responsibility boundaries"
+    },
+    {
+      "id": "F16",
+      "requirement": "R04",
+      "name": "Chat user",
+      "pass_criteria": "Ask/reply and cancel own answer work; config/extended info/global asset writes/others cancel reject",
+      "readiness": "READY",
+      "status": "NOT_RUN",
+      "evidence": [],
+      "owner_role": "See EXECUTION-v1.md responsibility boundaries"
+    },
+    {
+      "id": "F17",
+      "requirement": "R04",
+      "name": "Aggregate and profile authorization",
+      "pass_criteria": "Node/run/session/assets lists and detail fields obey same policy; profile/node/KB params cannot bypass; unknown/expired identity denied",
+      "readiness": "READY",
+      "status": "NOT_RUN",
+      "evidence": [],
+      "owner_role": "See EXECUTION-v1.md responsibility boundaries"
+    },
+    {
+      "id": "F18",
+      "requirement": "R04",
+      "name": "Multiuser concurrency",
+      "pass_criteria": "Admin, Viewer and Chat concurrently use separate cookies; no process-global profile/key/config/session bleed",
+      "readiness": "READY",
+      "status": "NOT_RUN",
+      "evidence": [],
+      "owner_role": "See EXECUTION-v1.md responsibility boundaries"
+    },
+    {
+      "id": "F19",
+      "requirement": "R05",
+      "name": "Same-engine multi-node deployment",
+      "pass_criteria": "One engine with two processes/nodes, actual independent state and keys; same approved assets consumed",
+      "readiness": "READY",
+      "status": "NOT_RUN",
+      "evidence": [],
+      "owner_role": "See EXECUTION-v1.md responsibility boundaries"
+    },
+    {
+      "id": "F20",
+      "requirement": "R05",
+      "name": "Pool and disconnect behavior",
+      "pass_criteria": "Manager/pool chooses eligible node; one offline does not fake another health; active task not silently migrated; new attempt has evidence",
+      "readiness": "READY",
+      "status": "NOT_RUN",
+      "evidence": [],
+      "owner_role": "See EXECUTION-v1.md responsibility boundaries"
+    },
+    {
+      "id": "F21",
+      "requirement": "R05",
+      "name": "Remote target deployment",
+      "pass_criteria": "Configured non-loopback target API supported without local path assumption; actual two-host network/identity validation remains NOT_RUN until provided",
+      "readiness": "NEEDS_SECOND_HOST_FOR_PHYSICAL_ACCEPTANCE",
+      "status": "NOT_RUN",
+      "evidence": [],
+      "owner_role": "See EXECUTION-v1.md responsibility boundaries"
+    },
+    {
+      "id": "F22",
+      "requirement": "R06",
+      "name": "Remote WeKnora knowledge",
+      "pass_criteria": "Actual isolated WeKnora instance and engine-scoped API/MCP read/search; content/citation/version usable in Hermes; wrong scope denied",
+      "readiness": "READY_IF_LOCAL_WEKNORA_DEPS",
+      "status": "NOT_RUN",
+      "evidence": [],
+      "owner_role": "See EXECUTION-v1.md responsibility boundaries"
+    },
+    {
+      "id": "F23",
+      "requirement": "R06",
+      "name": "Remote knowledge update",
+      "pass_criteria": "Actual remote draft/update/publish; next eligible Run consumes new version; in-flight Run stays pinned; no local-only UI success",
+      "readiness": "READY_IF_LOCAL_WEKNORA_DEPS",
+      "status": "NOT_RUN",
+      "evidence": [],
+      "owner_role": "See EXECUTION-v1.md responsibility boundaries"
+    },
+    {
+      "id": "F24",
+      "requirement": "R06",
+      "name": "Remote Skill content/package consumption",
+      "pass_criteria": "Actual remote asset read and approved digest; Hermes uses method and required scripts/references in scoped snapshot; native file requirement handled explicitly",
+      "readiness": "READY_IF_LOCAL_WEKNORA_DEPS",
+      "status": "NOT_RUN",
+      "evidence": [],
+      "owner_role": "See EXECUTION-v1.md responsibility boundaries"
+    },
+    {
+      "id": "F25",
+      "requirement": "R06",
+      "name": "Asset version authority",
+      "pass_criteria": "KB/Skill/config bundle identities, published pointers/CAS/history/rollback owned once remotely; no conflicting local latest",
+      "readiness": "READY",
+      "status": "NOT_RUN",
+      "evidence": [],
+      "owner_role": "See EXECUTION-v1.md responsibility boundaries"
+    },
+    {
+      "id": "F26",
+      "requirement": "R06",
+      "name": "Cache eligibility",
+      "pass_criteria": "Versioned local cache optional and reproducible; expiry/revocation/auth failure cannot enable stale unauthorized content; no writable shared Skill dir",
+      "readiness": "READY",
+      "status": "NOT_RUN",
+      "evidence": [],
+      "owner_role": "See EXECUTION-v1.md responsibility boundaries"
+    },
+    {
+      "id": "F27",
+      "requirement": "R06",
+      "name": "Remote management readback",
+      "pass_criteria": "UI asset/Memory/workspace update hits authorized remote target, readback and actual execution agree; conflicts/traversal/secret leaks denied",
+      "readiness": "READY",
+      "status": "NOT_RUN",
+      "evidence": [],
+      "owner_role": "See EXECUTION-v1.md responsibility boundaries"
+    },
+    {
+      "id": "F28",
+      "requirement": "R01",
+      "name": "Real Run lifecycle",
+      "pass_criteria": "Session -> node -> Run/attempt -> terminal -> report SHA trace; same-session followup new Run; cancellation stops actual execution",
+      "readiness": "READY",
+      "status": "NOT_RUN",
+      "evidence": [],
+      "owner_role": "See EXECUTION-v1.md responsibility boundaries"
+    },
+    {
+      "id": "F29",
+      "requirement": "R01",
+      "name": "Manager adapter contract",
+      "pass_criteria": "UI user/space/input revision -> Manager Run -> dispatch, cancel, query, recovery and delivery contract tested against transparent local reference",
+      "readiness": "READY_WITH_LOCAL_REFERENCE",
+      "status": "NOT_RUN",
+      "evidence": [],
+      "owner_role": "See EXECUTION-v1.md responsibility boundaries"
+    },
+    {
+      "id": "F30",
+      "requirement": "R01",
+      "name": "Internal Manager deployment parity",
+      "pass_criteria": "Actual internal versions/interfaces/roles/delivery checked; remains NOT_RUN while internal inaccessible; no substitution by local fixture",
+      "readiness": "NEEDS_INTERNAL_ENV",
+      "status": "NOT_RUN",
+      "evidence": [],
+      "owner_role": "See EXECUTION-v1.md responsibility boundaries"
+    },
+    {
+      "id": "F31",
+      "requirement": "R01",
+      "name": "Recoverability and data preservation",
+      "pass_criteria": "Fresh owned process restart restores identities/versions/records; existing labs/worktrees untouched; no rebootstrap/reset",
+      "readiness": "READY",
+      "status": "NOT_RUN",
+      "evidence": [],
+      "owner_role": "See EXECUTION-v1.md responsibility boundaries"
+    },
+    {
+      "id": "F32",
+      "requirement": "R01",
+      "name": "Maintained private fork delivery",
+      "pass_criteria": "No production monkeypatch, explicit versioned code; role/browser/node/asset checks pass; staged list excludes secrets/cache; PRIVATE and local/remote SHA verified",
+      "readiness": "READY",
+      "status": "NOT_RUN",
+      "evidence": [],
+      "owner_role": "See EXECUTION-v1.md responsibility boundaries"
+    }
+  ],
+  "completion_gates": {
+    "LOCAL_IMPLEMENTATION": "READY functionality implemented and real local UI/Gateway/WeKnora/identity checks pass; fixture functional vs real semantic quality separated",
+    "DOMAIN_QUALITY": "F06/F11 real classifier/learning quality accepted; lack of model/set is not a pass",
+    "INTERNAL_DEPLOYMENT": "F21 physical-host acceptance and F30 internal parity need the corresponding environment; no local pass claims internal readiness"
+  },
+  "failure_policy": "Keep failed and environment-dependent rows, owner/next input/pass condition; do not delete or redefine requirements to raise pass rate."
+}

@@ -1,0 +1,36 @@
+{
+  "status": "LOCAL_FUNCTIONAL_VERIFIED_PRIVATE_DELIVERY_PENDING",
+  "upstream": "4a0639397d1d4eb14965d9e88f39aecffa9ef345",
+  "private_remote_created_and_verified": true,
+  "local_checks": {
+    "service": 49,
+    "governance_recovery": 18,
+    "browser": 12,
+    "luna_synthetic_routing": "21/21"
+  },
+  "luna_hermes": "Real retry completed with actual MCP evidence before resource incident; evidence/luna-hermes-retry-run.json",
+  "needs_input": [
+    "F11: domain truth/replay set and independent expert review",
+    "F21: second physical host",
+    "F30: internal Manager environment"
+  ],
+  "next": "Freeze source/evidence, stage exclusion scan, commit/push PRIVATE and compare SHAs",
+  "updated_at": "2026-10-08T17:36:03.586159+00:00",
+  "runtime": "Stopped by WSL restart; evidence and state retained",
+  "resource_diagnosis": "evidence/resource-diagnosis-20261009.json",
+  "resource_policy": {
+    "aggregate_memory_bytes": 1073741824,
+    "swap_max": 0,
+    "tasks_max": 192,
+    "cpu": "one-core verified affinity; kernel CPU quota unavailable",
+    "cold_worker_rotation": true
+  },
+  "acceptance": "acceptance-local-r1.json",
+  "pending": [
+    "F11",
+    "F21",
+    "F30",
+    "F32 pending push"
+  ],
+  "current_runtime": "UI/reference/assets/own WeKnora running; Gateway nodes can be stopped/activated within budget"
+}

@@ -1,0 +1,246 @@
+{
+  "mysql": {
+    "status": "PASS",
+    "result": [
+      {
+        "id": "1dd43914-2d58-46d1-96ee-1fa5c5aa5f4c",
+        "content": "SYNTHETIC mysql remote knowledge v1. Marker=mysql-knowledge-v1. Evidence first.",
+        "knowledge_id": "5bf69009-5af7-435d-a4e7-2b2e610f0566",
+        "chunk_index": 0,
+        "knowledge_title": "candidate-90e32cab62fbb676a4a91f43-knowledge",
+        "start_at": 0,
+        "end_at": 79,
+        "seq": 0,
+        "score": 0.016393442622950817,
+        "match_type": 0,
+        "sub_chunk_id": null,
+        "metadata": {
+          "content": "SYNTHETIC mysql remote knowledge v1. Marker=mysql-knowledge-v1. Evidence first.",
+          "format": "markdown",
+          "status": "publish",
+          "updated_at": "2026-10-08T15:24:16Z",
+          "version": "2"
+        },
+        "chunk_type": "text",
+        "parent_chunk_id": "",
+        "image_info": "",
+        "knowledge_filename": "candidate-90e32cab62fbb676a4a91f43-knowledge.md",
+        "knowledge_source": "manual",
+        "knowledge_channel": "web",
+        "matched_content": "candidate-90e32cab62fbb676a4a91f43-knowledge\nSYNTHETIC mysql remote knowledge v1. Marker=mysql-knowledge-v1. Evidence first.",
+        "knowledge_base_id": "8a04dde6-f8e4-417b-ae12-61c9dc334494"
+      },
+      {
+        "id": "6bfe59e4-4188-49f1-a73d-8e87348f6f21",
+        "content": "{\"SKILL.md\":\"---\\nname: engine-ops\\ndescription: mysql read-only method\\n---\\nSYNTHETIC mysql skill v1. Read references/method.md and execute scripts/probe.py before reporting.\",\"references/method.md\":\"SYNTHETIC mysql v1. Verify node identity, authorized evidence and pinned knowledge before diagnosis.\",\"scripts/probe.py\":\"from pathlib import Path\\nprint(\\\"EXECUTED:mysql:v1:\\\"+Path(\\\"references/method.md\\\").read_text())\"}",
+        "knowledge_id": "3b1bb30c-893a-4c32-85ea-333a914b08b0",
+        "chunk_index": 0,
+        "knowledge_title": "candidate-90e32cab62fbb676a4a91f43-skill",
+        "start_at": 0,
+        "end_at": 424,
+        "seq": 0,
+        "score": 0.016129032258064516,
+        "match_type": 0,
+        "sub_chunk_id": null,
+        "metadata": {
+          "content": "{\"SKILL.md\":\"---\\nname: engine-ops\\ndescription: mysql read-only method\\n---\\nSYNTHETIC mysql skill v1. Read references/method.md and execute scripts/probe.py before reporting.\",\"references/method.md\":\"SYNTHETIC mysql v1. Verify node identity, authorized evidence and pinned knowledge before diagnosis.\",\"scripts/probe.py\":\"from pathlib import Path\\nprint(\\\"EXECUTED:mysql:v1:\\\"+Path(\\\"references/method.md\\\").read_text())\"}",
+          "format": "markdown",
+          "status": "publish",
+          "updated_at": "2026-10-08T15:24:16Z",
+          "version": "2"
+        },
+        "chunk_type": "text",
+        "parent_chunk_id": "",
+        "image_info": "",
+        "knowledge_filename": "candidate-90e32cab62fbb676a4a91f43-skill.md",
+        "knowledge_source": "manual",
+        "knowledge_channel": "web",
+        "matched_content": "candidate-90e32cab62fbb676a4a91f43-skill\n{\"SKILL.md\":\"---\\nname: engine-ops\\ndescription: mysql read-only method\\n---\\nSYNTHETIC mysql skill v1. Read references/method.md and execute scripts/probe.py before reporting.\",\"references/method.md\":\"SYNTHETIC mysql v1. Verify node identity, authorized evidence and pinned knowledge before diagnosis.\",\"scripts/probe.py\":\"from pathlib import Path\\nprint(\\\"EXECUTED:mysql:v1:\\\"+Path(\\\"references/method.md\\\").read_text())\"}",
+        "knowledge_base_id": "8a04dde6-f8e4-417b-ae12-61c9dc334494"
+      }
+    ]
+  },
+  "pg": {
+    "status": "PASS",
+    "result": [
+      {
+        "id": "ba9ef410-0c51-4a69-8c96-afd179327efd",
+        "content": "SYNTHETIC pg remote knowledge v1. Marker=pg-knowledge-v1. Evidence first.",
+        "knowledge_id": "e9452f55-42df-418a-bfbf-13484fe5e3d2",
+        "chunk_index": 0,
+        "knowledge_title": "candidate-31cfdb174943986ca8c82f2b-knowledge",
+        "start_at": 0,
+        "end_at": 73,
+        "seq": 0,
+        "score": 0.016393442622950817,
+        "match_type": 0,
+        "sub_chunk_id": null,
+        "metadata": {
+          "content": "SYNTHETIC pg remote knowledge v1. Marker=pg-knowledge-v1. Evidence first.",
+          "format": "markdown",
+          "status": "publish",
+          "updated_at": "2026-10-08T15:24:16Z",
+          "version": "2"
+        },
+        "chunk_type": "text",
+        "parent_chunk_id": "",
+        "image_info": "",
+        "knowledge_filename": "candidate-31cfdb174943986ca8c82f2b-knowledge.md",
+        "knowledge_source": "manual",
+        "knowledge_channel": "web",
+        "matched_content": "candidate-31cfdb174943986ca8c82f2b-knowledge\nSYNTHETIC pg remote knowledge v1. Marker=pg-knowledge-v1. Evidence first.",
+        "knowledge_base_id": "e63727cb-74ca-492c-8adf-395f99ec3034"
+      },
+      {
+        "id": "a5ffa7c5-a4a5-49b9-8a77-8be91c018e02",
+        "content": "{\"SKILL.md\":\"---\\nname: engine-ops\\ndescription: pg read-only method\\n---\\nSYNTHETIC pg skill v1. Read references/method.md and execute scripts/probe.py before reporting.\",\"references/method.md\":\"SYNTHETIC pg v1. Verify node identity, authorized evidence and pinned knowledge before diagnosis.\",\"scripts/probe.py\":\"from pathlib import Path\\nprint(\\\"EXECUTED:pg:v1:\\\"+Path(\\\"references/method.md\\\").read_text())\"}",
+        "knowledge_id": "41f26a89-7527-46e7-968d-96598dff4396",
+        "chunk_index": 0,
+        "knowledge_title": "candidate-31cfdb174943986ca8c82f2b-skill",
+        "start_at": 0,
+        "end_at": 412,
+        "seq": 0,
+        "score": 0.016129032258064516,
+        "match_type": 0,
+        "sub_chunk_id": null,
+        "metadata": {
+          "content": "{\"SKILL.md\":\"---\\nname: engine-ops\\ndescription: pg read-only method\\n---\\nSYNTHETIC pg skill v1. Read references/method.md and execute scripts/probe.py before reporting.\",\"references/method.md\":\"SYNTHETIC pg v1. Verify node identity, authorized evidence and pinned knowledge before diagnosis.\",\"scripts/probe.py\":\"from pathlib import Path\\nprint(\\\"EXECUTED:pg:v1:\\\"+Path(\\\"references/method.md\\\").read_text())\"}",
+          "format": "markdown",
+          "status": "publish",
+          "updated_at": "2026-10-08T15:24:16Z",
+          "version": "2"
+        },
+        "chunk_type": "text",
+        "parent_chunk_id": "",
+        "image_info": "",
+        "knowledge_filename": "candidate-31cfdb174943986ca8c82f2b-skill.md",
+        "knowledge_source": "manual",
+        "knowledge_channel": "web",
+        "matched_content": "candidate-31cfdb174943986ca8c82f2b-skill\n{\"SKILL.md\":\"---\\nname: engine-ops\\ndescription: pg read-only method\\n---\\nSYNTHETIC pg skill v1. Read references/method.md and execute scripts/probe.py before reporting.\",\"references/method.md\":\"SYNTHETIC pg v1. Verify node identity, authorized evidence and pinned knowledge before diagnosis.\",\"scripts/probe.py\":\"from pathlib import Path\\nprint(\\\"EXECUTED:pg:v1:\\\"+Path(\\\"references/method.md\\\").read_text())\"}",
+        "knowledge_base_id": "e63727cb-74ca-492c-8adf-395f99ec3034"
+      }
+    ]
+  },
+  "cassandra": {
+    "status": "PASS",
+    "result": [
+      {
+        "id": "ea67bbf9-bd90-45e4-9e25-8a977aa2310c",
+        "content": "SYNTHETIC cassandra remote knowledge v1. Marker=cassandra-knowledge-v1. Evidence first.",
+        "knowledge_id": "9ea5c6e9-e3c4-4557-86b5-5929b3e2891b",
+        "chunk_index": 0,
+        "knowledge_title": "candidate-37f297b6168703dbfec30831-knowledge",
+        "start_at": 0,
+        "end_at": 87,
+        "seq": 0,
+        "score": 0.016393442622950817,
+        "match_type": 0,
+        "sub_chunk_id": null,
+        "metadata": {
+          "content": "SYNTHETIC cassandra remote knowledge v1. Marker=cassandra-knowledge-v1. Evidence first.",
+          "format": "markdown",
+          "status": "publish",
+          "updated_at": "2026-10-08T15:24:16Z",
+          "version": "2"
+        },
+        "chunk_type": "text",
+        "parent_chunk_id": "",
+        "image_info": "",
+        "knowledge_filename": "candidate-37f297b6168703dbfec30831-knowledge.md",
+        "knowledge_source": "manual",
+        "knowledge_channel": "web",
+        "matched_content": "candidate-37f297b6168703dbfec30831-knowledge\nSYNTHETIC cassandra remote knowledge v1. Marker=cassandra-knowledge-v1. Evidence first.",
+        "knowledge_base_id": "51533d05-2a5b-4303-a280-2b8409f58c7a"
+      },
+      {
+        "id": "1510412c-18e4-4b8c-a7e1-d8acf967d08f",
+        "content": "{\"SKILL.md\":\"---\\nname: engine-ops\\ndescription: cassandra read-only method\\n---\\nSYNTHETIC cassandra skill v1. Read references/method.md and execute scripts/probe.py before reporting.\",\"references/method.md\":\"SYNTHETIC cassandra v1. Verify node identity, authorized evidence and pinned knowledge before diagnosis.\",\"scripts/probe.py\":\"from pathlib import Path\\nprint(\\\"EXECUTED:cassandra:v1:\\\"+Path(\\\"references/method.md\\\").read_text())\"}",
+        "knowledge_id": "172dd090-980c-45a2-9893-29de25013cd1",
+        "chunk_index": 0,
+        "knowledge_title": "candidate-37f297b6168703dbfec30831-skill",
+        "start_at": 0,
+        "end_at": 440,
+        "seq": 0,
+        "score": 0.016129032258064516,
+        "match_type": 0,
+        "sub_chunk_id": null,
+        "metadata": {
+          "content": "{\"SKILL.md\":\"---\\nname: engine-ops\\ndescription: cassandra read-only method\\n---\\nSYNTHETIC cassandra skill v1. Read references/method.md and execute scripts/probe.py before reporting.\",\"references/method.md\":\"SYNTHETIC cassandra v1. Verify node identity, authorized evidence and pinned knowledge before diagnosis.\",\"scripts/probe.py\":\"from pathlib import Path\\nprint(\\\"EXECUTED:cassandra:v1:\\\"+Path(\\\"references/method.md\\\").read_text())\"}",
+          "format": "markdown",
+          "status": "publish",
+          "updated_at": "2026-10-08T15:24:16Z",
+          "version": "2"
+        },
+        "chunk_type": "text",
+        "parent_chunk_id": "",
+        "image_info": "",
+        "knowledge_filename": "candidate-37f297b6168703dbfec30831-skill.md",
+        "knowledge_source": "manual",
+        "knowledge_channel": "web",
+        "matched_content": "candidate-37f297b6168703dbfec30831-skill\n{\"SKILL.md\":\"---\\nname: engine-ops\\ndescription: cassandra read-only method\\n---\\nSYNTHETIC cassandra skill v1. Read references/method.md and execute scripts/probe.py before reporting.\",\"references/method.md\":\"SYNTHETIC cassandra v1. Verify node identity, authorized evidence and pinned knowledge before diagnosis.\",\"scripts/probe.py\":\"from pathlib import Path\\nprint(\\\"EXECUTED:cassandra:v1:\\\"+Path(\\\"references/method.md\\\").read_text())\"}",
+        "knowledge_base_id": "51533d05-2a5b-4303-a280-2b8409f58c7a"
+      }
+    ]
+  },
+  "redis": {
+    "status": "PASS",
+    "result": [
+      {
+        "id": "6baf6f52-7457-432c-9d07-e9feb2605a16",
+        "content": "SYNTHETIC redis remote knowledge v1. Marker=redis-knowledge-v1. Evidence first.",
+        "knowledge_id": "7bba86c0-eb14-464b-92a1-6ab47170430e",
+        "chunk_index": 0,
+        "knowledge_title": "candidate-4b0e2ac84af34031a5779d76-knowledge",
+        "start_at": 0,
+        "end_at": 79,
+        "seq": 0,
+        "score": 0.016393442622950817,
+        "match_type": 0,
+        "sub_chunk_id": null,
+        "metadata": {
+          "content": "SYNTHETIC redis remote knowledge v1. Marker=redis-knowledge-v1. Evidence first.",
+          "format": "markdown",
+          "status": "publish",
+          "updated_at": "2026-10-08T15:24:16Z",
+          "version": "2"
+        },
+        "chunk_type": "text",
+        "parent_chunk_id": "",
+        "image_info": "",
+        "knowledge_filename": "candidate-4b0e2ac84af34031a5779d76-knowledge.md",
+        "knowledge_source": "manual",
+        "knowledge_channel": "web",
+        "matched_content": "candidate-4b0e2ac84af34031a5779d76-knowledge\nSYNTHETIC redis remote knowledge v1. Marker=redis-knowledge-v1. Evidence first.",
+        "knowledge_base_id": "399d5679-0a10-445e-b251-14a5f0fba904"
+      },
+      {
+        "id": "90a0329d-73e2-47ea-8a98-05e86ea5c667",
+        "content": "{\"SKILL.md\":\"---\\nname: engine-ops\\ndescription: redis read-only method\\n---\\nSYNTHETIC redis skill v1. Read references/method.md and execute scripts/probe.py before reporting.\",\"references/method.md\":\"SYNTHETIC redis v1. Verify node identity, authorized evidence and pinned knowledge before diagnosis.\",\"scripts/probe.py\":\"from pathlib import Path\\nprint(\\\"EXECUTED:redis:v1:\\\"+Path(\\\"references/method.md\\\").read_text())\"}",
+        "knowledge_id": "edbc38ae-c375-4089-bacf-cea84aee7eb1",
+        "chunk_index": 0,
+        "knowledge_title": "candidate-4b0e2ac84af34031a5779d76-skill",
+        "start_at": 0,
+        "end_at": 424,
+        "seq": 0,
+        "score": 0.016129032258064516,
+        "match_type": 0,
+        "sub_chunk_id": null,
+        "metadata": {
+          "content": "{\"SKILL.md\":\"---\\nname: engine-ops\\ndescription: redis read-only method\\n---\\nSYNTHETIC redis skill v1. Read references/method.md and execute scripts/probe.py before reporting.\",\"references/method.md\":\"SYNTHETIC redis v1. Verify node identity, authorized evidence and pinned knowledge before diagnosis.\",\"scripts/probe.py\":\"from pathlib import Path\\nprint(\\\"EXECUTED:redis:v1:\\\"+Path(\\\"references/method.md\\\").read_text())\"}",
+          "format": "markdown",
+          "status": "publish",
+          "updated_at": "2026-10-08T15:24:16Z",
+          "version": "2"
+        },
+        "chunk_type": "text",
+        "parent_chunk_id": "",
+        "image_info": "",
+        "knowledge_filename": "candidate-4b0e2ac84af34031a5779d76-skill.md",
+        "knowledge_source": "manual",
+        "knowledge_channel": "web",
+        "matched_content": "candidate-4b0e2ac84af34031a5779d76-skill\n{\"SKILL.md\":\"---\\nname: engine-ops\\ndescription: redis read-only method\\n---\\nSYNTHETIC redis skill v1. Read references/method.md and execute scripts/probe.py before reporting.\",\"references/method.md\":\"SYNTHETIC redis v1. Verify node identity, authorized evidence and pinned knowledge before diagnosis.\",\"scripts/probe.py\":\"from pathlib import Path\\nprint(\\\"EXECUTED:redis:v1:\\\"+Path(\\\"references/method.md\\\").read_text())\"}",
+        "knowledge_base_id": "399d5679-0a10-445e-b251-14a5f0fba904"
+      }
+    ]
+  }
+}

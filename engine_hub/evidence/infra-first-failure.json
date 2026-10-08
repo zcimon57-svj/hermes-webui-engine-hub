@@ -1,0 +1,6 @@
+{
+  "container_id": "d341d9eee24d17d318da577c7d503c88bbc6de1b56c5194d23b1f8d62e25a17d",
+  "status": "exited",
+  "reason": "Owned Docker embedded DNS lookup refused; own-network IP binding used on retry",
+  "data_volume_preserved": true
+}

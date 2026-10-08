@@ -1,0 +1,85 @@
+{
+  "schema": "engine-hub-versions/1",
+  "webui_upstream_sha": "4a0639397d1d4eb14965d9e88f39aecffa9ef345",
+  "historical_webui_sha": "c367ef3c05a0d8cf4447c080798a88f1cf19b576",
+  "hermes_sha": "345cd2b057a452236de401d3534b8502a7465e8d",
+  "hermes_observed_health": "0.21.3",
+  "central_python": "3.12.13",
+  "hermes_python": "3.11.15",
+  "codex_cli": "codex-cli 0.161.0",
+  "requested_model": "gpt-6-luna",
+  "provider_response_model": "NOT_EXPOSED_BY_EXEC_JSON",
+  "weknora_runtime_image_source": "d97ad7a4",
+  "weknora_adjacent_source_not_runtime": "1edcd54b43606d9079bb36650efe3f68707a79ea",
+  "images": {
+    "eh158r-weknora-r2": {
+      "image": "weknora-ops-app:d97ad7a4",
+      "image_id": "sha256:687374a4d457b15e2afc0d1f61935ae41e11becadcd26d76aba1a1f903fe47c1",
+      "cgroup_parent": "eh158.slice",
+      "memory_max": 335544320,
+      "pids_limit": 64
+    },
+    "eh158r-postgres": {
+      "image": "paradedb/paradedb:v0.22.2-pg17",
+      "image_id": "sha256:fac7b3743a4cf5b86478a6947fa58bfc5a596bc344bffc73909c4962613454d9",
+      "cgroup_parent": "eh158.slice",
+      "memory_max": 134217728,
+      "pids_limit": 64
+    },
+    "eh158r-redis": {
+      "image": "redis:7.0-alpine",
+      "image_id": "sha256:b8653d876dd6ebd43d0e41cbe216d59ec8a1f4ee5f5aa2db30778221cb8d7fc1",
+      "cgroup_parent": "eh158.slice",
+      "memory_max": 33554432,
+      "pids_limit": 64
+    },
+    "eh158r-embedding": {
+      "image": "python:3.11-slim",
+      "image_id": "sha256:da047cb8f9d1d98e5c070f5300ba9f7274e33b8fc0e5be5ed88740aed1b95ba9",
+      "cgroup_parent": "eh158.slice",
+      "memory_max": 67108864,
+      "pids_limit": 64
+    }
+  },
+  "internal_versions": "UNKNOWN",
+  "physical_second_host": "NOT_RUN",
+  "source_sha256": {
+    "engine_hub/__init__.py": "d7654d1ac5aa2182c3fca56f2ee56ca841e8c48fbb2b8572a54f37644123c7ba",
+    "engine_hub/assets.py": "9723b39649a027151b84a2b238a331bd7e9c4830c0551af13f08c9f15d28e2dc",
+    "engine_hub/auth.py": "4eb5298c1f3dba50f87816682090639b5d5bca1f2f6eaf3236bf0fcd64d99e31",
+    "engine_hub/codex_luna.py": "a1406bb8aa25cd1a02fad22ba2baf9df3a5c712227833a48b8fa22c7632ec7b6",
+    "engine_hub/common.py": "fd0e32389cd8ab86ffe2d4b5ea18e205d96abaad49ab5f8837b49fa0831e77fb",
+    "engine_hub/companion.py": "80f1c91ae122fb453d1258fb7ad58abddda980b227251f90b5e3751baa4ba406",
+    "engine_hub/luna_bridge.py": "fc6183ea55829fc8007b5abd5dcdee748d48a7e53d686542050c28ca0ccf28ae",
+    "engine_hub/manager.py": "58cb6eea531a85ab7caa6f1bbaf9795a2e15295c464471e165b0fdd4e96e73ae",
+    "engine_hub/node_mcp.py": "88068daabff6b5100b5d62ab12215a8876915b4743d3fb3c1a9b1fa2d9fd3df9",
+    "engine_hub/resources.py": "837ddadda4c03acd5d7e7c2bfada3bfc20bb07976e2034bf711076813f875e79",
+    "engine_hub/routing.py": "34ba5d116ebb32a1bb867479605ae4200545c0a6aa90e3b9ecba91ecd4b4cfd7",
+    "engine_hub/server.py": "8e5fe581bdaf92d1d13f9d46ea7a95b0b26b0e8f26b213d7264f91af31eefba4",
+    "engine_hub/service.py": "d524febfb5ddb5828a234a94e60c3b6a13c9b21cb6ac20fbf43d2c8f4972c71b",
+    "engine_hub/supervisor.py": "aeee23c70da233705c67f81b79c874e29221322a1b3af07c395d3f8632e674fe"
+  },
+  "scripts_sha256": {
+    "engine_hub/scripts/affinity.S": "b23507f6468a727cd25e0e920a501803439054e022bb9649fbf3415597988d20",
+    "engine_hub/scripts/browser_guarded.cjs": "ceb8eff29004e0ce0980adb2112602ad7fb0914c8e35c3fbac4e86fad371b53a",
+    "engine_hub/scripts/browser_verify.cjs": "b148948688890fa5785dcb0452968e602cad779315665878bd56fe1d8901fbd3",
+    "engine_hub/scripts/embedding_fixture.py": "ccdba67a4bc13785b40caf9b97756b517cc2efafe4d3bd3216d06840ffc1e745",
+    "engine_hub/scripts/guarded_exec.py": "a47679d08c0e5f022814022d9c8a4443ae079a456e60c0d39d90e3692618e8fa",
+    "engine_hub/scripts/infra.py": "ae6704b39ec2aa3b687044fb4bd0996f7d6d2c328ba999586e06d2bc452956c0",
+    "engine_hub/scripts/lab.py": "b4632613137cc64f99e2ba36b498a36ad5785a34ef29f960b0558bb5e5cc0462",
+    "engine_hub/scripts/model_fixture.py": "64600339f954d58d3df4963be0ad4a601ef5d5926c2df5b4c368e3e56486b12e",
+    "engine_hub/scripts/model_mode.py": "8537047da4a6bc60cc0b33f19630b14c68b462f6e8a90fb12f3e5427bea8e743",
+    "engine_hub/scripts/seed.py": "b36392fbf158a4f37122af32561f16e46a2f74b9ea3f1c7029501343f19c8181",
+    "engine_hub/scripts/verify_final_edges.py": "b9a00120d29633a01f43441e1ea69e8c11e286a16f87a470ccfc44479f7c0230",
+    "engine_hub/scripts/verify_governance_recovery.py": "28280da3ad1fdeb608c0536da81300fef3dc556405a9b4d35f6e9b4b2b60f58b",
+    "engine_hub/scripts/verify_guarded_hub.py": "6b23f02d9dd97f3a4ebc01bdc5386a322ea08da41e265a710e7b5cab69c1e8ad",
+    "engine_hub/scripts/verify_guarded_luna.py": "0d2339cf89a02fdbb9c93fcf624da8443b9e605a78382a332bdd581fae9a7764",
+    "engine_hub/scripts/verify_live.py": "28b78f81e4c2c387999e7afbd1935b6cc8d4103521d9236dc9ac2958f3be26fb",
+    "engine_hub/scripts/verify_luna.py": "e8401e63d6894cee574a1432b742e5e9f8454becc51c736e164ed153d666aefc",
+    "engine_hub/scripts/verify_resource_limits.py": "a6431dc79374c2b9646432a74fdc6300d92a4d77baed422d12fd550be5f9ce4a"
+  },
+  "node_js": "v22.19.0",
+  "playwright": "1.61.1",
+  "history_shallow": false,
+  "baseline_history_commits": 9565
+}

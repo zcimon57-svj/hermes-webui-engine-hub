@@ -1,0 +1,27 @@
+{
+  "at": 1791473071.8436463,
+  "attempt": 1,
+  "bundle_sha256": "903f9c03852b22e982b6583f5d8434f4f5245e66c77e7256b04487347a5d5289",
+  "cancel_requested": false,
+  "conversation": "ab6e3cde20ac5d59be3d69dd",
+  "delivery_receipt": {
+    "external_delivery": "NOT_RUN",
+    "id": "receipt-manager-8a27c0afb3ef5d0c25b584cb",
+    "report_sha256": "9853f11d05924e2a9fe76286c565a4c426e804f88a54bb026ca0adcdf9428af1",
+    "target": "local-reference-report-store"
+  },
+  "engine": "pg",
+  "gateway_run": "run_c6169222a2e14b78aeab1bcfe3bd71f1",
+  "id": "manager-8a27c0afb3ef5d0c25b584cb",
+  "input_revision": "2a382d8c16f301616ed7dd5dd6734229",
+  "knowledge_release": "release-6c1159a2c2066ff801b9793a",
+  "node": "node-03",
+  "observed_at": 1791473073.392189,
+  "owner": "chat",
+  "reference_boundary": "LOCAL_REFERENCE_NOT_INTERNAL_MANAGER",
+  "report": "SYNTHETIC_PROTOCOL_REPORT\n{\"error\": \"tool_call to 'mcp__ops__ops_evidence' is missing required argument(s): context_id. The tool was NOT invoked. Parameters schema: {\\\"type\\\": \\\"object\\\", \\\"properties\\\": {\\\"context_id\\\": {\\\"type\\\": \\\"string\\\"}}, \\\"required\\\": [\\\"context_id\\\"], \\\"additionalProperties\\\": false}. Retry tool_call with 'arguments' matching the parameters schema above.\"}",
+  "report_sha256": "9853f11d05924e2a9fe76286c565a4c426e804f88a54bb026ca0adcdf9428af1",
+  "skill_release": "release-6c1159a2c2066ff801b9793a",
+  "space": "pg-ops",
+  "status": "completed"
+}

@@ -1,0 +1,122 @@
+{
+  "schema": "hermes-webui-engine-hub-requirements/1",
+  "revision": 1,
+  "recorded_at": "2026-10-08T14:26:50.904294+00:00",
+  "state": "USER_AUTHORIZED_NEXT_SESSION_IMPLEMENTATION_NOT_STARTED",
+  "objective": "Create a private Hermes WebUI derived repository retaining upstream history; implement and verify a unified UI for four engines/six isolated nodes, automatic space routing, controlled per-engine learning, role permissions and remote WeKnora assets.",
+  "user_requirements": [
+    {
+      "id": "R01",
+      "user_text": "多节点多引擎是可以隔离的，但是是统一入口访问，统一UI管理的",
+      "current": "Sandbox node isolation verified; unified access/health/Runs only with runtime patch",
+      "target": "One login/URL; engine-aware route; real node health, sessions, assets and Runs; explicit independent state and credentials"
+    },
+    {
+      "id": "R02",
+      "user_text": "多个引擎之间是否能够根据一定的规则和分析自动选择对应的空间",
+      "current": "Manual UI profile selection; September trusted repo mapping only",
+      "target": "Authorize scope first; instance/explicit rules then classifier; uncertainty asks rather than defaulting; bind engine/KB/Skill version/server node route"
+    },
+    {
+      "id": "R03",
+      "user_text": "当前方案各自节点的知识自进化是否隔离",
+      "current": "Separate writable homes; governance tested with manual synthetic candidates; real learning quality NOT_RUN",
+      "target": "Private node/case drafts; per-engine candidate/evaluation/review/release; same-engine approved assets shared; no cross-engine automatic writeback"
+    },
+    {
+      "id": "R04",
+      "user_text": "是否支持多个用户登录，给不同的访问权限",
+      "clarification": "权限管理主要是想管理部分人可以修改配置查看更多信息，部分人只能只读，部分人可以回消息问问题",
+      "current": "One shared operator password; custom aggregate endpoints do not filter by user",
+      "target": "Distinct users, server-side Admin/Viewer/Chat roles and field-level visibility; scopes optional policy but no unauthorized profile expansion"
+    },
+    {
+      "id": "R05",
+      "user_text": "多引擎是否支持多节点或者多进程部署",
+      "current": "Six actual Gateway processes on one host; two Cassandra and two Redis nodes verified",
+      "target": "Support one/multiple processes or nodes per engine, remote targets; state/ports/keys separate; pool selection under single Manager authority"
+    },
+    {
+      "id": "R06",
+      "user_text": "是否支持知识库或者skill这些直接对接到weknora的知识库，包括读取和使用，更新直接用远端的，是否支持版本管理，本地是否还需要保存",
+      "current": "September real WeKnora reads plus separate release adapter; new WebUI has local-only asset panes",
+      "target": "Remote WeKnora is authoritative; API/MCP knowledge consumption; remote Skill provider/package consumption; versioned publish+adoption; local approved snapshot/cache only when runtime needs it; private session state separate"
+    }
+  ],
+  "architecture": {
+    "top_level_modules": [
+      "业务接入",
+      "Agent Manager",
+      "Agent Core",
+      "知识平台",
+      "MCP接口"
+    ],
+    "business_authority": "Existing internal Manager through ManagerClient; inaccessible deployment marked UNKNOWN. Do not default to replacing it with Paperclip or adding a competing task scheduler.",
+    "ui": "Hermes WebUI fork",
+    "runtime": "Engine -> pool -> explicit node -> isolated Hermes state",
+    "assets": "WeKnora remote assets plus ONE version/release authority; node private drafts are not global approved assets",
+    "execution_identity": [
+      "input_revision",
+      "manager_run",
+      "attempt",
+      "engine_id",
+      "node_id",
+      "profile_or_state_scope",
+      "hermes_run",
+      "session",
+      "knowledge_release",
+      "skill_release",
+      "report_sha",
+      "delivery_receipt"
+    ]
+  },
+  "topology": {
+    "mysql": [
+      "node-01"
+    ],
+    "pg": [
+      "node-03"
+    ],
+    "cassandra": [
+      "node-02",
+      "node-05"
+    ],
+    "redis": [
+      "node-04",
+      "node-06"
+    ]
+  },
+  "authorization": {
+    "this_turn": "Persist evidence, new requirements, execution contract and next-session prompt only",
+    "next_session": "Create private derived repo, modify code, run bounded local real-component/synthetic-data verification, create test users and separate owned services, commit/push new fork privately once verified",
+    "not_authorized": [
+      "Public repo/site publication",
+      "Changes to inaccessible internal/production/neighbor services",
+      "Overwriting unrelated dirty work or old experiment evidence",
+      "Inviting or messaging other people",
+      "Reactivating withdrawn mysql-v2 source"
+    ]
+  },
+  "versions": {
+    "preferred_webui_base": "4a0639397d1d4eb14965d9e88f39aecffa9ef345",
+    "historical_webui_base": "c367ef3c05a0d8cf4447c080798a88f1cf19b576",
+    "verified_hermes": "345cd2b057a452236de401d3534b8502a7465e8d",
+    "actual_hermes_health": "0.21.3",
+    "internal_versions": "UNKNOWN"
+  },
+  "fork_destination": {
+    "local": "/home/cimon/code/hermes-webui-engine-hub",
+    "suggested_remote": "zcimon57-svj/hermes-webui-engine-hub",
+    "visibility": "PRIVATE",
+    "method": "Independent private history-preserving derived repo with upstream remote, because public GitHub forks cannot simply be private",
+    "if_existing": "Inspect ownership/status/remotes and preserve; never overwrite or reset; choose an isolated new path if conflicting"
+  },
+  "implementation_constraints": [
+    "Replace prototype monkeypatch with explicit maintained backend modules/hooks in fork",
+    "Do not mount all node Homes into central UI",
+    "Ordinary users never receive node admin keys; trusted proxy headers stripped/reissued by proxy",
+    "Keep model-fixture functional tests distinct from real classification/learning quality",
+    "One business Run state authority, one approved asset release authority",
+    "Preserve FAIL/NOT_RUN and scoped internal UNKNOWN"
+  ]
+}

@@ -1,3 +1,9 @@
+# 私人 Hermes WebUI Engine Hub
+
+当前派生仓交付入口：[Engine Hub 运行、权限、版本和验收](engine_hub/README.md)。固定上游历史、保留许可证，私人维护；本轮采用硬资源总预算和按需节点，不使用实验 monkeypatch。验收分开报告本地功能、真实模型小样本、领域学习和内部部署。
+
+以下保留上游 README，原单用户启动方式和能力说明按其版本解释。Engine Hub 的授权部署使用上面的独立入口。
+
 # Hermes Web UI
 
 [Hermes Agent](https://hermes-agent.nousresearch.com/) is a sophisticated autonomous agent that lives on your server, accessed via a terminal or messaging apps, that remembers what it learns and gets more capable the longer it runs.

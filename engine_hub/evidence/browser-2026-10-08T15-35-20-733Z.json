@@ -1,0 +1,225 @@
+{
+  "at": "2026-10-08T15:35:20.736Z",
+  "checks": [
+    {
+      "name": "three_origins_one_login_url",
+      "pass": true
+    },
+    {
+      "name": "three_distinct_browser_identities",
+      "pass": true
+    },
+    {
+      "name": "viewer_no_bootstrap_writes",
+      "pass": true
+    },
+    {
+      "name": "viewer_composer_absent",
+      "pass": true
+    },
+    {
+      "name": "chat_admin_hidden",
+      "pass": true
+    },
+    {
+      "name": "admin_configuration_visible",
+      "pass": true
+    },
+    {
+      "name": "admin_no_plaintext_node_keys",
+      "pass": true
+    },
+    {
+      "name": "viewer_direct_write_denied",
+      "pass": true
+    },
+    {
+      "name": "chat_direct_config_denied",
+      "pass": true
+    },
+    {
+      "name": "browser_ask_route",
+      "pass": true
+    },
+    {
+      "name": "browser_followup_same_session_new_run",
+      "pass": true
+    },
+    {
+      "name": "mobile_no_horizontal_overflow",
+      "pass": false
+    }
+  ],
+  "requests": [
+    {
+      "actor": "viewer",
+      "method": "GET",
+      "path": "/api/me"
+    },
+    {
+      "actor": "chat",
+      "method": "GET",
+      "path": "/api/me"
+    },
+    {
+      "actor": "admin",
+      "method": "GET",
+      "path": "/api/me"
+    },
+    {
+      "actor": "viewer",
+      "method": "GET",
+      "path": "/api/summary"
+    },
+    {
+      "actor": "chat",
+      "method": "GET",
+      "path": "/api/summary"
+    },
+    {
+      "actor": "admin",
+      "method": "GET",
+      "path": "/api/summary"
+    },
+    {
+      "actor": "chat",
+      "method": "GET",
+      "path": "/api/me"
+    },
+    {
+      "actor": "viewer",
+      "method": "GET",
+      "path": "/api/me"
+    },
+    {
+      "actor": "admin",
+      "method": "GET",
+      "path": "/api/me"
+    },
+    {
+      "actor": "admin",
+      "method": "GET",
+      "path": "/api/assets/mysql/current"
+    },
+    {
+      "actor": "admin",
+      "method": "GET",
+      "path": "/api/assets/mysql/releases/release-e8a018843a4c7e7723b310e7"
+    },
+    {
+      "actor": "viewer",
+      "method": "GET",
+      "path": "/api/assets/mysql/current"
+    },
+    {
+      "actor": "viewer",
+      "method": "GET",
+      "path": "/api/assets/mysql/releases/release-e8a018843a4c7e7723b310e7"
+    },
+    {
+      "actor": "chat",
+      "method": "GET",
+      "path": "/api/assets/mysql/current"
+    },
+    {
+      "actor": "chat",
+      "method": "GET",
+      "path": "/api/assets/mysql/releases/release-e8a018843a4c7e7723b310e7"
+    },
+    {
+      "actor": "admin",
+      "method": "GET",
+      "path": "/api/config"
+    },
+    {
+      "actor": "admin",
+      "method": "GET",
+      "path": "/api/diagnostics"
+    },
+    {
+      "actor": "viewer",
+      "method": "POST",
+      "path": "/api/ask"
+    },
+    {
+      "actor": "chat",
+      "method": "PATCH",
+      "path": "/api/config"
+    },
+    {
+      "actor": "chat",
+      "method": "POST",
+      "path": "/api/ask"
+    },
+    {
+      "actor": "chat",
+      "method": "GET",
+      "path": "/api/summary"
+    },
+    {
+      "actor": "chat",
+      "method": "GET",
+      "path": "/api/conversations/71135ebdc0e246f8ae2dd409"
+    },
+    {
+      "actor": "viewer",
+      "method": "GET",
+      "path": "/api/summary"
+    },
+    {
+      "actor": "chat",
+      "method": "GET",
+      "path": "/api/summary"
+    },
+    {
+      "actor": "admin",
+      "method": "GET",
+      "path": "/api/summary"
+    },
+    {
+      "actor": "chat",
+      "method": "GET",
+      "path": "/api/conversations/71135ebdc0e246f8ae2dd409"
+    },
+    {
+      "actor": "chat",
+      "method": "POST",
+      "path": "/api/ask"
+    },
+    {
+      "actor": "chat",
+      "method": "GET",
+      "path": "/api/summary"
+    },
+    {
+      "actor": "chat",
+      "method": "GET",
+      "path": "/api/conversations/71135ebdc0e246f8ae2dd409"
+    },
+    {
+      "actor": "chat",
+      "method": "GET",
+      "path": "/api/me"
+    },
+    {
+      "actor": "chat",
+      "method": "GET",
+      "path": "/api/summary"
+    }
+  ],
+  "screenshots": [
+    "2026-10-08T15-35-20-733Z-admin-six-nodes.png",
+    "2026-10-08T15-35-20-733Z-viewer-six-nodes.png",
+    "2026-10-08T15-35-20-733Z-chat-six-nodes.png",
+    "2026-10-08T15-35-20-733Z-admin-remote-assets.png",
+    "2026-10-08T15-35-20-733Z-viewer-remote-assets.png",
+    "2026-10-08T15-35-20-733Z-chat-remote-assets.png",
+    "2026-10-08T15-35-20-733Z-admin-sanitized-config.png",
+    "2026-10-08T15-35-20-733Z-chat-pg-real-report.png",
+    "2026-10-08T15-35-20-733Z-chat-followup.png",
+    "2026-10-08T15-35-20-733Z-mobile-nodes.png"
+  ],
+  "boundary": "Actual Chromium + owned Hermes/WeKnora; deterministic answer model, separate real Luna evidence.",
+  "status": "FAIL",
+  "error": "mobile_no_horizontal_overflow"
+}

@@ -1,0 +1,11 @@
+{
+  "object": "hermes.run",
+  "run_id": "run_be4b87fe97be41b391b0eb04f2f2201d",
+  "status": "failed",
+  "updated_at": 1791474045.241381,
+  "created_at": 1791474037.595602,
+  "session_id": "f3c1dc00e3cdf4ec3f1de771",
+  "model": "codex-luna-bridge",
+  "error": "HTTP 429: {\"error\":\"classifier_budget\"}",
+  "last_event": "run.failed"
+}

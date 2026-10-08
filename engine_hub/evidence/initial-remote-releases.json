@@ -1,0 +1,410 @@
+[
+  {
+    "engine": "mysql",
+    "candidate": {
+      "at": 1791473056.142418,
+      "author": "bootstrap",
+      "base": null,
+      "documents": {
+        "knowledge": {
+          "id": "5bf69009-5af7-435d-a4e7-2b2e610f0566",
+          "kb_id": "8a04dde6-f8e4-417b-ae12-61c9dc334494",
+          "sha256": "243aa036c9ba8b536d505f2597b736df7a81df15de1f111a25d5fc97dc5026eb"
+        },
+        "skill": {
+          "id": "3b1bb30c-893a-4c32-85ea-333a914b08b0",
+          "kb_id": "8a04dde6-f8e4-417b-ae12-61c9dc334494",
+          "sha256": "48a677883b284c9aebaff76ed2efcb4001be0a7671a3bba37e16b540180ca66c"
+        }
+      },
+      "engine": "mysql",
+      "id": "candidate-90e32cab62fbb676a4a91f43",
+      "origin": "MANUAL_SYNTHETIC",
+      "share_consent": true,
+      "source": {
+        "case": "initial-fixed-synthetic-seed",
+        "engine": "mysql",
+        "owner": "bootstrap"
+      },
+      "stage": "candidate"
+    },
+    "release": {
+      "at": 1791473056.2717268,
+      "base": null,
+      "bundle_sha256": "f990cec01f2b070c17af8ad707b46d5d0d996de22d31c0384194a858748c8607",
+      "candidate": "candidate-90e32cab62fbb676a4a91f43",
+      "config": {
+        "tool_policy": "read_only",
+        "version": "config-1"
+      },
+      "documents": {
+        "knowledge": {
+          "id": "5bf69009-5af7-435d-a4e7-2b2e610f0566",
+          "kb_id": "8a04dde6-f8e4-417b-ae12-61c9dc334494",
+          "sha256": "243aa036c9ba8b536d505f2597b736df7a81df15de1f111a25d5fc97dc5026eb"
+        },
+        "skill": {
+          "id": "3b1bb30c-893a-4c32-85ea-333a914b08b0",
+          "kb_id": "8a04dde6-f8e4-417b-ae12-61c9dc334494",
+          "sha256": "48a677883b284c9aebaff76ed2efcb4001be0a7671a3bba37e16b540180ca66c"
+        }
+      },
+      "engine": "mysql",
+      "id": "release-e8a018843a4c7e7723b310e7",
+      "reviewer": "bootstrap-reviewer",
+      "revoked": false,
+      "semantic_quality": "NOT_RUN"
+    },
+    "readback": {
+      "at": 1791473056.2717268,
+      "base": null,
+      "bundle_sha256": "f990cec01f2b070c17af8ad707b46d5d0d996de22d31c0384194a858748c8607",
+      "candidate": "candidate-90e32cab62fbb676a4a91f43",
+      "config": {
+        "tool_policy": "read_only",
+        "version": "config-1"
+      },
+      "content": {
+        "knowledge": {
+          "citation": "http://127.0.0.1:15802/api/v1/knowledge/5bf69009-5af7-435d-a4e7-2b2e610f0566",
+          "content": "SYNTHETIC mysql remote knowledge v1. Marker=mysql-knowledge-v1. Evidence first.",
+          "kb_id": "8a04dde6-f8e4-417b-ae12-61c9dc334494",
+          "knowledge_id": "5bf69009-5af7-435d-a4e7-2b2e610f0566",
+          "status": "publish",
+          "version": 2
+        },
+        "skill": {
+          "citation": "http://127.0.0.1:15802/api/v1/knowledge/3b1bb30c-893a-4c32-85ea-333a914b08b0",
+          "content": "{\"SKILL.md\":\"---\\nname: engine-ops\\ndescription: mysql read-only method\\n---\\nSYNTHETIC mysql skill v1. Read references/method.md and execute scripts/probe.py before reporting.\",\"references/method.md\":\"SYNTHETIC mysql v1. Verify node identity, authorized evidence and pinned knowledge before diagnosis.\",\"scripts/probe.py\":\"from pathlib import Path\\nprint(\\\"EXECUTED:mysql:v1:\\\"+Path(\\\"references/method.md\\\").read_text())\"}",
+          "kb_id": "8a04dde6-f8e4-417b-ae12-61c9dc334494",
+          "knowledge_id": "3b1bb30c-893a-4c32-85ea-333a914b08b0",
+          "status": "publish",
+          "version": 2
+        }
+      },
+      "documents": {
+        "knowledge": {
+          "id": "5bf69009-5af7-435d-a4e7-2b2e610f0566",
+          "kb_id": "8a04dde6-f8e4-417b-ae12-61c9dc334494",
+          "sha256": "243aa036c9ba8b536d505f2597b736df7a81df15de1f111a25d5fc97dc5026eb"
+        },
+        "skill": {
+          "id": "3b1bb30c-893a-4c32-85ea-333a914b08b0",
+          "kb_id": "8a04dde6-f8e4-417b-ae12-61c9dc334494",
+          "sha256": "48a677883b284c9aebaff76ed2efcb4001be0a7671a3bba37e16b540180ca66c"
+        }
+      },
+      "engine": "mysql",
+      "id": "release-e8a018843a4c7e7723b310e7",
+      "reviewer": "bootstrap-reviewer",
+      "revoked": false,
+      "semantic_quality": "NOT_RUN"
+    }
+  },
+  {
+    "engine": "pg",
+    "candidate": {
+      "at": 1791473056.3795874,
+      "author": "bootstrap",
+      "base": null,
+      "documents": {
+        "knowledge": {
+          "id": "e9452f55-42df-418a-bfbf-13484fe5e3d2",
+          "kb_id": "e63727cb-74ca-492c-8adf-395f99ec3034",
+          "sha256": "a09d96372d5bfcf488037ff10588ecf6749c1d8db60474c637e7831a5f5188f4"
+        },
+        "skill": {
+          "id": "41f26a89-7527-46e7-968d-96598dff4396",
+          "kb_id": "e63727cb-74ca-492c-8adf-395f99ec3034",
+          "sha256": "26a8966892c62d81a1cfb9919e9fb913da86d42954cfd9c971faaf535da6c003"
+        }
+      },
+      "engine": "pg",
+      "id": "candidate-31cfdb174943986ca8c82f2b",
+      "origin": "MANUAL_SYNTHETIC",
+      "share_consent": true,
+      "source": {
+        "case": "initial-fixed-synthetic-seed",
+        "engine": "pg",
+        "owner": "bootstrap"
+      },
+      "stage": "candidate"
+    },
+    "release": {
+      "at": 1791473056.46892,
+      "base": null,
+      "bundle_sha256": "903f9c03852b22e982b6583f5d8434f4f5245e66c77e7256b04487347a5d5289",
+      "candidate": "candidate-31cfdb174943986ca8c82f2b",
+      "config": {
+        "tool_policy": "read_only",
+        "version": "config-1"
+      },
+      "documents": {
+        "knowledge": {
+          "id": "e9452f55-42df-418a-bfbf-13484fe5e3d2",
+          "kb_id": "e63727cb-74ca-492c-8adf-395f99ec3034",
+          "sha256": "a09d96372d5bfcf488037ff10588ecf6749c1d8db60474c637e7831a5f5188f4"
+        },
+        "skill": {
+          "id": "41f26a89-7527-46e7-968d-96598dff4396",
+          "kb_id": "e63727cb-74ca-492c-8adf-395f99ec3034",
+          "sha256": "26a8966892c62d81a1cfb9919e9fb913da86d42954cfd9c971faaf535da6c003"
+        }
+      },
+      "engine": "pg",
+      "id": "release-6c1159a2c2066ff801b9793a",
+      "reviewer": "bootstrap-reviewer",
+      "revoked": false,
+      "semantic_quality": "NOT_RUN"
+    },
+    "readback": {
+      "at": 1791473056.46892,
+      "base": null,
+      "bundle_sha256": "903f9c03852b22e982b6583f5d8434f4f5245e66c77e7256b04487347a5d5289",
+      "candidate": "candidate-31cfdb174943986ca8c82f2b",
+      "config": {
+        "tool_policy": "read_only",
+        "version": "config-1"
+      },
+      "content": {
+        "knowledge": {
+          "citation": "http://127.0.0.1:15802/api/v1/knowledge/e9452f55-42df-418a-bfbf-13484fe5e3d2",
+          "content": "SYNTHETIC pg remote knowledge v1. Marker=pg-knowledge-v1. Evidence first.",
+          "kb_id": "e63727cb-74ca-492c-8adf-395f99ec3034",
+          "knowledge_id": "e9452f55-42df-418a-bfbf-13484fe5e3d2",
+          "status": "publish",
+          "version": 2
+        },
+        "skill": {
+          "citation": "http://127.0.0.1:15802/api/v1/knowledge/41f26a89-7527-46e7-968d-96598dff4396",
+          "content": "{\"SKILL.md\":\"---\\nname: engine-ops\\ndescription: pg read-only method\\n---\\nSYNTHETIC pg skill v1. Read references/method.md and execute scripts/probe.py before reporting.\",\"references/method.md\":\"SYNTHETIC pg v1. Verify node identity, authorized evidence and pinned knowledge before diagnosis.\",\"scripts/probe.py\":\"from pathlib import Path\\nprint(\\\"EXECUTED:pg:v1:\\\"+Path(\\\"references/method.md\\\").read_text())\"}",
+          "kb_id": "e63727cb-74ca-492c-8adf-395f99ec3034",
+          "knowledge_id": "41f26a89-7527-46e7-968d-96598dff4396",
+          "status": "publish",
+          "version": 2
+        }
+      },
+      "documents": {
+        "knowledge": {
+          "id": "e9452f55-42df-418a-bfbf-13484fe5e3d2",
+          "kb_id": "e63727cb-74ca-492c-8adf-395f99ec3034",
+          "sha256": "a09d96372d5bfcf488037ff10588ecf6749c1d8db60474c637e7831a5f5188f4"
+        },
+        "skill": {
+          "id": "41f26a89-7527-46e7-968d-96598dff4396",
+          "kb_id": "e63727cb-74ca-492c-8adf-395f99ec3034",
+          "sha256": "26a8966892c62d81a1cfb9919e9fb913da86d42954cfd9c971faaf535da6c003"
+        }
+      },
+      "engine": "pg",
+      "id": "release-6c1159a2c2066ff801b9793a",
+      "reviewer": "bootstrap-reviewer",
+      "revoked": false,
+      "semantic_quality": "NOT_RUN"
+    }
+  },
+  {
+    "engine": "cassandra",
+    "candidate": {
+      "at": 1791473056.5604687,
+      "author": "bootstrap",
+      "base": null,
+      "documents": {
+        "knowledge": {
+          "id": "9ea5c6e9-e3c4-4557-86b5-5929b3e2891b",
+          "kb_id": "51533d05-2a5b-4303-a280-2b8409f58c7a",
+          "sha256": "c9d7098c6259bd01cb73683753f382a8a0254712b5422a016e25d36e83db0d99"
+        },
+        "skill": {
+          "id": "172dd090-980c-45a2-9893-29de25013cd1",
+          "kb_id": "51533d05-2a5b-4303-a280-2b8409f58c7a",
+          "sha256": "f700aa8ec946c77c57b63535ef880c630da872c066ef676c0b0c1dcc62927a87"
+        }
+      },
+      "engine": "cassandra",
+      "id": "candidate-37f297b6168703dbfec30831",
+      "origin": "MANUAL_SYNTHETIC",
+      "share_consent": true,
+      "source": {
+        "case": "initial-fixed-synthetic-seed",
+        "engine": "cassandra",
+        "owner": "bootstrap"
+      },
+      "stage": "candidate"
+    },
+    "release": {
+      "at": 1791473056.6597805,
+      "base": null,
+      "bundle_sha256": "a367fd861b89d1fb152f658c70f732b27fab6458e1b37a050a7b206148050f59",
+      "candidate": "candidate-37f297b6168703dbfec30831",
+      "config": {
+        "tool_policy": "read_only",
+        "version": "config-1"
+      },
+      "documents": {
+        "knowledge": {
+          "id": "9ea5c6e9-e3c4-4557-86b5-5929b3e2891b",
+          "kb_id": "51533d05-2a5b-4303-a280-2b8409f58c7a",
+          "sha256": "c9d7098c6259bd01cb73683753f382a8a0254712b5422a016e25d36e83db0d99"
+        },
+        "skill": {
+          "id": "172dd090-980c-45a2-9893-29de25013cd1",
+          "kb_id": "51533d05-2a5b-4303-a280-2b8409f58c7a",
+          "sha256": "f700aa8ec946c77c57b63535ef880c630da872c066ef676c0b0c1dcc62927a87"
+        }
+      },
+      "engine": "cassandra",
+      "id": "release-4471c11c7041da23ea98bddf",
+      "reviewer": "bootstrap-reviewer",
+      "revoked": false,
+      "semantic_quality": "NOT_RUN"
+    },
+    "readback": {
+      "at": 1791473056.6597805,
+      "base": null,
+      "bundle_sha256": "a367fd861b89d1fb152f658c70f732b27fab6458e1b37a050a7b206148050f59",
+      "candidate": "candidate-37f297b6168703dbfec30831",
+      "config": {
+        "tool_policy": "read_only",
+        "version": "config-1"
+      },
+      "content": {
+        "knowledge": {
+          "citation": "http://127.0.0.1:15802/api/v1/knowledge/9ea5c6e9-e3c4-4557-86b5-5929b3e2891b",
+          "content": "SYNTHETIC cassandra remote knowledge v1. Marker=cassandra-knowledge-v1. Evidence first.",
+          "kb_id": "51533d05-2a5b-4303-a280-2b8409f58c7a",
+          "knowledge_id": "9ea5c6e9-e3c4-4557-86b5-5929b3e2891b",
+          "status": "publish",
+          "version": 2
+        },
+        "skill": {
+          "citation": "http://127.0.0.1:15802/api/v1/knowledge/172dd090-980c-45a2-9893-29de25013cd1",
+          "content": "{\"SKILL.md\":\"---\\nname: engine-ops\\ndescription: cassandra read-only method\\n---\\nSYNTHETIC cassandra skill v1. Read references/method.md and execute scripts/probe.py before reporting.\",\"references/method.md\":\"SYNTHETIC cassandra v1. Verify node identity, authorized evidence and pinned knowledge before diagnosis.\",\"scripts/probe.py\":\"from pathlib import Path\\nprint(\\\"EXECUTED:cassandra:v1:\\\"+Path(\\\"references/method.md\\\").read_text())\"}",
+          "kb_id": "51533d05-2a5b-4303-a280-2b8409f58c7a",
+          "knowledge_id": "172dd090-980c-45a2-9893-29de25013cd1",
+          "status": "publish",
+          "version": 2
+        }
+      },
+      "documents": {
+        "knowledge": {
+          "id": "9ea5c6e9-e3c4-4557-86b5-5929b3e2891b",
+          "kb_id": "51533d05-2a5b-4303-a280-2b8409f58c7a",
+          "sha256": "c9d7098c6259bd01cb73683753f382a8a0254712b5422a016e25d36e83db0d99"
+        },
+        "skill": {
+          "id": "172dd090-980c-45a2-9893-29de25013cd1",
+          "kb_id": "51533d05-2a5b-4303-a280-2b8409f58c7a",
+          "sha256": "f700aa8ec946c77c57b63535ef880c630da872c066ef676c0b0c1dcc62927a87"
+        }
+      },
+      "engine": "cassandra",
+      "id": "release-4471c11c7041da23ea98bddf",
+      "reviewer": "bootstrap-reviewer",
+      "revoked": false,
+      "semantic_quality": "NOT_RUN"
+    }
+  },
+  {
+    "engine": "redis",
+    "candidate": {
+      "at": 1791473056.7551165,
+      "author": "bootstrap",
+      "base": null,
+      "documents": {
+        "knowledge": {
+          "id": "7bba86c0-eb14-464b-92a1-6ab47170430e",
+          "kb_id": "399d5679-0a10-445e-b251-14a5f0fba904",
+          "sha256": "05f7aef96df29d4ee75bd8c89622b0e88d2aed3a00e67d0a02843b27e68f156e"
+        },
+        "skill": {
+          "id": "edbc38ae-c375-4089-bacf-cea84aee7eb1",
+          "kb_id": "399d5679-0a10-445e-b251-14a5f0fba904",
+          "sha256": "5b6bbfde660baaf15df3ef95dbf8f6c25f20e265cde19fe696b405b1bc6d3e1f"
+        }
+      },
+      "engine": "redis",
+      "id": "candidate-4b0e2ac84af34031a5779d76",
+      "origin": "MANUAL_SYNTHETIC",
+      "share_consent": true,
+      "source": {
+        "case": "initial-fixed-synthetic-seed",
+        "engine": "redis",
+        "owner": "bootstrap"
+      },
+      "stage": "candidate"
+    },
+    "release": {
+      "at": 1791473056.8498058,
+      "base": null,
+      "bundle_sha256": "c367a5e3dfec8d9b486fdce118d003d3d0b09ede198f14f3d1ba8a554b5072c4",
+      "candidate": "candidate-4b0e2ac84af34031a5779d76",
+      "config": {
+        "tool_policy": "read_only",
+        "version": "config-1"
+      },
+      "documents": {
+        "knowledge": {
+          "id": "7bba86c0-eb14-464b-92a1-6ab47170430e",
+          "kb_id": "399d5679-0a10-445e-b251-14a5f0fba904",
+          "sha256": "05f7aef96df29d4ee75bd8c89622b0e88d2aed3a00e67d0a02843b27e68f156e"
+        },
+        "skill": {
+          "id": "edbc38ae-c375-4089-bacf-cea84aee7eb1",
+          "kb_id": "399d5679-0a10-445e-b251-14a5f0fba904",
+          "sha256": "5b6bbfde660baaf15df3ef95dbf8f6c25f20e265cde19fe696b405b1bc6d3e1f"
+        }
+      },
+      "engine": "redis",
+      "id": "release-55a89692a619899e0f4b69bb",
+      "reviewer": "bootstrap-reviewer",
+      "revoked": false,
+      "semantic_quality": "NOT_RUN"
+    },
+    "readback": {
+      "at": 1791473056.8498058,
+      "base": null,
+      "bundle_sha256": "c367a5e3dfec8d9b486fdce118d003d3d0b09ede198f14f3d1ba8a554b5072c4",
+      "candidate": "candidate-4b0e2ac84af34031a5779d76",
+      "config": {
+        "tool_policy": "read_only",
+        "version": "config-1"
+      },
+      "content": {
+        "knowledge": {
+          "citation": "http://127.0.0.1:15802/api/v1/knowledge/7bba86c0-eb14-464b-92a1-6ab47170430e",
+          "content": "SYNTHETIC redis remote knowledge v1. Marker=redis-knowledge-v1. Evidence first.",
+          "kb_id": "399d5679-0a10-445e-b251-14a5f0fba904",
+          "knowledge_id": "7bba86c0-eb14-464b-92a1-6ab47170430e",
+          "status": "publish",
+          "version": 2
+        },
+        "skill": {
+          "citation": "http://127.0.0.1:15802/api/v1/knowledge/edbc38ae-c375-4089-bacf-cea84aee7eb1",
+          "content": "{\"SKILL.md\":\"---\\nname: engine-ops\\ndescription: redis read-only method\\n---\\nSYNTHETIC redis skill v1. Read references/method.md and execute scripts/probe.py before reporting.\",\"references/method.md\":\"SYNTHETIC redis v1. Verify node identity, authorized evidence and pinned knowledge before diagnosis.\",\"scripts/probe.py\":\"from pathlib import Path\\nprint(\\\"EXECUTED:redis:v1:\\\"+Path(\\\"references/method.md\\\").read_text())\"}",
+          "kb_id": "399d5679-0a10-445e-b251-14a5f0fba904",
+          "knowledge_id": "edbc38ae-c375-4089-bacf-cea84aee7eb1",
+          "status": "publish",
+          "version": 2
+        }
+      },
+      "documents": {
+        "knowledge": {
+          "id": "7bba86c0-eb14-464b-92a1-6ab47170430e",
+          "kb_id": "399d5679-0a10-445e-b251-14a5f0fba904",
+          "sha256": "05f7aef96df29d4ee75bd8c89622b0e88d2aed3a00e67d0a02843b27e68f156e"
+        },
+        "skill": {
+          "id": "edbc38ae-c375-4089-bacf-cea84aee7eb1",
+          "kb_id": "399d5679-0a10-445e-b251-14a5f0fba904",
+          "sha256": "5b6bbfde660baaf15df3ef95dbf8f6c25f20e265cde19fe696b405b1bc6d3e1f"
+        }
+      },
+      "engine": "redis",
+      "id": "release-55a89692a619899e0f4b69bb",
+      "reviewer": "bootstrap-reviewer",
+      "revoked": false,
+      "semantic_quality": "NOT_RUN"
+    }
+  }
+]

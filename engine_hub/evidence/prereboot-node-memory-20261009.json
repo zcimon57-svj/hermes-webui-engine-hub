@@ -1,0 +1,234 @@
+{
+  "new": [
+    {
+      "file": "engine_hub/.local/nodes/node-01/home/state/gateway.heartbeat",
+      "updated_at": "2026-10-08T16:01:46.676498+00:00",
+      "memory": {
+        "rss_kib": 226312,
+        "mem_total_kib": 8022384,
+        "mem_available_kib": 371368,
+        "swap_used_kib": 2097152
+      },
+      "keys": [
+        "pid",
+        "updated_at",
+        "monotonic",
+        "start_time",
+        "mem",
+        "loop_tick_socket",
+        "loop_tick_tcp_port"
+      ]
+    },
+    {
+      "file": "engine_hub/.local/nodes/node-02/home/state/gateway.heartbeat",
+      "updated_at": "2026-10-08T16:01:54.772606+00:00",
+      "memory": {
+        "rss_kib": 218024,
+        "mem_total_kib": 8022384,
+        "mem_available_kib": 432796,
+        "swap_used_kib": 2097152
+      },
+      "keys": [
+        "pid",
+        "updated_at",
+        "monotonic",
+        "start_time",
+        "mem",
+        "loop_tick_socket",
+        "loop_tick_tcp_port"
+      ]
+    },
+    {
+      "file": "engine_hub/.local/nodes/node-03/home/state/gateway.heartbeat",
+      "updated_at": "2026-10-08T16:01:50.604595+00:00",
+      "memory": {
+        "rss_kib": 199672,
+        "mem_total_kib": 8022384,
+        "mem_available_kib": 410824,
+        "swap_used_kib": 2097152
+      },
+      "keys": [
+        "pid",
+        "updated_at",
+        "monotonic",
+        "start_time",
+        "mem",
+        "loop_tick_socket",
+        "loop_tick_tcp_port"
+      ]
+    },
+    {
+      "file": "engine_hub/.local/nodes/node-04/home/state/gateway.heartbeat",
+      "updated_at": "2026-10-08T16:01:19.368389+00:00",
+      "memory": {
+        "rss_kib": 166464,
+        "mem_total_kib": 8022384,
+        "mem_available_kib": 427248,
+        "swap_used_kib": 2097152
+      },
+      "keys": [
+        "pid",
+        "updated_at",
+        "monotonic",
+        "start_time",
+        "mem",
+        "loop_tick_socket",
+        "loop_tick_tcp_port"
+      ]
+    },
+    {
+      "file": "engine_hub/.local/nodes/node-05/home/state/gateway.heartbeat",
+      "updated_at": "2026-10-08T16:01:46.625009+00:00",
+      "memory": {
+        "rss_kib": 222924,
+        "mem_total_kib": 8022384,
+        "mem_available_kib": 402152,
+        "swap_used_kib": 2097152
+      },
+      "keys": [
+        "pid",
+        "updated_at",
+        "monotonic",
+        "start_time",
+        "mem",
+        "loop_tick_socket",
+        "loop_tick_tcp_port"
+      ]
+    },
+    {
+      "file": "engine_hub/.local/nodes/node-06/home/state/gateway.heartbeat",
+      "updated_at": "2026-10-08T16:01:58.635847+00:00",
+      "memory": {
+        "rss_kib": 219820,
+        "mem_total_kib": 8022384,
+        "mem_available_kib": 401812,
+        "swap_used_kib": 2097152
+      },
+      "keys": [
+        "pid",
+        "updated_at",
+        "monotonic",
+        "start_time",
+        "mem",
+        "loop_tick_socket",
+        "loop_tick_tcp_port"
+      ]
+    }
+  ],
+  "old": [
+    {
+      "file": "/home/cimon/code/business-agent-engineering/explorations/2026-10-08-hermes-webui-six-node-validation/runtime/nodes/node-01/mysql/home/state/gateway.heartbeat",
+      "updated_at": "2026-10-08T16:01:38.678464+00:00",
+      "memory": {
+        "rss_kib": 198880,
+        "mem_total_kib": 8022384,
+        "mem_available_kib": 421872,
+        "swap_used_kib": 2097152
+      },
+      "keys": [
+        "pid",
+        "updated_at",
+        "monotonic",
+        "start_time",
+        "mem",
+        "loop_tick_socket",
+        "loop_tick_tcp_port"
+      ]
+    },
+    {
+      "file": "/home/cimon/code/business-agent-engineering/explorations/2026-10-08-hermes-webui-six-node-validation/runtime/nodes/node-02/cassandra/home/state/gateway.heartbeat",
+      "updated_at": "2026-10-08T16:01:46.641216+00:00",
+      "memory": {
+        "rss_kib": 198288,
+        "mem_total_kib": 8022384,
+        "mem_available_kib": 405668,
+        "swap_used_kib": 2097152
+      },
+      "keys": [
+        "pid",
+        "updated_at",
+        "monotonic",
+        "start_time",
+        "mem",
+        "loop_tick_socket",
+        "loop_tick_tcp_port"
+      ]
+    },
+    {
+      "file": "/home/cimon/code/business-agent-engineering/explorations/2026-10-08-hermes-webui-six-node-validation/runtime/nodes/node-03/pg/home/state/gateway.heartbeat",
+      "updated_at": "2026-10-08T16:01:58.691454+00:00",
+      "memory": {
+        "rss_kib": 200620,
+        "mem_total_kib": 8022384,
+        "mem_available_kib": 404668,
+        "swap_used_kib": 2097152
+      },
+      "keys": [
+        "pid",
+        "updated_at",
+        "monotonic",
+        "start_time",
+        "mem",
+        "loop_tick_socket",
+        "loop_tick_tcp_port"
+      ]
+    },
+    {
+      "file": "/home/cimon/code/business-agent-engineering/explorations/2026-10-08-hermes-webui-six-node-validation/runtime/nodes/node-04/redis/home/state/gateway.heartbeat",
+      "updated_at": "2026-10-08T16:01:34.335057+00:00",
+      "memory": {
+        "rss_kib": 198264,
+        "mem_total_kib": 8022384,
+        "mem_available_kib": 422352,
+        "swap_used_kib": 2097152
+      },
+      "keys": [
+        "pid",
+        "updated_at",
+        "monotonic",
+        "start_time",
+        "mem",
+        "loop_tick_socket",
+        "loop_tick_tcp_port"
+      ]
+    },
+    {
+      "file": "/home/cimon/code/business-agent-engineering/explorations/2026-10-08-hermes-webui-six-node-validation/runtime/nodes/node-05/cassandra/home/state/gateway.heartbeat",
+      "updated_at": "2026-10-08T15:47:49.753155+00:00",
+      "memory": {
+        "rss_kib": 196444,
+        "mem_total_kib": 8022384,
+        "mem_available_kib": 406876,
+        "swap_used_kib": 2097152
+      },
+      "keys": [
+        "pid",
+        "updated_at",
+        "monotonic",
+        "start_time",
+        "mem",
+        "loop_tick_socket",
+        "loop_tick_tcp_port"
+      ]
+    },
+    {
+      "file": "/home/cimon/code/business-agent-engineering/explorations/2026-10-08-hermes-webui-six-node-validation/runtime/nodes/node-06/redis/home/state/gateway.heartbeat",
+      "updated_at": "2026-10-08T16:01:46.613354+00:00",
+      "memory": {
+        "rss_kib": 198160,
+        "mem_total_kib": 8022384,
+        "mem_available_kib": 409308,
+        "swap_used_kib": 2097152
+      },
+      "keys": [
+        "pid",
+        "updated_at",
+        "monotonic",
+        "start_time",
+        "mem",
+        "loop_tick_socket",
+        "loop_tick_tcp_port"
+      ]
+    }
+  ]
+}

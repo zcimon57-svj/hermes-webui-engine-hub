@@ -1,0 +1,116 @@
+{
+  "at": "2026-10-08T16:15:36.354914+00:00",
+  "activity": "RESOURCE_DIAGNOSIS_BEFORE_RESUMING_IMPLEMENTATION",
+  "current_boot_id": "4b692a65-095a-4082-974d-94e19cdc13de",
+  "current_uptime_seconds": 710.95,
+  "current_linux_memory_kib": {
+    "MemTotal": 8022392,
+    "MemAvailable": 6122032,
+    "Cached": 3039504,
+    "SwapTotal": 2097152,
+    "SwapFree": 2097152
+  },
+  "current_own_runtime_families": 17,
+  "own_runtime_live_count": 0,
+  "new_docker_containers_started": 4,
+  "old_runtime_families_preserved": 11,
+  "prior_new_gateway_rss_sum_gib": 1.195159912109375,
+  "prior_old_gateway_rss_sum_gib": 1.135498046875,
+  "rss_interpretation": "Last per-process samples at differing times; RSS sums include shared mappings and are not exclusive physical memory",
+  "prior_available_memory_mib_range": [
+    362.6640625,
+    422.65234375
+  ],
+  "prior_swap_used_gib": 2.0,
+  "current_windows_memory": {
+    "logical_cpus": 8,
+    "windows_boot": "/Date(1790950659500)/",
+    "total_ram_gib": 15.79,
+    "at": "2026-10-09T00:11:55.7631121+08:00",
+    "free_ram_gib": 1.52
+  },
+  "current_windows_process_groups": [
+    {
+      "name": "vmmemWSL",
+      "count": 1,
+      "ws_mib": 5246.5
+    },
+    {
+      "name": "ChatGPT",
+      "count": 17,
+      "ws_mib": 2297.5
+    },
+    {
+      "name": "chrome",
+      "count": 22,
+      "ws_mib": 1103.6
+    },
+    {
+      "name": "svchost",
+      "count": 92,
+      "ws_mib": 1075.8
+    },
+    {
+      "name": "powershell",
+      "count": 5,
+      "ws_mib": 382.4
+    },
+    {
+      "name": "codex",
+      "count": 2,
+      "ws_mib": 255.3
+    },
+    {
+      "name": "MsMpEng",
+      "count": 1,
+      "ws_mib": 254.2
+    },
+    {
+      "name": "explorer",
+      "count": 1,
+      "ws_mib": 220.4
+    },
+    {
+      "name": "Typora",
+      "count": 6,
+      "ws_mib": 196.9
+    },
+    {
+      "name": "msedgewebview2",
+      "count": 6,
+      "ws_mib": 185.7
+    },
+    {
+      "name": "WindowsTerminal",
+      "count": 1,
+      "ws_mib": 176.7
+    },
+    {
+      "name": "conhost",
+      "count": 20,
+      "ws_mib": 150.9
+    }
+  ],
+  "confirmed": [
+    "System memory pressure before WSL restart; all 2 GiB swap occupied",
+    "New and previous six-Gateway labs co-resident",
+    "New lab has per-process virtual-address and per-container limits but no aggregate host admission or continuous host/process sampling",
+    "Current owned lab processes and containers are stopped after WSL restart; no restart performed during diagnosis"
+  ],
+  "inferred": [
+    "Aggregate workloads exceeded practical memory headroom; this session added material load",
+    "Memory reclaim/swap pressure may explain part of observed CPU/system responsiveness degradation"
+  ],
+  "unknown": [
+    "Per-process CPU at the historical peak",
+    "Memory contribution from companions, WebUI variants, Docker and other concurrent Codex sessions at the historical peak",
+    "Whether kernel OOM killed a process; previous system journal not readable and owned container OOMKilled flags false"
+  ],
+  "action_taken": "Read-only diagnosis plus evidence/checkpoint files; no services started/stopped, no Windows/WSL configuration changed",
+  "resume_gate": "Before any runtime resume: aggregate Linux AND Windows memory headroom gate, bounded phased node start, aggregate resource sampling/watchdog; keep old labs stopped unless specifically needed. Do not stop unrelated services or change OS settings without authorization.",
+  "source_sha256": {
+    "engine_hub/evidence/prereboot-node-memory-20261009.json": "8a0edf4ea05037d6b133b74bad0b206dfc2d49c610951fe77773d2f223a64d24",
+    "engine_hub/evidence/windows-resource-audit-20261009.json": "67ee67d4f16b5424bcb2b90e5da4505cc8d21506e2bb837a2019c5ccbac865f8",
+    "engine_hub/evidence/windows-resource-sample-20261009.json": "5aa8a0f2998b9ef3608a160703d790bed26592a6456b3ffe2134c83d9fdf8c03"
+  }
+}

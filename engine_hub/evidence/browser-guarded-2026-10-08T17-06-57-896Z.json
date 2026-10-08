@@ -1,0 +1,145 @@
+{
+  "checks": [
+    {
+      "name": "same_origin_admin",
+      "pass": true
+    },
+    {
+      "name": "role_ui_admin",
+      "pass": true
+    },
+    {
+      "name": "same_origin_viewer",
+      "pass": true
+    },
+    {
+      "name": "role_ui_viewer",
+      "pass": true
+    },
+    {
+      "name": "same_origin_chat",
+      "pass": true
+    },
+    {
+      "name": "role_ui_chat",
+      "pass": true
+    },
+    {
+      "name": "viewer_boot_no_mutations",
+      "pass": true
+    },
+    {
+      "name": "three_browser_cookie_identities",
+      "pass": true
+    },
+    {
+      "name": "viewer_direct_write_denied",
+      "pass": true
+    },
+    {
+      "name": "actual_remote_asset_page_admin",
+      "pass": true
+    },
+    {
+      "name": "actual_remote_asset_page_viewer",
+      "pass": true
+    },
+    {
+      "name": "actual_remote_asset_page_chat",
+      "pass": true
+    },
+    {
+      "name": "mobile_no_overflow",
+      "pass": true
+    }
+  ],
+  "screenshots": [
+    "2026-10-08T17-06-57-896Z-admin-guarded.png",
+    "2026-10-08T17-06-57-896Z-viewer-guarded.png",
+    "2026-10-08T17-06-57-896Z-chat-guarded.png",
+    "2026-10-08T17-06-57-896Z-mobile-guarded.png"
+  ],
+  "requests": [
+    {
+      "user": "admin",
+      "method": "GET",
+      "path": "/api/me"
+    },
+    {
+      "user": "admin",
+      "method": "GET",
+      "path": "/api/summary"
+    },
+    {
+      "user": "viewer",
+      "method": "GET",
+      "path": "/api/me"
+    },
+    {
+      "user": "viewer",
+      "method": "GET",
+      "path": "/api/summary"
+    },
+    {
+      "user": "chat",
+      "method": "GET",
+      "path": "/api/me"
+    },
+    {
+      "user": "chat",
+      "method": "GET",
+      "path": "/api/summary"
+    },
+    {
+      "user": "admin",
+      "method": "GET",
+      "path": "/api/me"
+    },
+    {
+      "user": "chat",
+      "method": "GET",
+      "path": "/api/me"
+    },
+    {
+      "user": "viewer",
+      "method": "GET",
+      "path": "/api/me"
+    },
+    {
+      "user": "viewer",
+      "method": "POST",
+      "path": "/api/ask"
+    },
+    {
+      "user": "admin",
+      "method": "GET",
+      "path": "/api/assets/mysql/current"
+    },
+    {
+      "user": "admin",
+      "method": "GET",
+      "path": "/api/assets/mysql/releases/release-e8a018843a4c7e7723b310e7"
+    },
+    {
+      "user": "viewer",
+      "method": "GET",
+      "path": "/api/assets/mysql/current"
+    },
+    {
+      "user": "viewer",
+      "method": "GET",
+      "path": "/api/assets/mysql/releases/release-e8a018843a4c7e7723b310e7"
+    },
+    {
+      "user": "chat",
+      "method": "GET",
+      "path": "/api/assets/mysql/current"
+    },
+    {
+      "user": "chat",
+      "method": "GET",
+      "path": "/api/assets/mysql/releases/release-e8a018843a4c7e7723b310e7"
+    }
+  ],
+  "status": "PASS"
+}

@@ -84,3 +84,8 @@ docs/ui-ux/review-shots/
 # Local WebUI runtime data and credentials
 .webui_password
 attachments/
+
+# Engine Hub private runtime and local dependency artifacts
+engine_hub/.local/
+engine_hub/__pycache__/
+engine_hub/**/__pycache__/

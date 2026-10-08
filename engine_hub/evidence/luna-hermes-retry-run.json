@@ -1,0 +1,31 @@
+{
+  "run": {
+    "at": 1791474177.1559498,
+    "attempt": 1,
+    "bundle_sha256": "903f9c03852b22e982b6583f5d8434f4f5245e66c77e7256b04487347a5d5289",
+    "cancel_requested": false,
+    "conversation": "b2b5f0cdec74727db99cbf28",
+    "delivery_receipt": {
+      "external_delivery": "NOT_RUN",
+      "id": "receipt-manager-a95f6b06fc1418f26ea539be",
+      "report_sha256": "041a97ded23b80fe85215f34bdf1077559bb3b4a12fa33b7f0bb15bdc573ae33",
+      "target": "local-reference-report-store"
+    },
+    "engine": "pg",
+    "gateway_run": "run_918ddd5f6a1c48c298c9d9cebaa1aa2e",
+    "id": "manager-a95f6b06fc1418f26ea539be",
+    "input_revision": "ec4605b0ca88e4c9302e8bff900ee097",
+    "knowledge_release": "release-6c1159a2c2066ff801b9793a",
+    "model": "codex-luna-bridge",
+    "node": "node-03",
+    "observed_at": 1791474250.2860758,
+    "owner": "chat",
+    "reference_boundary": "LOCAL_REFERENCE_NOT_INTERNAL_MANAGER",
+    "report": "已完成只读证据核对：engine=pg，node=node-03，release=release-6c1159a2c2066ff801b9793a。批准知识为 v2（status=publish），引用：http://127.0.0.1:15802/api/v1/knowledge/e9452f55-42df-418a-bfbf-13484fe5e3d2。Skill 脚本实际执行输出：EXECUTED:pg:v1:SYNTHETIC pg v1. Verify node identity, authorized evidence and pinned knowledge before diagnosis. 证据标记为合成内容，不能证明生产诊断结论或已学习的领域事实。",
+    "report_sha256": "041a97ded23b80fe85215f34bdf1077559bb3b4a12fa33b7f0bb15bdc573ae33",
+    "skill_release": "release-6c1159a2c2066ff801b9793a",
+    "space": "pg-ops",
+    "status": "completed"
+  },
+  "boundary": "Real Luna inference through Hermes/MCP/WeKnora; synthetic assets, no business diagnosis acceptance"
+}

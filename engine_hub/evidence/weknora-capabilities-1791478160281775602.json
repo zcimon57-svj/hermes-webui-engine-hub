@@ -1,0 +1,41 @@
+{
+  "actual_instance": "http://127.0.0.1:15802",
+  "container_image_source": "d97ad7a4",
+  "adjacent_source_head": "1edcd54b43606d9079bb36650efe3f68707a79ea",
+  "source_is_not_runtime": true,
+  "skill_adapter": "Versioned package stored as remote WeKnora manual content, read/verified through RemoteSkillProvider; not native sandbox installation",
+  "identities": {
+    "mysql": {
+      "skills_api": {
+        "data": [],
+        "skills_available": false,
+        "success": true
+      },
+      "kb_id": "8a04dde6-f8e4-417b-ae12-61c9dc334494"
+    },
+    "pg": {
+      "skills_api": {
+        "data": [],
+        "skills_available": false,
+        "success": true
+      },
+      "kb_id": "e63727cb-74ca-492c-8adf-395f99ec3034"
+    },
+    "cassandra": {
+      "skills_api": {
+        "data": [],
+        "skills_available": false,
+        "success": true
+      },
+      "kb_id": "51533d05-2a5b-4303-a280-2b8409f58c7a"
+    },
+    "redis": {
+      "skills_api": {
+        "data": [],
+        "skills_available": false,
+        "success": true
+      },
+      "kb_id": "399d5679-0a10-445e-b251-14a5f0fba904"
+    }
+  }
+}

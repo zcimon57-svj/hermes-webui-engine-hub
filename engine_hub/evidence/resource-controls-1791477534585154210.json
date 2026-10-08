@@ -1,0 +1,82 @@
+{
+  "status": "PASS",
+  "kernel_limits": {
+    "memory.max": "1073741824",
+    "memory.high": "939524096",
+    "memory.swap.max": "0",
+    "pids.max": "192",
+    "cpu_enforcement": "single_core_sched_affinity; cpu controller unavailable"
+  },
+  "cgroup": "/sys/fs/cgroup/user.slice/user-1001.slice/user@1001.service/eh158.slice",
+  "cpu_affinity": [
+    0
+  ],
+  "thread_affinities": [
+    [
+      0
+    ],
+    [
+      0
+    ],
+    [
+      0
+    ]
+  ],
+  "child_affinity": [
+    0
+  ],
+  "global_model_second_denied": true,
+  "before": {
+    "at": 1791477531.9162455,
+    "boot_id": "4b692a65-095a-4082-974d-94e19cdc13de",
+    "linux_available": 5846978560,
+    "linux_total": 8214929408,
+    "swap_used": 86016,
+    "cpu_ticks": [
+      59898,
+      15,
+      15106,
+      1597913,
+      2375,
+      0,
+      18348,
+      0,
+      0,
+      0
+    ],
+    "memory_psi": "some avg10=0.00 avg60=0.00 avg300=0.00 total=10145\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=9750\n",
+    "windows_required": true,
+    "windows_available": 1228509184,
+    "windows_total": 16952647680,
+    "owned_bytes": 374976512,
+    "owned_tasks": 28,
+    "memory_events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n"
+  },
+  "after": {
+    "at": 1791477533.9440224,
+    "boot_id": "4b692a65-095a-4082-974d-94e19cdc13de",
+    "linux_available": 5827002368,
+    "linux_total": 8214929408,
+    "swap_used": 86016,
+    "cpu_ticks": [
+      60134,
+      15,
+      15124,
+      1599272,
+      2376,
+      0,
+      18399,
+      0,
+      0,
+      0
+    ],
+    "memory_psi": "some avg10=0.00 avg60=0.00 avg300=0.00 total=10145\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=9750\n",
+    "windows_required": true,
+    "windows_available": 1227313152,
+    "windows_total": 16952647680,
+    "owned_bytes": 391548928,
+    "owned_tasks": 28,
+    "memory_events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n"
+  },
+  "boundary": "Actual inherited affinity, cgroup memory/pid controls and cross-process model mutex; no memory saturation or stress beyond 16 MiB."
+}

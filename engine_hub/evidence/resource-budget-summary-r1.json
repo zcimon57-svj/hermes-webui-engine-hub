@@ -1,0 +1,21 @@
+{
+  "at": "2026-10-08T17:46:17.175254+00:00",
+  "kernel_limits": {
+    "memory.max": "1073741824",
+    "memory.high": "939524096",
+    "memory.swap.max": "0",
+    "pids.max": "192",
+    "cpu_enforcement": "single_core_sched_affinity; cpu controller unavailable"
+  },
+  "samples": 752,
+  "interval_seconds": 5,
+  "peak_owned_mib": 886.19,
+  "peak_owned_tasks": 72,
+  "minimum_windows_available_mib": 1098.04,
+  "maximum_swap_used_mib": 0.25,
+  "trips": [],
+  "admission_refusals": 1,
+  "affinity_escape_samples": 0,
+  "last_memory_events": "low 0\nhigh 429\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n",
+  "scope": "Owned runtime and four controlled containers in shared slice; watchdog separately limited. Primary existing Codex/user desktop applications are not claimed as this slice."
+}

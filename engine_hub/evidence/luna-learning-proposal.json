@@ -1,0 +1,52 @@
+{
+  "model": {
+    "requested_model": "gpt-6-luna",
+    "reasoning": "medium",
+    "cli_version": "codex-cli 0.161.0",
+    "seconds": 17.34427809715271,
+    "exit_code": 0,
+    "prompt_sha256": "6f575ab9a2845edf6de2dcc9dcbc4406ec3c2c039da1530836847fab08751596",
+    "model_response_identity": "REQUESTED_CONFIGURATION; provider response.model not exposed by exec JSON",
+    "session_persistence": "ephemeral",
+    "evidence_id": "da3708b6594312218cd4b88a",
+    "usage": [
+      {
+        "input_tokens": 15907,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 248,
+        "reasoning_output_tokens": 38
+      }
+    ],
+    "tool_items": []
+  },
+  "source": {
+    "engine": "pg",
+    "node": "node-03",
+    "scenario": "SYNTHETIC_WAL_RETENTION",
+    "facts": [
+      "slot lab_slot is inactive",
+      "slot restart_lsn is 18 GB behind current WAL",
+      "pg_wal grew 18 GB during observation",
+      "no production permissions or deletion approval"
+    ],
+    "counterexample": "High pg_wal volume without slot lag cannot be attributed to slot retention from these facts alone."
+  },
+  "proposal": {
+    "candidate": "SYNTHETIC: For node-03 in scenario SYNTHETIC_WAL_RETENTION, the inactive slot lab_slot had a restart_lsn 18 GB behind current WAL, while pg_wal grew 18 GB during the observation. These facts alone do not establish that slot retention caused the WAL growth or resolve the business outcome. High pg_wal volume without slot lag cannot be attributed to slot retention from these facts alone. Causal evidence is missing. Do not issue deletion commands; independent approval is required before any action.",
+    "engine": "pg",
+    "evidence_refs": [
+      "SYNTHETIC_WAL_RETENTION",
+      "slot lab_slot is inactive",
+      "slot restart_lsn is 18 GB behind current WAL",
+      "pg_wal grew 18 GB during observation",
+      "counterexample: high pg_wal volume without slot lag cannot be attributed to slot retention from these facts alone",
+      "no production permissions or deletion approval"
+    ],
+    "requires_approval": true,
+    "unsupported_claims": []
+  },
+  "publication": "NOT_PUBLISHED_PENDING_INDEPENDENT_DOMAIN_REVIEW",
+  "F11": "NOT_RUN_DOMAIN_TRUTH_SET_ABSENT",
+  "boundary": "Real model generated this candidate; neither synthetic truth nor model self-review constitutes expert acceptance"
+}

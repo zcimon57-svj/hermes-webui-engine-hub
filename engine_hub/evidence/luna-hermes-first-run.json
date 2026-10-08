@@ -1,0 +1,44 @@
+{
+  "route": {
+    "candidates": [
+      "pg"
+    ],
+    "engine": "pg",
+    "evidence_id": "a7d7ee64c7a664fb643efd9c",
+    "model": "gpt-6-luna",
+    "quality": "REAL_MODEL_BOUNDED_EVAL",
+    "reason": "WAL replication slots are a PostgreSQL feature; the question concerns their disk-space impact.",
+    "selected": "pg",
+    "space": "pg-ops",
+    "version": "codex-luna-1"
+  },
+  "run": {
+    "at": 1791474037.5369856,
+    "attempt": 1,
+    "bundle_sha256": "903f9c03852b22e982b6583f5d8434f4f5245e66c77e7256b04487347a5d5289",
+    "cancel_requested": false,
+    "conversation": "f3c1dc00e3cdf4ec3f1de771",
+    "delivery_receipt": {
+      "external_delivery": "NOT_RUN",
+      "id": "receipt-manager-32b5c6186cd55e2905595669",
+      "report_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "target": "local-reference-report-store"
+    },
+    "engine": "pg",
+    "gateway_run": "run_be4b87fe97be41b391b0eb04f2f2201d",
+    "id": "manager-32b5c6186cd55e2905595669",
+    "input_revision": "2abdb711fa5768e8f060bc04091a85a5",
+    "knowledge_release": "release-6c1159a2c2066ff801b9793a",
+    "model": "codex-luna-bridge",
+    "node": "node-03",
+    "observed_at": 1791474045.6353936,
+    "owner": "chat",
+    "reference_boundary": "LOCAL_REFERENCE_NOT_INTERNAL_MANAGER",
+    "report": "",
+    "report_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "skill_release": "release-6c1159a2c2066ff801b9793a",
+    "space": "pg-ops",
+    "status": "failed"
+  },
+  "boundary": "Real Codex Luna via protocol bridge; actual Hermes/MCP/WeKnora; synthetic assets, no domain incident acceptance"
+}

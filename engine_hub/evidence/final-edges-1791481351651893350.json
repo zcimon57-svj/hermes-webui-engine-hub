@@ -1,0 +1,239 @@
+{
+  "status": "FAIL",
+  "error": "('admin', '/ask', 503, {'error': 'worker_resource_or_identity_refused'})",
+  "checks": [
+    {
+      "name": "native_revision_pinned",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "remote_publish_readback",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "trace": [
+    {
+      "actor": "admin",
+      "path": "/assets/pg/current",
+      "method": "GET",
+      "status": 200,
+      "result": {
+        "at": 1791473056.46892,
+        "base": null,
+        "bundle_sha256": "903f9c03852b22e982b6583f5d8434f4f5245e66c77e7256b04487347a5d5289",
+        "candidate": "candidate-31cfdb174943986ca8c82f2b",
+        "config": {
+          "tool_policy": "read_only",
+          "version": "config-1"
+        },
+        "documents": {
+          "knowledge": {
+            "id": "e9452f55-42df-418a-bfbf-13484fe5e3d2",
+            "kb_id": "e63727cb-74ca-492c-8adf-395f99ec3034",
+            "sha256": "a09d96372d5bfcf488037ff10588ecf6749c1d8db60474c637e7831a5f5188f4"
+          },
+          "skill": {
+            "id": "41f26a89-7527-46e7-968d-96598dff4396",
+            "kb_id": "e63727cb-74ca-492c-8adf-395f99ec3034",
+            "sha256": "26a8966892c62d81a1cfb9919e9fb913da86d42954cfd9c971faaf535da6c003"
+          }
+        },
+        "engine": "pg",
+        "id": "release-6c1159a2c2066ff801b9793a",
+        "reviewer": "bootstrap-reviewer",
+        "revoked": false,
+        "semantic_quality": "NOT_RUN"
+      }
+    },
+    {
+      "actor": "admin",
+      "path": "/assets/pg/candidates",
+      "method": "POST",
+      "status": 200,
+      "result": {
+        "at": 1791481352.6951394,
+        "author": "admin",
+        "base": "release-6c1159a2c2066ff801b9793a",
+        "documents": {
+          "knowledge": {
+            "id": "72ac4bbf-c60b-497e-9163-fb820a7979b2",
+            "kb_id": "e63727cb-74ca-492c-8adf-395f99ec3034",
+            "sha256": "03d18d7f436e109eb8c7d72e56a17ccbaa738300278aa1e4331ed792981f3627"
+          },
+          "skill": {
+            "id": "0374618d-495c-43bc-a06f-a9df76f402dc",
+            "kb_id": "e63727cb-74ca-492c-8adf-395f99ec3034",
+            "sha256": "50477013d398aacc83bbc3736a9b3fa603c4f31806e3ccdebf05fd841f753b92"
+          }
+        },
+        "engine": "pg",
+        "id": "candidate-85206346771a2c4f88afaab8",
+        "origin": "MANUAL_SYNTHETIC",
+        "share_consent": true,
+        "source": {
+          "conversation": "26a8d35814782ae94f13c449",
+          "engine": "pg",
+          "node": "node-03",
+          "owner": "admin",
+          "private_draft": {
+            "id": "cbf6d93be3bc4fb281b2be6e6d22f7d8",
+            "node": "node-03",
+            "sha256": "03d18d7f436e109eb8c7d72e56a17ccbaa738300278aa1e4331ed792981f3627"
+          },
+          "report_sha256": "7b4d073823333ecb4fd1c3fe99aadf8bcb5182116bb09df9bb09cf76935f0053",
+          "run": "manager-a0e88ac73d0c971e6049bd33"
+        },
+        "stage": "candidate"
+      }
+    },
+    {
+      "actor": "reviewer",
+      "path": "/assets/pg/candidates/candidate-85206346771a2c4f88afaab8/evaluate",
+      "method": "POST",
+      "status": 200,
+      "result": {
+        "at": 1791481352.6951394,
+        "author": "admin",
+        "base": "release-6c1159a2c2066ff801b9793a",
+        "documents": {
+          "knowledge": {
+            "id": "72ac4bbf-c60b-497e-9163-fb820a7979b2",
+            "kb_id": "e63727cb-74ca-492c-8adf-395f99ec3034",
+            "sha256": "03d18d7f436e109eb8c7d72e56a17ccbaa738300278aa1e4331ed792981f3627"
+          },
+          "skill": {
+            "id": "0374618d-495c-43bc-a06f-a9df76f402dc",
+            "kb_id": "e63727cb-74ca-492c-8adf-395f99ec3034",
+            "sha256": "50477013d398aacc83bbc3736a9b3fa603c4f31806e3ccdebf05fd841f753b92"
+          }
+        },
+        "engine": "pg",
+        "evaluation": {
+          "evidence": [
+            "FUNCTIONAL_ONLY"
+          ],
+          "passed": true,
+          "quality": "GOVERNANCE_ONLY",
+          "reviewer": "reviewer"
+        },
+        "id": "candidate-85206346771a2c4f88afaab8",
+        "origin": "MANUAL_SYNTHETIC",
+        "share_consent": true,
+        "source": {
+          "conversation": "26a8d35814782ae94f13c449",
+          "engine": "pg",
+          "node": "node-03",
+          "owner": "admin",
+          "private_draft": {
+            "id": "cbf6d93be3bc4fb281b2be6e6d22f7d8",
+            "node": "node-03",
+            "sha256": "03d18d7f436e109eb8c7d72e56a17ccbaa738300278aa1e4331ed792981f3627"
+          },
+          "report_sha256": "7b4d073823333ecb4fd1c3fe99aadf8bcb5182116bb09df9bb09cf76935f0053",
+          "run": "manager-a0e88ac73d0c971e6049bd33"
+        },
+        "stage": "evaluated"
+      }
+    },
+    {
+      "actor": "reviewer",
+      "path": "/assets/pg/candidates/candidate-85206346771a2c4f88afaab8/approve",
+      "method": "POST",
+      "status": 200,
+      "result": {
+        "at": 1791481352.8115234,
+        "base": "release-6c1159a2c2066ff801b9793a",
+        "bundle_sha256": "ab2fae19df11bffb0b264fc91b1c69bb42cdc44fc506f600919b484543ba1dfc",
+        "candidate": "candidate-85206346771a2c4f88afaab8",
+        "config": {
+          "tool_policy": "read_only",
+          "version": "config-1"
+        },
+        "documents": {
+          "knowledge": {
+            "id": "72ac4bbf-c60b-497e-9163-fb820a7979b2",
+            "kb_id": "e63727cb-74ca-492c-8adf-395f99ec3034",
+            "remote_revision": 2,
+            "sha256": "03d18d7f436e109eb8c7d72e56a17ccbaa738300278aa1e4331ed792981f3627"
+          },
+          "skill": {
+            "id": "0374618d-495c-43bc-a06f-a9df76f402dc",
+            "kb_id": "e63727cb-74ca-492c-8adf-395f99ec3034",
+            "remote_revision": 2,
+            "sha256": "50477013d398aacc83bbc3736a9b3fa603c4f31806e3ccdebf05fd841f753b92"
+          }
+        },
+        "engine": "pg",
+        "id": "release-27f4f62b2e9f1cfd9c3c3957",
+        "reviewer": "reviewer",
+        "revoked": false,
+        "semantic_quality": "NOT_RUN"
+      }
+    },
+    {
+      "actor": "admin",
+      "path": "/assets/pg/releases/release-27f4f62b2e9f1cfd9c3c3957",
+      "method": "GET",
+      "status": 200,
+      "result": {
+        "at": 1791481352.8115234,
+        "base": "release-6c1159a2c2066ff801b9793a",
+        "bundle_sha256": "ab2fae19df11bffb0b264fc91b1c69bb42cdc44fc506f600919b484543ba1dfc",
+        "candidate": "candidate-85206346771a2c4f88afaab8",
+        "config": {
+          "tool_policy": "read_only",
+          "version": "config-1"
+        },
+        "content": {
+          "knowledge": {
+            "citation": "http://127.0.0.1:15802/api/v1/knowledge/72ac4bbf-c60b-497e-9163-fb820a7979b2",
+            "content": "SYNTHETIC PG guarded publication 0481d989c4ca1047",
+            "kb_id": "e63727cb-74ca-492c-8adf-395f99ec3034",
+            "knowledge_id": "72ac4bbf-c60b-497e-9163-fb820a7979b2",
+            "remote_revision": 2,
+            "status": "publish"
+          },
+          "skill": {
+            "citation": "http://127.0.0.1:15802/api/v1/knowledge/0374618d-495c-43bc-a06f-a9df76f402dc",
+            "content": "{\"SKILL.md\":\"---\\nname: engine-ops\\ndescription: PG synthetic approved method\\n---\\nSynthetic PG method; verify cited evidence.\",\"dependencies.json\":\"{\\\"python\\\":\\\"3.11\\\",\\\"packages\\\":{}}\",\"references/method.md\":\"Synthetic read-only reference.\",\"scripts/probe.py\":\"print(\\\"PG_GUARDED_APPROVED_SCRIPT\\\")\"}",
+            "kb_id": "e63727cb-74ca-492c-8adf-395f99ec3034",
+            "knowledge_id": "0374618d-495c-43bc-a06f-a9df76f402dc",
+            "remote_revision": 2,
+            "status": "publish"
+          }
+        },
+        "documents": {
+          "knowledge": {
+            "id": "72ac4bbf-c60b-497e-9163-fb820a7979b2",
+            "kb_id": "e63727cb-74ca-492c-8adf-395f99ec3034",
+            "remote_revision": 2,
+            "sha256": "03d18d7f436e109eb8c7d72e56a17ccbaa738300278aa1e4331ed792981f3627"
+          },
+          "skill": {
+            "id": "0374618d-495c-43bc-a06f-a9df76f402dc",
+            "kb_id": "e63727cb-74ca-492c-8adf-395f99ec3034",
+            "remote_revision": 2,
+            "sha256": "50477013d398aacc83bbc3736a9b3fa603c4f31806e3ccdebf05fd841f753b92"
+          }
+        },
+        "engine": "pg",
+        "id": "release-27f4f62b2e9f1cfd9c3c3957",
+        "reviewer": "reviewer",
+        "revoked": false,
+        "semantic_quality": "NOT_RUN"
+      }
+    },
+    {
+      "actor": "admin",
+      "path": "/ask",
+      "method": "POST",
+      "status": 503,
+      "result": {
+        "error": "worker_resource_or_identity_refused"
+      }
+    }
+  ],
+  "boundary": "Actual HTTP identity, remote content/revisions, Gateway consumption, UI receipt recovery and project-space denial; synthetic fixture quality only"
+}

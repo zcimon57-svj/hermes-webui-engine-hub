@@ -1,0 +1,30 @@
+{
+  "mysql": {
+    "error": "upstream_http",
+    "details": {
+      "upstream_status": 400
+    },
+    "status": "FAIL"
+  },
+  "pg": {
+    "error": "upstream_http",
+    "details": {
+      "upstream_status": 400
+    },
+    "status": "FAIL"
+  },
+  "cassandra": {
+    "error": "upstream_http",
+    "details": {
+      "upstream_status": 400
+    },
+    "status": "FAIL"
+  },
+  "redis": {
+    "error": "upstream_http",
+    "details": {
+      "upstream_status": 400
+    },
+    "status": "FAIL"
+  }
+}

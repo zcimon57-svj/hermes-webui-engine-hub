@@ -1,0 +1,80 @@
+{
+  "status": "FAIL",
+  "error": "('admin', '/ask', 503, {'error': 'target_unavailable'})",
+  "checks": [
+    {
+      "name": "viewer_no_direct_writes",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "restricted_summary_no_unreadable_nodes",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "trace": [
+    {
+      "actor": "viewer",
+      "path": "/ask",
+      "method": "POST",
+      "status": 403,
+      "result": {
+        "error": "viewer_read_only"
+      }
+    },
+    {
+      "actor": "chat",
+      "path": "/config",
+      "method": "GET",
+      "status": 403,
+      "result": {
+        "error": "capability_denied"
+      }
+    },
+    {
+      "actor": "chat",
+      "path": "/diagnostics",
+      "method": "GET",
+      "status": 403,
+      "result": {
+        "error": "capability_denied"
+      }
+    },
+    {
+      "actor": "restricted",
+      "path": "/summary",
+      "method": "GET",
+      "status": 200,
+      "result": {
+        "conversations": [],
+        "engines": [
+          "pg"
+        ],
+        "manager": "LOCAL_REFERENCE_NOT_INTERNAL",
+        "model_modes": {
+          "pg": "webui-node-fixture"
+        },
+        "nodes": [
+          {
+            "enabled": true,
+            "engine": "pg",
+            "id": "node-03",
+            "online": false
+          }
+        ],
+        "runs": []
+      }
+    },
+    {
+      "actor": "admin",
+      "path": "/ask",
+      "method": "POST",
+      "status": 503,
+      "result": {
+        "error": "target_unavailable"
+      }
+    }
+  ],
+  "boundary": "Final code, actual Gateway/MCP/remote WeKnora, one warm node at a time; fixture model. Simultaneous six-node claims are not inferred."
+}

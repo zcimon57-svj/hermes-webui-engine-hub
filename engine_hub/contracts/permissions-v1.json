@@ -1,0 +1,103 @@
+{
+  "schema": "hermes-webui-permissions/1",
+  "user_clarification": "管理员修改配置查看更多信息；只读用户只查看；问答用户可以回消息问问题。",
+  "principles": [
+    "Roles are server-side capabilities; frontend hiding is insufficient.",
+    "Login/logout/auth session writes are permitted for all roles; Viewer cannot create a conversation even if page boot currently does so.",
+    "More information means sanitized configuration, node diagnostics and logs; no default plaintext secret disclosure.",
+    "Roles control actions; engine/project/conversation scope is checked separately when restricted. Do not assume a full enterprise tenant product is required.",
+    "No UI role grants production write/repair rights through MCP automatically."
+  ],
+  "roles": {
+    "admin": {
+      "label": "管理员",
+      "allow": [
+        "assets.read_published_authorized",
+        "config.read_sanitized",
+        "config.write_authorized",
+        "conversation.ask",
+        "conversation.create",
+        "conversation.read_authorized",
+        "conversation.reply",
+        "diagnostics.read_extended_sanitized",
+        "report.read_authorized",
+        "run.cancel_own",
+        "run.manage_authorized",
+        "run.read_authorized",
+        "summary.read",
+        "users.manage_test_or_owned_scope"
+      ],
+      "not_implicit": [
+        "secret.read_plaintext",
+        "production.repair",
+        "asset.publish",
+        "unrestricted_all_engines"
+      ]
+    },
+    "viewer": {
+      "label": "只读",
+      "allow": [
+        "summary.read",
+        "conversation.read_authorized",
+        "report.read_authorized",
+        "assets.read_published_authorized",
+        "run.read_authorized"
+      ],
+      "deny": [
+        "conversation.create",
+        "conversation.ask",
+        "conversation.reply",
+        "conversation.edit",
+        "run.start",
+        "run.cancel",
+        "config.write",
+        "config.read_sensitive",
+        "diagnostics.read_extended",
+        "users.manage",
+        "asset.candidate_write",
+        "asset.publish",
+        "memory.write",
+        "workspace.write"
+      ]
+    },
+    "chat": {
+      "label": "问答",
+      "allow": [
+        "assets.read_published_authorized",
+        "conversation.ask",
+        "conversation.create",
+        "conversation.read_authorized",
+        "conversation.reply",
+        "report.read_authorized",
+        "run.cancel_own",
+        "run.read_authorized",
+        "summary.read"
+      ],
+      "deny": [
+        "config.write",
+        "config.read_sensitive",
+        "diagnostics.read_extended",
+        "users.manage",
+        "asset.publish",
+        "asset.direct_global_write",
+        "memory.admin_write",
+        "workspace.admin_write",
+        "run.cancel_other_user"
+      ]
+    }
+  },
+  "role_defaults_are_design_choices": [
+    "Admin includes Chat capabilities; Chat can cancel its own running answer for usability; asset review/publish is a separately granted capability, not implicit config administration.",
+    "Default view is shared authorized team/business information; private conversations and operator secrets are not shared solely because users share an engine."
+  ],
+  "required_negative_tests": [
+    "Viewer direct HTTP/SSE/WebSocket and bootstrap writes denied",
+    "Chat direct config/asset/other-run operations denied",
+    "Admin sanitized extended view and scoped config updates succeed",
+    "Unknown/expired user denied",
+    "User-supplied profile/node/KB cannot broaden server permissions",
+    "Node/Run aggregate filtered; no six-node global leakage via custom endpoints",
+    "Trusted-auth username/group cannot be supplied by a direct client to bypass identity",
+    "Runtime MCP retains the requesting business scope; UI role cannot turn read-only tools into repair permission"
+  ]
+}

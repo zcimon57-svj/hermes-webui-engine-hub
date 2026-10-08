@@ -1,0 +1,67 @@
+{
+  "status": "PASS",
+  "result": {
+    "candidates": [
+      "pg"
+    ],
+    "reason": "WAL replication slots and retained WAL are PostgreSQL-specific concepts.",
+    "selected": "pg",
+    "version": "codex-luna-1",
+    "quality": "REAL_MODEL_BOUNDED_EVAL",
+    "model": "gpt-6-luna",
+    "evidence_id": "f571e6090772aec924938027"
+  },
+  "before": {
+    "at": 1791480026.59942,
+    "boot_id": "4b692a65-095a-4082-974d-94e19cdc13de",
+    "linux_available": 5580959744,
+    "linux_total": 8214929408,
+    "swap_used": 159744,
+    "cpu_ticks": [
+      147117,
+      15,
+      32434,
+      3475281,
+      4216,
+      0,
+      45495,
+      0,
+      0,
+      0
+    ],
+    "memory_psi": "some avg10=0.00 avg60=0.00 avg300=0.00 total=1241006\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=315050\n",
+    "windows_required": true,
+    "windows_available": 1738440704,
+    "windows_total": 16952647680,
+    "owned_bytes": 610758656,
+    "owned_tasks": 37,
+    "memory_events": "low 0\nhigh 339\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n"
+  },
+  "after": {
+    "at": 1791480043.8417737,
+    "boot_id": "4b692a65-095a-4082-974d-94e19cdc13de",
+    "linux_available": 5573582848,
+    "linux_total": 8214929408,
+    "swap_used": 159744,
+    "cpu_ticks": [
+      147422,
+      15,
+      32584,
+      3488512,
+      4231,
+      0,
+      45636,
+      0,
+      0,
+      0
+    ],
+    "memory_psi": "some avg10=0.00 avg60=0.00 avg300=0.00 total=1244484\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=318457\n",
+    "windows_required": true,
+    "windows_available": 1622609920,
+    "windows_total": 16952647680,
+    "owned_bytes": 753545216,
+    "owned_tasks": 37,
+    "memory_events": "low 0\nhigh 339\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n"
+  },
+  "boundary": "One actual authorized Luna inference under global model mutex, one-core affinity and shared 1 GiB envelope; not a domain-quality acceptance set"
+}

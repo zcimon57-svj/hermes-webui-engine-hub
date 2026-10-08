@@ -1,0 +1,89 @@
+{
+    "resource_exhaustion_events":  [
+
+                                   ],
+    "top":  [
+                {
+                    "name":  "vmmemWSL",
+                    "Id":  26056,
+                    "working_set_mib":  5228.8,
+                    "private_mib":  5299.2
+                },
+                {
+                    "name":  "ChatGPT",
+                    "Id":  13124,
+                    "working_set_mib":  498.4,
+                    "private_mib":  503.4
+                },
+                {
+                    "name":  "chrome",
+                    "Id":  18528,
+                    "working_set_mib":  446.1,
+                    "private_mib":  606.7
+                },
+                {
+                    "name":  "ChatGPT",
+                    "Id":  12444,
+                    "working_set_mib":  309.9,
+                    "private_mib":  356.8
+                },
+                {
+                    "name":  "ChatGPT",
+                    "Id":  24952,
+                    "working_set_mib":  261.6,
+                    "private_mib":  315.7
+                },
+                {
+                    "name":  "MsMpEng",
+                    "Id":  6404,
+                    "working_set_mib":  256.7,
+                    "private_mib":  409.5
+                },
+                {
+                    "name":  "ChatGPT",
+                    "Id":  22312,
+                    "working_set_mib":  249.8,
+                    "private_mib":  252.7
+                },
+                {
+                    "name":  "explorer",
+                    "Id":  11084,
+                    "working_set_mib":  220.2,
+                    "private_mib":  2239.5
+                },
+                {
+                    "name":  "codex",
+                    "Id":  27224,
+                    "working_set_mib":  192.9,
+                    "private_mib":  135.3
+                },
+                {
+                    "name":  "chrome",
+                    "Id":  11280,
+                    "working_set_mib":  190.4,
+                    "private_mib":  245.4
+                },
+                {
+                    "name":  "ChatGPT",
+                    "Id":  17184,
+                    "working_set_mib":  185.8,
+                    "private_mib":  311
+                },
+                {
+                    "name":  "WindowsTerminal",
+                    "Id":  26532,
+                    "working_set_mib":  176.9,
+                    "private_mib":  106.6
+                }
+            ],
+    "stats":  {
+                  "logical_cpus":  8,
+                  "windows_boot":  "\/Date(1790950659500)\/",
+                  "total_ram_gib":  15.79,
+                  "at":  "2026-10-09T00:11:55.7631121+08:00",
+                  "free_ram_gib":  1.52
+              },
+    "wsl_config_resource_fields":  [
+
+                                   ]
+}
