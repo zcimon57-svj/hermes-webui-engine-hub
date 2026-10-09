@@ -24,6 +24,8 @@
 
 **所有本轮负载合计受 `eh158.slice` 限制：3 GiB RAM、192 个线程/进程、0 swap。** 2.5 GiB 为软停止线（用户本轮明确允许调整；[kernel核对](reviews/2026-10-09-reassessment/resource-budget-v3-applied.json)）。当前 WSL 只委派 memory/pids；CPU 通过所有进程、容器入口和子线程固定核心 0 并持续核对实现，不能把未生效的 CPUQuota 属性当证据。
 
+上述单核affinity是历史实现机制，尚未证明工作负载无法自行放宽CPU集合。当前新启动必须先通过[不可由负载放宽的CPU启动门禁](architecture/goals/execution-requirements.md#cpu-admission-gate)；仅继承affinity或watcher事后停止不合格，机制未知即拒绝。门禁待实现/验证，业务服务继续停止；本节和下方运行命令不构成恢复许可。
+
 启动前同时核对 WSL 和 Windows 可用内存；至少保留 WSL 2 GiB、Windows 2 GiB，另计本次启动预留。宿主采样不可用、已有 swap 压力或预算不足时拒绝新工作。每五秒监控；触线先持久化原因，再停止本轮 slice，保持人工/控制器显式 reconcile，禁止自动恢复。监控器另有 64 MiB/16 tasks 限制。仅回收本轮 cgroup 的缓存，不修改 WSL/Windows 全局配置，不操作其它会话或服务。
 
 本受限宿主通常只保留一个热 Gateway；Manager 按授权引擎按需唤醒、任务完成后轮换，同会话固定节点。忙碌/不确定 Run 不被迁移或为了腾容量而停止。手工批次最多两个节点，仍受总预算检查。六个节点可以串行实测；不能把串行验收声称为六节点同时常驻的资源验收。历史同时部署证据另列其时间与边界。

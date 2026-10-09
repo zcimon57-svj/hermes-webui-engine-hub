@@ -43,3 +43,7 @@
 [同引擎跨VM/容器路由与产物分析](../reviews/2026-10-09-reassessment/multi-resource-routing-artifacts-v1.md)：静态现状与架构建议，跨VM注册/租约/汇聚/产物上传等NOT_RUN。
 
 [公开架构/目标交付PR #1](https://github.com/zcimon57-svj/hermes-webui-engine-hub/pull/1)、[提交记录](architecture-pr-submission-20261009.json)、[检查结果](architecture-handoff-checks-20261009.json)、[公开检查](publication-safety-20261009.json)。PR/ref是最终合并权威；提交记录不证明业务验收。
+
+## 2026-10-09 独立复核后三项文档补齐
+
+[补充检查记录](review-followup-checks-20261009.json)：CPU启动门禁、不可变发布内容保留和当前顺序一致性；仅文档/状态修改，运行验证NOT_RUN。原review-readiness-checks与历史验收保持各自版本范围，不被覆盖。

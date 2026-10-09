@@ -1,0 +1,56 @@
+{
+  "schema": "engine-hub-document-followup-v1",
+  "checked_at_utc": "2026-10-09T08:17:52.788400+00:00",
+  "status": "STATIC_DOCUMENT_CHECKS_PASS_RUNTIME_NOT_RUN",
+  "reviewed_parent": "701c92f2fd3b068dfc86de36daeffe323020bba4",
+  "baseline_main": "6e6c4e897c62078ff1f14f072abe3fd7d7c461b3",
+  "pr": 12,
+  "updated_issue_numbers": [
+    2,
+    8,
+    11
+  ],
+  "changes": [
+    "mandatory non-relaxable aggregate CPU startup gate and E03-A6/A7",
+    "immutable published content identity/retention and R06-A11",
+    "STATE.next and architecture navigation aligned to prerequisite boundaries then real two-node acceptance"
+  ],
+  "scope": "Documentation and current planning only; no product/runtime code or historical result rewrites",
+  "checks": {
+    "markdown_checked": 21,
+    "repository_markdown": 17,
+    "prepared_bodies": 4,
+    "repository_links_checked": 334,
+    "mermaid_source_blocks": 31,
+    "changed_files": 11
+  },
+  "critical_markdown_output": "critical_markdown_check: 21 file(s) OK — no catastrophic Markdown issues",
+  "link_errors": [],
+  "diff_check_exit": 0,
+  "json_parse": "PASS",
+  "preservation_checks": "PASS: acceptance, versions, prior check artifact, functional status/runtime/quality fields and existing pending items unchanged",
+  "changed_files": [
+    "AGENTS.md",
+    "engine_hub/README.md",
+    "engine_hub/STATE.json",
+    "engine_hub/architecture/README.md",
+    "engine_hub/architecture/goals/README.md",
+    "engine_hub/architecture/goals/decisions.md",
+    "engine_hub/architecture/goals/execution-requirements.md",
+    "engine_hub/architecture/goals/overview.md",
+    "engine_hub/architecture/goals/r06-assets-and-local-skills.md",
+    "engine_hub/evidence/INDEX.md",
+    "engine_hub/evidence/review-followup-checks-20261009.json"
+  ],
+  "mermaid": "Fence/source/manual review only; parser/browser rendering NOT_RUN",
+  "prepared_body_sha256": {
+    "issue-8.md": "d176b14034fc5d67d2fbd43d2358a4091c8e391095af6558bcf25aba6c82a6b8",
+    "pr-12.md": "30a98b55a620fea424a6556ec76740c12ad4ae74bb24d11f9ab0cb3f988d8cfc",
+    "issue-11.md": "83dfee827237d1484d83afcc90f2b8dbd6cd5df3c8477130d14b0c2ce392dcda",
+    "issue-2.md": "1ce5b7abd57ee017e93bcd8012cad5554df8f2666f529a015cfc402d90594391"
+  },
+  "runtime_changes": false,
+  "new_functional_passes": 0,
+  "runtime_verification": "NOT_RUN; no service/model/browser/container startup, no trip reset or automatic restart",
+  "publication": "Prepared checks; actual commit/head and body hashes require GitHub readback after push. PR/issues stay OPEN."
+}

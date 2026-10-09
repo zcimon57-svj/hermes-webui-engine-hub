@@ -34,10 +34,12 @@
 |---|---|---|
 | E01 派生仓与可核对交付 | [E01](execution-requirements.md#e01) / [#9](https://github.com/zcimon57-svj/hermes-webui-engine-hub/issues/9) | 已有历史交付；公开已获用户授权；保留上游历史/许可证与失败证据，原PR持续评审 |
 | E02 真实模型与本地生产分类 | [E02](execution-requirements.md#e02) / [#10](https://github.com/zcimon57-svj/hermes-webui-engine-hub/issues/10) | 历史真实Luna证据保留；本地模型、真实领域和数据阈值未验 |
-| E03 严格资源控制 | [E03](execution-requirements.md#e03) / [#11](https://github.com/zcimon57-svj/hermes-webui-engine-hub/issues/11) | 事故/补救/空组配置读回保留；新负载、双节点与CPU降级限制须实际验证 |
+| E03 严格资源控制 | [E03](execution-requirements.md#e03) / [#11](https://github.com/zcimon57-svj/hermes-webui-engine-hub/issues/11) | 事故/补救/空组配置读回保留；不可放宽的CPU启动门禁待实现，新负载与双节点须实测 |
 
 ## 评审反馈怎么写
 
 请引用目标决策/验收编号或跨目标 `X01–X12`，给出认可、需修改或缺证据的结论及原因。设计认可、实现完成、领域/部署验收分开记录。所有图注明当前或拟议，接口字段有当前映射；没有取得的内部数据和没有运行的验证继续保留未知状态。
 
 其他入口：[五模块索引](../README.md) · [历史目标进度](../../reviews/2026-10-09-reassessment/goals-progress-v2.md) · [版本锁](../../versions.lock.json) · [原始证据](../../evidence/INDEX.md) · [本轮检查记录](../../evidence/review-readiness-checks-20261009.json)。
+
+本次独立复核补齐：[CPU启动门禁](execution-requirements.md#cpu-admission-gate)、[已发布内容保留](r06-assets-and-local-skills.md#immutable-published-content)及[当前执行顺序](overview.md#9-实施与评审顺序)。[补充检查记录](../../evidence/review-followup-checks-20261009.json)只证明文档修改与检查，不增加功能PASS。

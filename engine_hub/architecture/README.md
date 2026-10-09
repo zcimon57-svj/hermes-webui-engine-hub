@@ -22,6 +22,8 @@ WebUI为交互面，评测器/发布协调/伴随服务属于相应模块内部�
 
 本轮静态审查还发现读取下游触发派发/stop、脚本继承管理权限、同引擎换实例被旧绑定提前返回、评测只记录布尔值、远端发布与本地CAS事务分离等具体问题；对应修法、来源和关闭条件均在[审查发现](goals/review-findings.md)，没有因文档更新而宣称修复。
 
+当前执行顺序以[总设计第9节](goals/overview.md#9-实施与评审顺序)和[STATE.next](../STATE.json)一致说明为准：先关闭I01脚本管理身份、I04完整对象范围与纯读取缺口，并落实[E03 CPU启动门禁](goals/execution-requirements.md#cpu-admission-gate)，再做I02同引擎及跨引擎真实同时双节点；I05本地分类、I03受控学习、I06通用Skill/检索按依赖推进。发布遵守[不可覆盖已发布正文及被引用旧版本保留规则](goals/r06-assets-and-local-skills.md#immutable-published-content)。上述均为待实现/验收，服务保持停止。
+
 执行仍受[三个要求](goals/execution-requirements.md)约束：保留历史/许可证/失败证据，生产分类选用经核实的内部本地方案，3GiB聚合max/2.5GiB high/0swap/192tasks与双宿主准入。CPU是亲和性降级限制，不是已生效cpu.max；当前用户宿主状态未在本轮探测。
 
 原PR #1作为历史合入基线保留；实现进度在[总账](https://github.com/zcimon57-svj/hermes-webui-engine-hub/issues/2)及分项Issue更新，[历史进度快照](../reviews/2026-10-09-reassessment/goals-progress-v2.md)和[STATE](../STATE.json)保持可追溯。

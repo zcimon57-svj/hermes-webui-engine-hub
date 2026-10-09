@@ -13,8 +13,8 @@
     "F21: second physical host",
     "F30: internal Manager environment"
   ],
-  "next": "First fix I01; implement confirmed native pending/RCA/internal eval/periodic human approval design using existing publication chain. External evolution/eval projects reference only. RCA access and two-node acceptance remain pending; no automatic restart.",
-  "updated_at": "2026-10-09T03:03:39.701097+00:00",
+  "next": "First close I01 script/control isolation and I04 full object-scope authorization plus pure-read semantics; implement and verify the mandatory non-relaxable aggregate CPU admission gate before runtime startup. Then perform I02 real overlapping same-engine and cross-engine two-node isolation within the existing budget. Advance I05 local classification, I03 native pending/confirmed RCA/actual eval/periodic human approval, and I06 generic Skill/retrieval by dependency; R03/R06 preserve immutable published content for pinned Runs and rollback. F11/F21/F30 remain separate input gates; no automatic restart. See architecture/goals/overview.md section 9.",
+  "updated_at": "2026-10-09T08:13:37.524204+00:00",
   "runtime": "All owned services stopped by Windows headroom protection; no restart this turn",
   "resource_diagnosis": "evidence/resource-diagnosis-20261009.json",
   "resource_policy": {
@@ -26,7 +26,9 @@
     "memory_high_bytes": 2684354560,
     "reserve_windows_bytes": 2147483648,
     "reserve_linux_bytes": 2147483648,
-    "evidence": "reviews/2026-10-09-reassessment/resource-budget-v3-applied.json"
+    "evidence": "reviews/2026-10-09-reassessment/resource-budget-v3-applied.json",
+    "cpu_admission_requirement": "Mandatory verified aggregate CPU limit that workloads/threads/descendants cannot relax or escape; affinity alone and after-the-fact watcher do not qualify; unknown means refuse runtime startup",
+    "cpu_gate_acceptance": "NOT_IMPLEMENTED_NOT_RUN"
   },
   "acceptance": "acceptance-local-r1.json",
   "pending": [
@@ -38,7 +40,8 @@
     "I06 generic Skill/retrieval management",
     "F11 domain quality",
     "F21 second physical host",
-    "F30 internal integration"
+    "F30 internal integration",
+    "E03 non-relaxable aggregate CPU admission gate"
   ],
   "current_runtime": "All owned services stopped by Windows headroom protection; no restart this turn",
   "private_repo": "https://github.com/zcimon57-svj/hermes-webui-engine-hub",
@@ -182,5 +185,20 @@
     "issues": "#2-#11 body revisions; no auto close or reviewer assignment",
     "pr": "https://github.com/zcimon57-svj/hermes-webui-engine-hub/pull/12",
     "checks_scope": "Source-grounded documentation and link checks; partial Mermaid parsing; browser rendering and runtime tests not run"
+  },
+  "documentation_followup": {
+    "at": "2026-10-09T08:13:37.524204+00:00",
+    "status": "THREE_REVIEW_FINDINGS_DOCUMENTED_RUNTIME_PENDING",
+    "reviewed_head": "701c92f2fd3b068dfc86de36daeffe323020bba4",
+    "changes": [
+      "Mandatory non-relaxable CPU startup gate, refusal and descendant tests",
+      "Independent immutable remote content IDs and retention of referenced historical content",
+      "STATE.next and architecture navigation aligned to prerequisites then real two-node acceptance"
+    ],
+    "checks": "evidence/review-followup-checks-20261009.json",
+    "runtime_changes": false,
+    "new_functional_passes": 0,
+    "runtime_verification": "NOT_RUN",
+    "goal_completion_unchanged": true
   }
 }
