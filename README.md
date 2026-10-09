@@ -1,5 +1,7 @@
 # Hermes WebUI Engine Hub
 
+目标与进度：[Issue总账 #2](https://github.com/zcimon57-svj/hermes-webui-engine-hub/issues/2)。架构评审：[六目标设计](engine_hub/architecture/goals/README.md)，新PR保持打开供转发；既有代码已在main，PR #1为已合入基线。
+
 本轮集成：[PR #1](https://github.com/zcimon57-svj/hermes-webui-engine-hub/pull/1)；后续统一在此派生仓`main`继续，合并状态以PR为准。[提交/检查记录](engine_hub/evidence/architecture-pr-submission-20261009.json)。
 
 **后续工作入口：[目标与进度](engine_hub/reviews/2026-10-09-reassessment/README.md) · [五模块架构](engine_hub/architecture/README.md) · [当前STATE](engine_hub/STATE.json)。整体未完成验收；原生RCA门禁/周期人审和本地批准副本共享方式已确认，仍待实现。**
