@@ -2,12 +2,14 @@
 
 ## 2026-10-09 后续工作基线
 
+**独立评审材料已补齐：[阅读入口](architecture/goals/README.md) · [整体架构/流程](architecture/goals/overview.md) · [审查发现](architecture/goals/review-findings.md) · [决策表](architecture/goals/decisions.md) · [验收解释](architecture/goals/acceptance-matrix.md)。** 分项Issue正文包含对应图示、接口/数据边界、失败恢复、问题与验收。下面的历史运行说明不代表本轮再次运行或完成完整目标。
+
 [五模块架构](architecture/README.md)承载当前职责与改造边界。当前判断以[目标重审与本地技术分析](reviews/2026-10-09-reassessment/README.md)为准。用户已确认自进化采用原生简单改造、确认RCA与周期人审；外部项目仅参考，设计已记录、待实现。整体目标未完成，旧29 PASS仅保留原范围；现版本双节点同时隔离及脚本管理身份边界仍需补齐。下文旧验收描述按其时间和范围阅读。[源码归属核对](reviews/2026-10-09-reassessment/isolation-implementation-analysis-v1.md)：当前主要是新Engine Hub控制/交互层，复用Hermes执行与WebUI样式，未接原Profile/API。
 
 
 实现入口为 `engine_hub`，保留上游完整 Git 历史、许可证和 `upstream` remote。基线 WebUI 为 `4a0639397d1d4eb14965d9e88f39aecffa9ef345`；Hermes 固定为 `345cd2b057a452236de401d3534b8502a7465e8d`，真实 health 为 0.21.3。
 
-一个 UI 提供四引擎六节点目录、三类登录、授权空间路由、私有会话/报告、真实 Gateway Run/取消、远端节点状态 CAS，以及远端 WeKnora 知识/Skill 包的候选、评测、批准、撤回和回退。内部 Manager 通过版本化客户端接入；本地验收使用明确标注的 reference Manager。业务状态权威在 Manager，正式内容在 WeKnora，唯一发布指针由薄的 release coordinator 管理。
+一个 UI 提供四引擎六节点目录、三类登录、授权空间路由、私有会话/报告、真实 Gateway Run/取消、远端节点状态 CAS，以及远端 WeKnora 知识/Skill 固定包的候选、评测标记、人工批准、撤回和回退。真实评测器与通用Skill仍待实现。内部 Manager 拟通过版本化客户端接入，当前本地验收使用明确标注的 reference Manager。业务状态权威在 Manager，正式内容在 WeKnora，唯一发布指针由薄的 release coordinator 管理。
 
 ## 当前验收边界
 
@@ -21,6 +23,8 @@
 ## 资源合同（用户最新约束）
 
 **所有本轮负载合计受 `eh158.slice` 限制：3 GiB RAM、192 个线程/进程、0 swap。** 2.5 GiB 为软停止线（用户本轮明确允许调整；[kernel核对](reviews/2026-10-09-reassessment/resource-budget-v3-applied.json)）。当前 WSL 只委派 memory/pids；CPU 通过所有进程、容器入口和子线程固定核心 0 并持续核对实现，不能把未生效的 CPUQuota 属性当证据。
+
+上述单核affinity是历史实现机制，尚未证明工作负载无法自行放宽CPU集合。当前新启动必须先通过[不可由负载放宽的CPU启动门禁](architecture/goals/execution-requirements.md#cpu-admission-gate)；仅继承affinity或watcher事后停止不合格，机制未知即拒绝。门禁待实现/验证，业务服务继续停止；本节和下方运行命令不构成恢复许可。
 
 启动前同时核对 WSL 和 Windows 可用内存；至少保留 WSL 2 GiB、Windows 2 GiB，另计本次启动预留。宿主采样不可用、已有 swap 压力或预算不足时拒绝新工作。每五秒监控；触线先持久化原因，再停止本轮 slice，保持人工/控制器显式 reconcile，禁止自动恢复。监控器另有 64 MiB/16 tasks 限制。仅回收本轮 cgroup 的缓存，不修改 WSL/Windows 全局配置，不操作其它会话或服务。
 
@@ -63,7 +67,7 @@ python3 -m engine_hub.scripts.lab stop
 
 本锁定 WeKnora 镜像的 `/skills` 返回空目录；提供明确的 RemoteSkillProvider 包适配：Skill 包以远端 manual knowledge 内容保存，包含 `SKILL.md`、`scripts/probe.py`、`references/method.md`，可带 `dependencies.json`。这是远端包适配，不是声称原生 WeKnora sandbox Skill 自动兼容 Hermes。
 
-节点从批准版本下载并校验只读、内容寻址快照；方法、引用和脚本实际消费。依赖使用钉死的 Python/包版本检查已预置的只读环境，缺失或版本不合就拒绝，禁止自动安装/升级。旧合成包采用 Python 3.11 标准库合同。内容、native `remote_revision` 与联合 `release` 是不同身份；发布固定文档 ID、摘要、原生修订、配置摘要，CAS 决定唯一 current 指针。在途 Run 保持固定 release；远端漂移、撤回、鉴权失败不允许旧缓存继续执行。
+节点从批准版本下载、核对内容摘要并设置缓存文件权限，固定包的方法、引用和脚本曾实际消费。当前chmod及脚本继承权限还不构成完整的只读执行隔离；拟议独立身份/挂载见[R01](architecture/goals/r01-isolation-and-ui.md)与[R06](architecture/goals/r06-assets-and-local-skills.md)。依赖使用钉死的 Python/包版本检查已预置的只读环境，缺失或版本不合就拒绝，禁止自动安装/升级。旧合成包采用 Python 3.11 标准库合同。内容、native `remote_revision` 与联合 `release` 是不同身份；发布固定文档 ID、摘要、原生修订、配置摘要，CAS 决定唯一 current 指针。在途 Run 保持固定 release；远端漂移、撤回、鉴权失败不允许旧缓存继续执行。
 
 允许的反馈先形成所属节点/会话的私有草稿，经明确共享同意写入所属引擎的远端候选，再评测、独立账号审核和发布。同引擎分享批准成果，其它引擎保持原版本。人工候选验证治理机制，真实 Luna 候选保留为待专家审阅，均不证明真实学习质量。
 
@@ -75,9 +79,9 @@ python3 -m engine_hub.scripts.lab stop
 | Agent Manager | `manager.py`：ManagerClient、本地 reference、幂等、持久 Run、取消/恢复、报告 SHA/本地回执；`supervisor.py`：开发环境受限节点生命周期 |
 | Agent Core | `companion.py`：单节点状态、CAS、私有草稿、只读执行快照；`resources.py`：资源预算；`codex_luna.py`/`luna_bridge.py`：受控模型协议适配 |
 | 知识平台 | `assets.py`：WeKnora 内容客户端与单一 release/CAS 权威 |
-| MCP接口 | `node_mcp.py`：只读证据及批准知识/Skill 消费；消费密钥不能修改节点状态，状态管理密钥位于 Gateway 不可见的伴随服务控制目录 |
+| MCP接口 | `node_mcp.py`：只读证据及批准知识/Skill 消费；消费密钥不能修改节点状态，状态管理密钥位于 Gateway 不可见的伴随服务控制目录；伴随服务派生脚本继承权限仍是待修缺口 |
 
-WebUI 自己的状态仅包括身份/权限、会话展示和持久输入意图；业务 Run 的终态和报告在 Manager，真实执行在 Gateway。UI 丢回执后从 Manager 恢复授权可见性；同输入修订不产生重复 Run。所有列表、详情、下载及 SSE 使用同一可见性检查。SSE 提供有限状态/事件快照，页面每四秒轮询；没有另造常驻 token 流权威。
+WebUI 自己的状态仅包括身份/权限、会话展示和持久输入意图；业务 Run 的终态和报告在 Manager，真实执行在 Gateway。UI 丢回执后从 Manager 恢复授权可见性；同输入修订不产生重复 Run。会话类读取复用可见性检查，但管理列表和跨服务scope仍有缺口，且Manager查询的refresh可能触发派发/stop；见[RF01/RF03](architecture/goals/review-findings.md)。目标要求所有列表、详情、下载及SSE都按完整范围校验并保持纯读取。当前SSE提供有限状态/事件快照，页面每四秒轮询；没有另造常驻token流权威。
 
 ## 验证入口
 

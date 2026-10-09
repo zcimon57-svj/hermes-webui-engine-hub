@@ -399,5 +399,74 @@
     "business_goals": "PARTIAL_IMPLEMENTATION_NOT_FULL_ACCEPTANCE",
     "services_or_models_started": false,
     "parent_repository_visibility_changed": false
+  },
+  "issue_tracking": {
+    "epic": {
+      "number": 2,
+      "html_url": "https://github.com/zcimon57-svj/hermes-webui-engine-hub/issues/2",
+      "state": "open",
+      "title": "[总账] 六个功能目标、三个执行要求与当前进度"
+    },
+    "per_goal": {
+      "R01": {
+        "number": 3,
+        "html_url": "https://github.com/zcimon57-svj/hermes-webui-engine-hub/issues/3",
+        "state": "open",
+        "title": "[R01] 多引擎/节点隔离与统一入口/UI：实现缺口与验收"
+      },
+      "R02": {
+        "number": 4,
+        "html_url": "https://github.com/zcimon57-svj/hermes-webui-engine-hub/issues/4",
+        "state": "open",
+        "title": "[R02] 授权范围内按规则与本地分析模型自动选择空间：实现缺口与验收"
+      },
+      "R03": {
+        "number": 5,
+        "html_url": "https://github.com/zcimon57-svj/hermes-webui-engine-hub/issues/5",
+        "state": "open",
+        "title": "[R03] 独立自进化候选与批准成果同引擎共享：实现缺口与验收"
+      },
+      "R04": {
+        "number": 6,
+        "html_url": "https://github.com/zcimon57-svj/hermes-webui-engine-hub/issues/6",
+        "state": "open",
+        "title": "[R04] Admin/Viewer/Chat三类用户权限：实现缺口与验收"
+      },
+      "R05": {
+        "number": 7,
+        "html_url": "https://github.com/zcimon57-svj/hermes-webui-engine-hub/issues/7",
+        "state": "open",
+        "title": "[R05] 同引擎多节点/多进程部署：实现缺口与验收"
+      },
+      "R06": {
+        "number": 8,
+        "html_url": "https://github.com/zcimon57-svj/hermes-webui-engine-hub/issues/8",
+        "state": "open",
+        "title": "[R06] 远端WeKnora知识/Skill消费、更新、版本与本地缓存：实现缺口与验收"
+      }
+    },
+    "execution_requirements": {
+      "E01": {
+        "number": 9,
+        "html_url": "https://github.com/zcimon57-svj/hermes-webui-engine-hub/issues/9",
+        "state": "open",
+        "title": "[E01] 私人可维护派生仓：执行记录与后续约束"
+      },
+      "E02": {
+        "number": 10,
+        "html_url": "https://github.com/zcimon57-svj/hermes-webui-engine-hub/issues/10",
+        "state": "open",
+        "title": "[E02] 真实模型测试与内部可用本地分类模型：执行记录与后续约束"
+      },
+      "E03": {
+        "number": 11,
+        "html_url": "https://github.com/zcimon57-svj/hermes-webui-engine-hub/issues/11",
+        "state": "open",
+        "title": "[E03] 严禁资源打满：执行记录与后续约束"
+      }
+    },
+    "authority": "Issues carry current progress; this file is a dated snapshot",
+    "architecture_review": "OPEN_PENDING_EXTERNAL_REVIEW_NO_AUTO_MERGE",
+    "architecture_pr": "https://github.com/zcimon57-svj/hermes-webui-engine-hub/pull/12"
   }
 }

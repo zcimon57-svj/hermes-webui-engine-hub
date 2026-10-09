@@ -1,6 +1,8 @@
 # Agent Manager
 
-职责：现有业务Manager拥有Run生命周期、节点分配、产物索引、评测/审批状态和交付回执。WebUI只投影状态；Worker只执行。当前[ManagerClient/ReferenceManager](../manager.py)是新适配合同与本地开发替身，不是内部Manager已上线。
+**2026-10-09 评审补充（待审、未改变实现状态）：** 目标职责与当前实现分别阅读。当前只有本地ReferenceManager；拟议内部协议、attempt代际和产物汇聚未实现。查询refresh会触发派发/stop，取消路径也可能先派发再stop；[RF01](goals/review-findings.md#rf01)要求把纯读取与受管恢复分离。业务接入裁决业务目标，Manager裁决执行节点。 [完整评审入口](goals/README.md)。
+
+目标职责：业务Manager拥有Run生命周期、节点分配、产物索引、评测/审批状态和交付回执。WebUI只投影状态；Worker只执行。当前[ManagerClient/ReferenceManager](../manager.py)是新适配合同与本地开发替身，不是内部Manager已上线。
 
 当前基础：输入幂等、engine/启用/运行数/健康筛选、会话固定节点、固定知识/Skill release、取消与终态报告SHA。本地[Supervisor](../supervisor.py)仍单热Gateway；手工上限两个，同时双节点I02 NOT_RUN。
 

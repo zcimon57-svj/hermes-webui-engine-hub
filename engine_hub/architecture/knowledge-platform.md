@@ -1,6 +1,8 @@
 # 知识平台
 
-职责：WeKnora持有正式知识/Skill内容；薄release coordinator持有唯一current指针、CAS和发布/撤回/回退记录。节点只是经授权缓存和消费。实现见[assets.py](../assets.py)、[RemoteSkillProvider](../companion.py)。
+**2026-10-09 评审补充（待审、未改变实现状态）：** 当前指针CAS在Hub本地SQLite，不能回滚远端HTTP副作用。正式检索需按Run固定批准manifest过滤，内容publish读回与索引ready分别验收。通用Skill加载、同名覆盖和真实只读挂载仍待补；见[R06](goals/r06-assets-and-local-skills.md)、[RF06/RF07](goals/review-findings.md)。 [完整评审入口](goals/README.md)。
+
+目标职责：WeKnora持有正式知识/Skill内容；薄release coordinator持有唯一current指针、CAS和发布/撤回/回退记录。节点只是经授权缓存和消费。实现见[assets.py](../assets.py)、[RemoteSkillProvider](../companion.py)。
 
 当前各引擎独立身份/KB，通过WeKnora manual knowledge读写内容、读回原生修订与SHA；Skill采用SKILL.md/scripts/references/dependencies验证包适配。当前读取固定发布文档，通用Skill加载及问题驱动检索整链仍部分完成。
 

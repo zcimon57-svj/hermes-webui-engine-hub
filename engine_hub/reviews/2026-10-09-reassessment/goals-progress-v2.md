@@ -1,5 +1,9 @@
 # 六个功能目标、三个执行要求：严格审查 v2
 
+**2026-10-09 独立评审补充：** [完整架构/流程入口](../../architecture/goals/README.md) · [静态审查发现](../../architecture/goals/review-findings.md) · [待决策问题](../../architecture/goals/decisions.md) · [历史验收范围解释](../../architecture/goals/acceptance-matrix.md)。本文件继续作为原时点进度快照；以下“当前服务停止”等描述不是本轮实时宿主观测。
+
+当前跟踪：[Issue总账 #2](https://github.com/zcimon57-svj/hermes-webui-engine-hub/issues/2)及分项Issue承载目标、真实进度、残余和验收；本文为快照。[目标架构文件](../../architecture/goals/README.md)通过另一个保持打开的PR交独立评审。此前已合入PR #1不代表这些架构已经评审通过，代码保留在main。
+
 2026-10-09。审查代码 `74437cb77829c7b301cdab8d92722315e4ebbab4`。**整体目标未完成；撤回“本地功能全部完成”的过宽表述。原29 PASS是有范围的历史检查，不是目标完成率。**
 
 当前入口服务已因Windows余量保护停止；本轮不重启、不部署模型、不跑重型验证。

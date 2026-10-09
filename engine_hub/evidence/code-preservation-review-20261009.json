@@ -1,0 +1,76 @@
+{
+  "head": "6e6c4e897c62078ff1f14f072abe3fd7d7c461b3",
+  "remote_main": "6e6c4e897c62078ff1f14f072abe3fd7d7c461b3",
+  "equal": true,
+  "source_files": [
+    {
+      "path": "engine_hub/server.py",
+      "present_in_origin_main": true,
+      "matches_worktree": true,
+      "sha256": "8e5fe581bdaf92d1d13f9d46ea7a95b0b26b0e8f26b213d7264f91af31eefba4"
+    },
+    {
+      "path": "engine_hub/auth.py",
+      "present_in_origin_main": true,
+      "matches_worktree": true,
+      "sha256": "4eb5298c1f3dba50f87816682090639b5d5bca1f2f6eaf3236bf0fcd64d99e31"
+    },
+    {
+      "path": "engine_hub/routing.py",
+      "present_in_origin_main": true,
+      "matches_worktree": true,
+      "sha256": "34ba5d116ebb32a1bb867479605ae4200545c0a6aa90e3b9ecba91ecd4b4cfd7"
+    },
+    {
+      "path": "engine_hub/manager.py",
+      "present_in_origin_main": true,
+      "matches_worktree": true,
+      "sha256": "58cb6eea531a85ab7caa6f1bbaf9795a2e15295c464471e165b0fdd4e96e73ae"
+    },
+    {
+      "path": "engine_hub/companion.py",
+      "present_in_origin_main": true,
+      "matches_worktree": true,
+      "sha256": "80f1c91ae122fb453d1258fb7ad58abddda980b227251f90b5e3751baa4ba406"
+    },
+    {
+      "path": "engine_hub/assets.py",
+      "present_in_origin_main": true,
+      "matches_worktree": true,
+      "sha256": "9723b39649a027151b84a2b238a331bd7e9c4830c0551af13f08c9f15d28e2dc"
+    },
+    {
+      "path": "engine_hub/node_mcp.py",
+      "present_in_origin_main": true,
+      "matches_worktree": true,
+      "sha256": "88068daabff6b5100b5d62ab12215a8876915b4743d3fb3c1a9b1fa2d9fd3df9"
+    },
+    {
+      "path": "engine_hub/scripts/lab.py",
+      "present_in_origin_main": true,
+      "matches_worktree": true,
+      "sha256": "878f55b39d5702f4417f552a7955734e02cb139be17807bee9cbc89ac60407d2"
+    },
+    {
+      "path": "engine_hub/resources.py",
+      "present_in_origin_main": true,
+      "matches_worktree": true,
+      "sha256": "3667c8f1914e1bd1759bf6380aada844263bfc496af1b6617e55372de03b77db"
+    },
+    {
+      "path": "engine_hub/static/hub.js",
+      "present_in_origin_main": true,
+      "matches_worktree": true,
+      "sha256": "5475f81635713c9221acb2aecc6cfbc438d53647a36cc4fbc262b94ebead6411"
+    }
+  ],
+  "feature_implementation_commit": "cb17e3364f58f4fbd53ccb2d78c82d39b4d38543",
+  "resource_update_commit": "ea1c9a0144d9cd0ef4f2c479e30c1dfadebcabe1",
+  "schema": "existing-code-preservation/1",
+  "at": "2026-10-09T03:48:34.021761+00:00",
+  "review_branch_changes": "Documentation/tracking only; no code rewrite/discard",
+  "user_request": "Retain and submit existing developed code",
+  "all_tracked_implementation_files_checked": 36,
+  "all_tracked_implementation_files_match_origin_main": true,
+  "new_product_code_delta": ""
+}
