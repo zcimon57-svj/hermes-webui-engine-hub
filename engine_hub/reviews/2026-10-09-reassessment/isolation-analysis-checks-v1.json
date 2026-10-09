@@ -1,0 +1,23 @@
+{
+  "schema": "isolation-source-analysis-check/1",
+  "at": "2026-10-09T02:01:38.826315+00:00",
+  "status": "PASS",
+  "checks": {
+    "historical_validator_files_restored": true,
+    "product_sources_unchanged_during_analysis": true,
+    "original_webui_sections_unchanged": true,
+    "local_doc_links": true,
+    "json_parse": true,
+    "six_goals_three_requirements_preserved": true,
+    "isolation_goals_not_marked_complete": true,
+    "native_evolution_decision_preserved": true,
+    "project_validation": true,
+    "whitespace": true
+  },
+  "project_summary": "{\"status\": \"PASS\", \"checks\": 71, \"authored_links\": 1385, \"errors\": [], \"missing_links\": []}",
+  "project_stderr": "",
+  "links_checked": 136,
+  "missing_links": [],
+  "runtime_tests": "NOT_RUN_READ_ONLY_SOURCE_AND_EVIDENCE_AUDIT",
+  "models_services_containers_started": false
+}

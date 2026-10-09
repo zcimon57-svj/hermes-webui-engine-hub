@@ -1,0 +1,204 @@
+{
+  "schema": "rca-evolution-route-sources/1",
+  "at": "2026-10-09T01:16:17.800637+00:00",
+  "repo_metadata": [
+    {
+      "repo": "NousResearch/hermes-agent",
+      "stars": 252045,
+      "forks": 54387,
+      "archived": false,
+      "pushed_at": "2026-10-09T00:31:46Z",
+      "license_metadata": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "retrieved_at": "2026-10-09T01:12:16.354211+00:00"
+    },
+    {
+      "repo": "NousResearch/hermes-agent-self-evolution",
+      "stars": 5480,
+      "forks": 653,
+      "archived": false,
+      "pushed_at": "2026-06-17T11:53:04Z",
+      "license_metadata": null,
+      "url": "https://github.com/NousResearch/hermes-agent-self-evolution",
+      "retrieved_at": "2026-10-09T01:12:17.440750+00:00"
+    },
+    {
+      "repo": "pingchesu/hermes-curator-evolver",
+      "stars": 45,
+      "forks": 5,
+      "archived": false,
+      "pushed_at": "2026-10-03T11:33:13Z",
+      "license_metadata": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "url": "https://github.com/pingchesu/hermes-curator-evolver",
+      "retrieved_at": "2026-10-09T01:12:18.500589+00:00"
+    },
+    {
+      "repo": "Carlo1911/skill-evolution",
+      "stars": 6,
+      "forks": 0,
+      "archived": false,
+      "pushed_at": "2026-09-15T03:26:41Z",
+      "license_metadata": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "url": "https://github.com/Carlo1911/skill-evolution",
+      "retrieved_at": "2026-10-09T01:12:19.574127+00:00"
+    },
+    {
+      "repo": "AnimaApp/smarter-agent",
+      "stars": 9,
+      "forks": 0,
+      "archived": false,
+      "pushed_at": "2026-08-19T16:01:58Z",
+      "license_metadata": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "url": "https://github.com/AnimaApp/smarter-agent",
+      "retrieved_at": "2026-10-09T01:12:20.646494+00:00"
+    },
+    {
+      "repo": "gepa-ai/gepa",
+      "stars": 6910,
+      "forks": 568,
+      "archived": false,
+      "pushed_at": "2026-10-08T19:30:54Z",
+      "license_metadata": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "url": "https://github.com/gepa-ai/gepa",
+      "retrieved_at": "2026-10-09T01:12:21.590490+00:00"
+    },
+    {
+      "repo": "langfuse/langfuse",
+      "stars": 35538,
+      "forks": 3952,
+      "archived": false,
+      "pushed_at": "2026-10-09T01:11:52Z",
+      "license_metadata": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "url": "https://github.com/langfuse/langfuse",
+      "retrieved_at": "2026-10-09T01:12:22.531889+00:00"
+    },
+    {
+      "repo": "promptfoo/promptfoo",
+      "stars": 25820,
+      "forks": 2452,
+      "archived": false,
+      "pushed_at": "2026-10-09T01:12:03Z",
+      "license_metadata": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "url": "https://github.com/promptfoo/promptfoo",
+      "retrieved_at": "2026-10-09T01:12:23.700709+00:00"
+    },
+    {
+      "repo": "Arize-ai/phoenix",
+      "stars": 11762,
+      "forks": 1195,
+      "archived": false,
+      "pushed_at": "2026-10-09T00:41:00Z",
+      "license_metadata": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "url": "https://github.com/Arize-ai/phoenix",
+      "retrieved_at": "2026-10-09T01:12:24.820105+00:00"
+    },
+    {
+      "repo": "microsoft/RCACopilot",
+      "error": "HTTP Error 404: Not Found"
+    }
+  ],
+  "interpretation": "Stars are dated adoption signals only, not correctness, production acceptance or the existence of Hermes-native integration",
+  "first_party_docs": [
+    {
+      "url": "https://langfuse.com/docs/evaluation/overview",
+      "use": "datasets, experiments, human annotation and custom evaluators/CI; reviewed docs only"
+    },
+    {
+      "url": "https://langfuse.com/docs/evaluation/evaluation-methods/annotation-queues",
+      "use": "expert scores/comments/corrected outputs"
+    },
+    {
+      "url": "https://langfuse.com/docs/evaluation/experiments/experiments-via-sdk",
+      "use": "input/metadata/output/expected-output evaluation boundary"
+    },
+    {
+      "url": "https://www.promptfoo.dev/docs/configuration/expected-outputs/",
+      "use": "deterministic and custom assertions; needs actual Hermes/domain provider adapter"
+    },
+    {
+      "url": "https://github.com/gepa-ai/gepa",
+      "use": "candidate optimization over supplied evaluator; prior source SHA in research-sources-v1.json"
+    },
+    {
+      "url": "https://sre.google/sre-book/postmortem-culture/",
+      "use": "reviewed RCA, contributing causes and separate action-plan review"
+    },
+    {
+      "url": "https://arxiv.org/abs/2401.13810",
+      "use": "incident RCA evaluated by actual incident owners; paper abstract only, not reproduced"
+    }
+  ],
+  "native_source": {
+    "repo": "NousResearch/hermes-agent",
+    "sha": "345cd2b057a452236de401d3534b8502a7465e8d",
+    "inspected": [
+      "agent/background_review.py selected entrypoints",
+      "tools/skill_manager_tool.py pending/gate functions",
+      "hermes_cli/write_approval_commands.py apply path",
+      "website/docs/user-guide/features/plugins.md"
+    ]
+  },
+  "user_report": {
+    "source": "Current user message",
+    "existing_final_rca_records": "USER_REPORTED",
+    "systems": [
+      "ticket",
+      "alert",
+      "war room"
+    ],
+    "api_schema_and_records": "NOT_INSPECTED",
+    "rca_review_state_and_independence": "UNKNOWN"
+  },
+  "search_miss": {
+    "microsoft/RCACopilot": "GitHub API 404; not used as an available implementation"
+  },
+  "deployments_and_model_calls": "NOT_RUN"
+}

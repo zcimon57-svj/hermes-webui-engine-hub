@@ -1,0 +1,44 @@
+{
+  "schema": "architecture-handoff-checks/1",
+  "at": "2026-10-09T03:07:25.348922+00:00",
+  "status": "PASS",
+  "checks": {
+    "six_goals_preserved": true,
+    "three_execution_requirements_preserved": true,
+    "no_external_evolution_dependencies": true,
+    "business_acceptance_not_claimed": true,
+    "five_modules_documented": true,
+    "json_parse": true,
+    "local_links": true,
+    "critical_markdown": true,
+    "scoped_units": true,
+    "parent_navigation_and_baselines": true
+  },
+  "unit_tests": {
+    "run": 27,
+    "failures": 0,
+    "errors": 0
+  },
+  "critical_markdown": {
+    "exit": 0,
+    "stdout": "critical_markdown_check: 20 file(s) OK — no catastrophic Markdown issues",
+    "stderr": ""
+  },
+  "links_checked": 200,
+  "missing_links": [],
+  "test_limits": {
+    "cpu_affinity": [
+      0
+    ],
+    "address_space_max_bytes": 134217728
+  },
+  "runtime_browser_models_and_internal_business": "NOT_RUN",
+  "historical_acceptance_and_versions_lock": "PRESERVED",
+  "full_upstream_pytest": "NOT_RUN_UNCHANGED_UPSTREAM_SOURCE",
+  "prior_failure_retained": "architecture-handoff-checks-20261009-first.json",
+  "parent_project_check": {
+    "exit": 0,
+    "summary": "{\"status\": \"PASS\", \"checks\": 71, \"authored_links\": 1385, \"errors\": [], \"missing_links\": []}",
+    "original_outputs_restored": true
+  }
+}

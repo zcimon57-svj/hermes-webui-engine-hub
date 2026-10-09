@@ -1,0 +1,28 @@
+{
+  "schema": "resource-budget-check/3",
+  "at": "2026-10-09T00:25:53.856703+00:00",
+  "before_change": {
+    "new_regression_cases": 3,
+    "failed_against_old_policy": 3,
+    "failures": [
+      "expanded owned workload rejected",
+      "2GiB model reservation lacked Windows reserve rejection",
+      "1GiB Windows remaining did not trip"
+    ]
+  },
+  "after_change": {
+    "tests_run": 13,
+    "failures": 0,
+    "errors": 0,
+    "status": "PASS"
+  },
+  "test_limits": {
+    "cpu_affinity": [
+      0
+    ],
+    "address_space_max_bytes": 134217728
+  },
+  "live_cgroup_reconfiguration": "NOT_RUN",
+  "services_started": false,
+  "model_started": false
+}

@@ -1,4 +1,9 @@
-# Hermes WebUI Engine Hub（私人派生仓）
+# Hermes WebUI Engine Hub（公开派生仓：用户已授权）
+
+## 2026-10-09 后续工作基线
+
+[五模块架构](architecture/README.md)承载当前职责与改造边界。当前判断以[目标重审与本地技术分析](reviews/2026-10-09-reassessment/README.md)为准。用户已确认自进化采用原生简单改造、确认RCA与周期人审；外部项目仅参考，设计已记录、待实现。整体目标未完成，旧29 PASS仅保留原范围；现版本双节点同时隔离及脚本管理身份边界仍需补齐。下文旧验收描述按其时间和范围阅读。[源码归属核对](reviews/2026-10-09-reassessment/isolation-implementation-analysis-v1.md)：当前主要是新Engine Hub控制/交互层，复用Hermes执行与WebUI样式，未接原Profile/API。
+
 
 实现入口为 `engine_hub`，保留上游完整 Git 历史、许可证和 `upstream` remote。基线 WebUI 为 `4a0639397d1d4eb14965d9e88f39aecffa9ef345`；Hermes 固定为 `345cd2b057a452236de401d3534b8502a7465e8d`，真实 health 为 0.21.3。
 
@@ -15,9 +20,9 @@
 
 ## 资源合同（用户最新约束）
 
-**所有本轮负载合计受 `eh158.slice` 限制：1 GiB RAM、192 个线程/进程、0 swap。** 896 MiB 为软停止线。当前 WSL 只委派 memory/pids；CPU 通过所有进程、容器入口和子线程固定核心 0 并持续核对实现，不能把未生效的 CPUQuota 属性当证据。
+**所有本轮负载合计受 `eh158.slice` 限制：3 GiB RAM、192 个线程/进程、0 swap。** 2.5 GiB 为软停止线（用户本轮明确允许调整；[kernel核对](reviews/2026-10-09-reassessment/resource-budget-v3-applied.json)）。当前 WSL 只委派 memory/pids；CPU 通过所有进程、容器入口和子线程固定核心 0 并持续核对实现，不能把未生效的 CPUQuota 属性当证据。
 
-启动前同时核对 WSL 和 Windows 可用内存；至少保留 WSL 2 GiB、Windows 512 MiB，另计本次启动预留。宿主采样不可用、已有 swap 压力或预算不足时拒绝新工作。每五秒监控；触线先持久化原因，再停止本轮 slice，保持人工/控制器显式 reconcile，禁止自动恢复。监控器另有 64 MiB/16 tasks 限制。仅回收本轮 cgroup 的缓存，不修改 WSL/Windows 全局配置，不操作其它会话或服务。
+启动前同时核对 WSL 和 Windows 可用内存；至少保留 WSL 2 GiB、Windows 2 GiB，另计本次启动预留。宿主采样不可用、已有 swap 压力或预算不足时拒绝新工作。每五秒监控；触线先持久化原因，再停止本轮 slice，保持人工/控制器显式 reconcile，禁止自动恢复。监控器另有 64 MiB/16 tasks 限制。仅回收本轮 cgroup 的缓存，不修改 WSL/Windows 全局配置，不操作其它会话或服务。
 
 本受限宿主通常只保留一个热 Gateway；Manager 按授权引擎按需唤醒、任务完成后轮换，同会话固定节点。忙碌/不确定 Run 不被迁移或为了腾容量而停止。手工批次最多两个节点，仍受总预算检查。六个节点可以串行实测；不能把串行验收声称为六节点同时常驻的资源验收。历史同时部署证据另列其时间与边界。
 
@@ -95,4 +100,8 @@ python3 -m engine_hub.scripts.guarded_exec -- node engine_hub/scripts/browser_gu
 | 不可信任意代码/HA | 运行与安全维护者：独立环境和故障合同；本机 Bubblewrap/受限批准脚本不外推强隔离或 HA |
 | 规模与领域分布 | 架构师/PM/领域：更大且已签收的分类集、真实反馈与容量计划；21 条合成题只证明本次小样本结果 |
 
-下一 session 先读本文件、STATE、验收矩阵和资源采样，核对 Git、PRIVATE、精确 SHA 与运行 unit/boot 身份；保持资源总上限，继续仍有授权环境的条目，不重建覆盖现有身份/会话/发布清单，不把 NOT_RUN 变成 PASS。
+下一 session 先读本文件、STATE、验收矩阵和资源采样，核对 Git、最新公开可见性、精确 SHA 与运行 unit/boot 身份；保持资源总上限，继续仍有授权环境的条目，不重建覆盖现有身份/会话/发布清单，不把 NOT_RUN 变成 PASS。
+
+2026-10-09研究已持久化：本地分类、Hermes/独立进化、社媒正反证据与版本账本见[当前重审入口](reviews/2026-10-09-reassessment/README.md)；新模型/进化运行NOT_RUN，整体目标仍部分实现。
+
+原生自进化质量最新研究：[插件/人审/静态与业务语义门禁](reviews/2026-10-09-reassessment/native-evolution-quality-gates-v1.md)。门禁尚未集成；trace不直接成为正式知识。版本锁保留旧交付SHA，当前预算源码差异见resource-budget-v3-applied.json。

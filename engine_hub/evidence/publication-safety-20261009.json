@@ -1,0 +1,92 @@
+{
+  "schema": "public-preflight-secret-check/1",
+  "at": "2026-10-09T03:08:23.465200+00:00",
+  "baseline_public_upstream": "4a0639397d1d4eb14965d9e88f39aecffa9ef345",
+  "private_commits_checked": [
+    "74437cb77829c7b301cdab8d92722315e4ebbab4",
+    "cb17e3364f58f4fbd53ccb2d78c82d39b4d38543"
+  ],
+  "private_added_or_changed_blobs_checked": 122,
+  "working_files_checked": 143,
+  "known_local_secret_values_checked": 37,
+  "findings": [],
+  "status": "PASS",
+  "boundary": "Exact owned-lab secrets and common key patterns; not an exhaustive third-party upstream history security audit. Public upstream unchanged history preserved. No secret values printed or persisted.",
+  "field_review": {
+    "private_text_blobs_checked": 92,
+    "resolved_non_credentials": [
+      {
+        "where": "engine_hub/reviews/2026-10-09-reassessment/resource-budget-v2.json",
+        "field": "/authorization",
+        "kind": "credential_field_requires_review",
+        "value_not_printed": true,
+        "resolution": "User budget authorization prose, not an HTTP Authorization credential"
+      }
+    ]
+  },
+  "user_publication_authorization": true,
+  "parent_repository_publication_authorized": false,
+  "private_refs_expected": [
+    "main"
+  ],
+  "tests": "architecture-handoff-checks-20261009.json",
+  "repository_after_visibility_change": {
+    "full_name": "zcimon57-svj/hermes-webui-engine-hub",
+    "private": false,
+    "visibility": "public",
+    "default_branch": "main"
+  },
+  "public_visibility_verified_at": "2026-10-09T03:10:25.953024+00:00",
+  "staged_candidate_scan": {
+    "at": "2026-10-09T03:12:57.933123+00:00",
+    "files_checked": 43,
+    "known_secret_values": 37,
+    "findings": [],
+    "paths": [
+      "AGENTS.md",
+      "README.md",
+      "engine_hub/README.md",
+      "engine_hub/STATE.json",
+      "engine_hub/architecture/README.md",
+      "engine_hub/architecture/agent-core.md",
+      "engine_hub/architecture/agent-manager.md",
+      "engine_hub/architecture/business-access.md",
+      "engine_hub/architecture/knowledge-platform.md",
+      "engine_hub/architecture/mcp-interface.md",
+      "engine_hub/evidence/INDEX.md",
+      "engine_hub/evidence/architecture-handoff-checks-20261009-first.json",
+      "engine_hub/evidence/architecture-handoff-checks-20261009.json",
+      "engine_hub/evidence/publication-safety-20261009.json",
+      "engine_hub/resources.py",
+      "engine_hub/reviews/2026-10-09-reassessment/README.md",
+      "engine_hub/reviews/2026-10-09-reassessment/budget-and-evolution-clarification-v2.md",
+      "engine_hub/reviews/2026-10-09-reassessment/documentation-validation-v1.json",
+      "engine_hub/reviews/2026-10-09-reassessment/evolution-quality-contract-v1.json",
+      "engine_hub/reviews/2026-10-09-reassessment/evolution-quality-contract-v2.json",
+      "engine_hub/reviews/2026-10-09-reassessment/goals-progress-v2.json",
+      "engine_hub/reviews/2026-10-09-reassessment/goals-progress-v2.md",
+      "engine_hub/reviews/2026-10-09-reassessment/isolation-analysis-checks-v1.json",
+      "engine_hub/reviews/2026-10-09-reassessment/isolation-implementation-analysis-v1.md",
+      "engine_hub/reviews/2026-10-09-reassessment/isolation-implementation-provenance-v1.json",
+      "engine_hub/reviews/2026-10-09-reassessment/local-classifier-analysis-v1.md",
+      "engine_hub/reviews/2026-10-09-reassessment/multi-resource-analysis-checks-v1.json",
+      "engine_hub/reviews/2026-10-09-reassessment/multi-resource-routing-artifacts-v1.md",
+      "engine_hub/reviews/2026-10-09-reassessment/native-evolution-quality-gates-v1.md",
+      "engine_hub/reviews/2026-10-09-reassessment/native-evolution-quality-sources-v1.json",
+      "engine_hub/reviews/2026-10-09-reassessment/native-quality-documentation-checks-v1.json",
+      "engine_hub/reviews/2026-10-09-reassessment/rca-evolution-route-sources-v1.json",
+      "engine_hub/reviews/2026-10-09-reassessment/rca-gated-native-evolution-v2.md",
+      "engine_hub/reviews/2026-10-09-reassessment/rca-route-document-checks-v1.json",
+      "engine_hub/reviews/2026-10-09-reassessment/research-sources-v1.json",
+      "engine_hub/reviews/2026-10-09-reassessment/resource-budget-v2.json",
+      "engine_hub/reviews/2026-10-09-reassessment/resource-budget-v3-applied.json",
+      "engine_hub/reviews/2026-10-09-reassessment/resource-budget-v3-checks.json",
+      "engine_hub/reviews/2026-10-09-reassessment/self-evolution-analysis-v1.md",
+      "engine_hub/reviews/2026-10-09-reassessment/simple-evolution-design-checks-v1.json",
+      "engine_hub/reviews/2026-10-09-reassessment/social-evidence-v1.md",
+      "engine_hub/scripts/lab.py",
+      "engine_hub/tests/test_resources.py"
+    ],
+    "scope": "Only explicitly staged derivative files; no ignored runtime/cache/credentials/parent materials"
+  }
+}

@@ -1,6 +1,10 @@
-# 私人 Hermes WebUI Engine Hub
+# Hermes WebUI Engine Hub
 
-当前派生仓交付入口：[Engine Hub 运行、权限、版本和验收](engine_hub/README.md)。固定上游历史、保留许可证，私人维护；本轮采用硬资源总预算和按需节点，不使用实验 monkeypatch。验收分开报告本地功能、真实模型小样本、领域学习和内部部署。
+本轮集成：[PR #1](https://github.com/zcimon57-svj/hermes-webui-engine-hub/pull/1)；后续统一在此派生仓`main`继续，合并状态以PR为准。[提交/检查记录](engine_hub/evidence/architecture-pr-submission-20261009.json)。
+
+**后续工作入口：[目标与进度](engine_hub/reviews/2026-10-09-reassessment/README.md) · [五模块架构](engine_hub/architecture/README.md) · [当前STATE](engine_hub/STATE.json)。整体未完成验收；原生RCA门禁/周期人审和本地批准副本共享方式已确认，仍待实现。**
+
+当前派生仓交付入口：[Engine Hub 运行、权限、版本和验收](engine_hub/README.md)。固定上游历史、保留许可证；用户已明确授权此派生仓公开，母资料仓不在公开范围内。本轮采用硬资源总预算和按需节点，不使用实验 monkeypatch。验收分开报告本地功能、真实模型小样本、领域学习和内部部署。
 
 以下保留上游 README，原单用户启动方式和能力说明按其版本解释。Engine Hub 的授权部署使用上面的独立入口。
 

@@ -38,6 +38,18 @@ class ResourceContracts(unittest.TestCase):
     def test_normal_admission(self):
         self.assertEqual(admission_errors(good(),64*1024**2),[])
 
+    def test_authorized_expanded_envelope_admits_bounded_workload(self):
+        d=good();d['owned_bytes']=1536*1024**2
+        self.assertEqual(admission_errors(d,512*1024**2),[])
+
+    def test_large_model_reservation_requires_windows_headroom(self):
+        d=good();d['linux_available']=12*1024**3
+        self.assertIn('windows_headroom',admission_errors(d,2*1024**3))
+
+    def test_one_gib_windows_available_trips_before_host_exhaustion(self):
+        d=good();d['windows_available']=1024**3
+        self.assertIn('windows_headroom_or_measurement',trip_errors(d))
+
     def test_monitor_trips_before_hard_memory_max(self):
         d=good();d['owned_bytes']=HIGH_BYTES
         self.assertLess(HIGH_BYTES,MAX_BYTES)

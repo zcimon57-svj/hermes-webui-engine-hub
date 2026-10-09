@@ -1,0 +1,403 @@
+{
+  "schema": "engine-hub-goals-reassessment/2",
+  "at": "2026-10-08T23:58:16.193945+00:00",
+  "audited_commit": "74437cb77829c7b301cdab8d92722315e4ebbab4",
+  "verdict": "PARTIAL_IMPLEMENTATION_NOT_FULL_ACCEPTANCE",
+  "prior_completion_claim": "WITHDRAWN_AS_TOO_BROAD",
+  "scope": "Document persistence and static research only; no runtime/model starts or product code edits in this turn",
+  "goals": [
+    {
+      "id": "R01",
+      "goal": "多引擎/节点隔离与统一入口/UI",
+      "status": "PARTIAL_ISOLATION_NOT_ACCEPTED",
+      "implemented": [
+        "统一目录/会话/Run/报告",
+        "节点级Home/工作区/凭据",
+        "六节点各自运行过、错误密钥和路径检查"
+      ],
+      "missing": [
+        "现版本两节点同时运行的隔离/并发/故障实测",
+        "Skill脚本与管理控制目录的权限分离"
+      ],
+      "reason_kind": [
+        "IMPLEMENTATION_GAP",
+        "VALIDATION_GAP"
+      ],
+      "reason": "事故后单热节点策略和串行验证缩小了范围；脚本继承伴随服务权限。不是缺外部主机。",
+      "implementation_origin": "New Engine Hub UI/auth + launcher/Bubblewrap/independent Hermes Home; not upstream WebUI Profile route"
+    },
+    {
+      "id": "R02",
+      "goal": "授权范围内按规则与本地分析模型自动选择空间",
+      "status": "PARTIAL_LOCAL_CLASSIFIER_NOT_IMPLEMENTED",
+      "implemented": [
+        "实例绑定/关键词规则/歧义澄清/追问绑定",
+        "历史Luna 21条合成分类题"
+      ],
+      "missing": [
+        "内部可离线部署的分类模型接入",
+        "同引擎多实例/项目空间自动辨别",
+        "本域标注集、拒识与置信校准"
+      ],
+      "reason_kind": [
+        "IMPLEMENTATION_GAP",
+        "VALIDATION_GAP"
+      ],
+      "reason": "目前模型可选Codex Luna，默认规则/fixture；分析通常返回engine-ops。最新用户明确改为Jev/Laya类本地分类模型。"
+    },
+    {
+      "id": "R03",
+      "goal": "独立自进化候选与批准成果同引擎共享",
+      "status": "PARTIAL_GOVERNANCE_ONLY",
+      "implemented": [
+        "私有草稿/远端候选",
+        "人工审核、CAS发布/撤回/回退",
+        "批准资产在同引擎节点分别消费"
+      ],
+      "missing": [
+        "自动反馈采集与候选生成产品链",
+        "实际评测执行器",
+        "Hermes原生学习能力的受控接入",
+        "Hermes原生候选→确认RCA→内部评测→周期人审产品链",
+        "真实领域效果验收"
+      ],
+      "reason_kind": [
+        "IMPLEMENTATION_GAP",
+        "NEEDS_DOMAIN_INPUT"
+      ],
+      "reason": "UI人工填候选、评测标记布尔值；Luna候选为独立脚本。当前lab关闭原生memory写能力且工具集限定mcp-ops。",
+      "design_status": "USER_CONFIRMED_SIMPLE_DESIGN_DOCUMENTED",
+      "design": {
+        "status": "USER_CONFIRMED_DESIGN_RECORDED_IMPLEMENTATION_PENDING",
+        "at": "2026-10-09T01:46:20.330454+00:00",
+        "route": "Hermes native candidate generation + confirmed final RCA + lightweight internal eval + periodic human pre-merge approval + existing CAS publication",
+        "external_evolution_and_eval_projects": "REFERENCE_ONLY_NO_INTEGRATION_OR_DEPENDENCIES",
+        "scope": "R03/R06 evolution only; R02 local classifier selection unchanged",
+        "design_in": "goals-progress-v2.md",
+        "implementation": "NOT_IMPLEMENTED",
+        "domain_and_two_node_acceptance": "NOT_RUN"
+      },
+      "independent_evolution_meaning": "Private scoped candidate learning, not an external evolution framework dependency"
+    },
+    {
+      "id": "R04",
+      "goal": "Admin/Viewer/Chat三类用户权限",
+      "status": "BASIC_ROLES_VERIFIED_MANAGEMENT_PARTIAL",
+      "implemented": [
+        "独立身份和服务端拒绝",
+        "三浏览器上下文",
+        "私有会话共享、部分engine/space限制"
+      ],
+      "missing": [
+        "配置/现有用户角色与作用域完整管理",
+        "项目范围贯穿配置和管理列表",
+        "执行脚本的权限边界闭合"
+      ],
+      "reason_kind": [
+        "IMPLEMENTATION_GAP",
+        "VALIDATION_GAP"
+      ],
+      "reason": "配置PATCH仅node/enabled；用户管理主要列表和新建，配置实例列表只按engine过滤。",
+      "implementation_origin": "New engine_hub.auth role/engine/space/owner checks; upstream auth/SSO not in this route"
+    },
+    {
+      "id": "R05",
+      "goal": "同引擎多节点/多进程部署",
+      "status": "SIMULTANEOUS_TWO_NODE_PENDING",
+      "implemented": [
+        "六个节点定义、独立运行状态",
+        "同引擎两个节点分别消费批准资产",
+        "启动器最多允许两个节点"
+      ],
+      "missing": [
+        "至少两节点同时部署和并发任务",
+        "跨引擎隔离与同引擎共享/私有状态两组实测",
+        "一节点离线另一节点继续工作现版本实测"
+      ],
+      "reason_kind": [
+        "IMPLEMENTATION_GAP",
+        "VALIDATION_GAP"
+      ],
+      "reason": "supervisor自动路径保留一个热Gateway，忙碌时拒绝唤醒其它节点；当前证据主要串行。",
+      "implementation_origin": "New ReferenceManager/supervisor node pool + actual per-node Hermes Gateway; one warm node policy remains"
+    },
+    {
+      "id": "R06",
+      "goal": "远端WeKnora知识/Skill消费、更新、版本与本地缓存",
+      "status": "VERSION_CHAIN_VERIFIED_GENERIC_ADAPTER_PARTIAL",
+      "implemented": [
+        "真实远端内容读写/发布读回/下一Run消费",
+        "固定release/native revision、CAS/回退/撤回",
+        "验证包的方法/脚本/引用/依赖检查"
+      ],
+      "missing": [
+        "通用Skill选择/加载/运行",
+        "问题驱动检索与普通问答链完整集成",
+        "通用远端工作区管理",
+        "第三方依赖完整验证"
+      ],
+      "reason_kind": [
+        "IMPLEMENTATION_GAP",
+        "VALIDATION_GAP"
+      ],
+      "reason": "固定scripts/probe.py与method引用路径，现有依赖校验；workspace仅node-evidence.txt；运行读取固定发布文档。",
+      "evolution_design_boundary": "Confirmed RCA and human-approved knowledge/Skill only; quarantine candidates outside normal retrieval and Skill discovery",
+      "implementation_origin": "New release/Companion/MCP adapters consuming existing WeKnora; not native WebUI remote workspace integration"
+    }
+  ],
+  "execution_requirements": [
+    {
+      "id": "E01",
+      "goal": "私人可维护派生仓",
+      "status": "DONE_VERIFIED",
+      "facts": "Full upstream history/license retained; historical private delivery preserved. User authorized PUBLIC visibility on 2026-10-09; GitHub metadata verified public. Current PR/main delivery checked separately.",
+      "historical_facts": "PRIVATE；74437cb7本地/远端一致；完整9565基线历史；保留许可证与upstream；明确模块。"
+    },
+    {
+      "id": "E02",
+      "goal": "真实模型测试与内部可用本地分类模型",
+      "status": "PAST_LUNA_TEST_DONE_LOCAL_PRODUCTION_CLASSIFIER_PENDING",
+      "facts": "历史Luna分类/候选/真实Hermes工具链实测保留；最新要求生产分类改为本地Jev/Laya类，分析中，尚未部署/接入。"
+    },
+    {
+      "id": "E03",
+      "goal": "严禁资源打满",
+      "status": "INITIAL_FAILURE_REMEDIATED_PROTECTION_VERIFIED",
+      "facts": "发生过内存与swap满；补救后shared1GiB/192tasks/0swap、单模型、CPU亲和性与监控；02:19Windows剩约368MiB触发停止。当前服务停止；CPU配额未委派。",
+      "current_policy": {
+        "max_bytes": 3221225472,
+        "high_bytes": 2684354560,
+        "swap": 0,
+        "tasks": 192,
+        "host_reserve_each_bytes": 2147483648,
+        "kernel_evidence": "resource-budget-v3-applied.json",
+        "checks": "resource-budget-v3-checks.json",
+        "workload_peak": "NOT_RUN"
+      }
+    }
+  ],
+  "issues": [
+    {
+      "id": "I01",
+      "priority": "BLOCKER",
+      "owner": "Agent Core/UI执行维护者",
+      "item": "脚本继承含state_admin_key的/control/config.json可见环境",
+      "evidence": [
+        "engine_hub/scripts/lab.py:114",
+        "engine_hub/scripts/lab.py:138",
+        "engine_hub/companion.py:94"
+      ],
+      "status": "STATIC_CODE_GAP_CONFIRMED_ATTACK_NOT_RUN",
+      "next": "单独脚本执行沙箱/最小消费身份，不挂管理控制目录；实际验证不可读取凭据、不可改节点状态。"
+    },
+    {
+      "id": "I02",
+      "priority": "P0",
+      "owner": "Manager/Core/验证执行者",
+      "item": "同时双节点与隔离未闭合",
+      "status": "PENDING_IMPLEMENTATION_AND_LIVE_VALIDATION",
+      "next": "维持资源上限；分别测跨引擎两节点和同引擎两节点，写入自己的状态并尝试另一节点读取/写入、并发、错误凭据和单节点失效。"
+    },
+    {
+      "id": "I03",
+      "priority": "P0",
+      "owner": "Core/知识维护者",
+      "item": "自动学习采集、生成与评测执行器未实现",
+      "status": "PENDING_IMPLEMENTATION",
+      "next": "实施已确认的原生pending/统一写口、RCA关联、轻量实际评测与周期人审，并复用CAS发布；不引入外部自进化/评测项目。先修I01；所有业务验收仍NOT_RUN。",
+      "design_status": "USER_CONFIRMED_DESIGN_RECORDED"
+    },
+    {
+      "id": "I04",
+      "priority": "P0",
+      "owner": "身份/UI维护者",
+      "item": "项目授权与配置管理覆盖不足",
+      "status": "PENDING_IMPLEMENTATION_AND_REVIEW",
+      "next": "覆盖实例/配置/用户管理列表、读写和脚本身份，补负例。"
+    },
+    {
+      "id": "I05",
+      "priority": "P1",
+      "owner": "Core/路由维护者",
+      "item": "本地分类与多空间选择",
+      "status": "ANALYSIS_ONLY",
+      "next": "Jev/Laya原作者资料核对；锁定本地权重、依赖、scope候选和拒识门槛，本域数据验收。"
+    },
+    {
+      "id": "I06",
+      "priority": "P1",
+      "owner": "知识/Core维护者",
+      "item": "通用Skill/检索/状态适配",
+      "status": "PENDING_IMPLEMENTATION",
+      "next": "移除验证包固定路径假设，设计可声明入口、引用/依赖锁、问题检索与固定Run版本。"
+    },
+    {
+      "id": "I07",
+      "priority": "P0",
+      "owner": "本轮资料执行者",
+      "item": "旧完成结论与现场状态过宽/过时",
+      "status": "CORRECTED_IN_REASSESSMENT",
+      "next": "新审查文件为当前判断；旧29PASS仅原范围证据，不改原结果文件。"
+    }
+  ],
+  "external_inputs": [
+    {
+      "id": "F11",
+      "owner": "领域维护者/确认人",
+      "input": "已有最终RCA来源由用户报告；需验证事件关联、读取权限、确认状态、回放/holdout与专家阈值",
+      "truth_source_status": "USER_REPORTED_NOT_INSPECTED"
+    },
+    {
+      "id": "F21",
+      "owner": "运行维护者",
+      "input": "第二物理主机与授权网络/身份"
+    },
+    {
+      "id": "F30",
+      "owner": "内部Manager/身份/MCP维护者",
+      "input": "内部版本/接口/权限/回执"
+    }
+  ],
+  "runtime_observation": {
+    "at": "2026-10-09T07:47:24+08:00",
+    "all_owned_services_stopped": true,
+    "reason": "windows_headroom_or_measurement",
+    "recorded_windows_available_bytes": 385875968,
+    "no_automatic_restart": true
+  },
+  "historical_acceptance": "engine_hub/acceptance-local-r1.json preserved as original scoped record",
+  "research": {
+    "status": "SOURCE_AND_SOCIAL_REVIEW_COMPLETE_IMPLEMENTATION_DEPLOYMENT_NOT_RUN",
+    "documents": [
+      "reviews/2026-10-09-reassessment/local-classifier-analysis-v1.md",
+      "reviews/2026-10-09-reassessment/self-evolution-analysis-v1.md",
+      "reviews/2026-10-09-reassessment/social-evidence-v1.md",
+      "reviews/2026-10-09-reassessment/research-sources-v1.json"
+    ],
+    "local_production_model_selected": false,
+    "models_installed": false,
+    "goal_completion_unchanged": true
+  },
+  "latest_user_extension": {
+    "at": "2026-10-09T00:30:57.527754+00:00",
+    "business_semantic_evolution_quality": "Must gate native Memory/Skill candidate promotion with independent provenance/domain/behavior/human approval; not implemented",
+    "resource_budget": "3GiB max, 2.5GiB high, Windows reserve 2GiB; empty kernel slice verified; workload peak NOT_RUN",
+    "evidence": [
+      "native-evolution-quality-gates-v1.md",
+      "evolution-quality-contract-v1.json",
+      "resource-budget-v3-applied.json"
+    ]
+  },
+  "rca_ground_truth_followup": {
+    "at": "2026-10-09T01:17:42.319476+00:00",
+    "reported_by_user": true,
+    "records_read": false,
+    "schema_and_review_status": "UNKNOWN",
+    "preferred_route": "Hermes native candidate generation + confirmed final RCA + lightweight internal eval + periodic human pre-merge approval + existing CAS publication",
+    "recommended_components": [],
+    "progress": "No domain acceptance or quality implementation achieved",
+    "documents": [
+      "rca-gated-native-evolution-v2.md",
+      "evolution-quality-contract-v2.json",
+      "rca-evolution-route-sources-v1.json",
+      "goals-progress-v2.md"
+    ],
+    "route_status": "USER_CONFIRMED",
+    "external_projects": "Reference only; no project integration planned"
+  },
+  "updated_at": "2026-10-09T02:13:12.732931+00:00",
+  "evolution_design_decision": {
+    "status": "USER_CONFIRMED_DESIGN_RECORDED_IMPLEMENTATION_PENDING",
+    "at": "2026-10-09T01:46:20.330454+00:00",
+    "route": "Hermes native candidate generation + confirmed final RCA + lightweight internal eval + periodic human pre-merge approval + existing CAS publication",
+    "external_evolution_and_eval_projects": "REFERENCE_ONLY_NO_INTEGRATION_OR_DEPENDENCIES",
+    "scope": "R03/R06 evolution only; R02 local classifier selection unchanged",
+    "design_in": "goals-progress-v2.md",
+    "implementation": "NOT_IMPLEMENTED",
+    "domain_and_two_node_acceptance": "NOT_RUN"
+  },
+  "implementation_provenance": {
+    "status": "SOURCE_VERIFIED_RUNTIME_NOT_RERUN",
+    "at": "2026-10-09T02:00:58.804649+00:00",
+    "analysis": "isolation-implementation-analysis-v1.md",
+    "evidence": "isolation-implementation-provenance-v1.json",
+    "webui_reused_directly": "Upstream static/style.css; upstream history/license retained",
+    "new_layer": "Engine Hub UI/auth/routing/ManagerClient + local ReferenceManager/Companion/release adapters/launcher/resource controls",
+    "runtime_reused": "Hermes Gateway native Run/Session/MCP; existing WeKnora APIs",
+    "legacy_webui_route_integrated": false,
+    "original_server_api_static_unchanged_vs_baseline": true,
+    "kernel_network_shared": true,
+    "simultaneous_two_node_acceptance": "NOT_RUN",
+    "script_control_credential_gap": "STATIC_CONFIRMED_ATTACK_NOT_RUN",
+    "goal_completion_unchanged": true
+  },
+  "multi_resource_analysis": {
+    "status": "ANALYSIS_PROPOSED_IMPLEMENTATION_AND_RUNTIME_NOT_RUN",
+    "at": "2026-10-09T02:13:12.732931+00:00",
+    "document": "multi-resource-routing-artifacts-v1.md",
+    "scope": "Hypothetical same-engine multi-VM/container worker pools, multiple targets and bounded parent/subtasks; not a new implementation commitment",
+    "routing_owner": "Existing business Manager",
+    "artifact_owner": "business Run/task/attempt metadata in Manager; selected payloads in existing internal storage; approved reusable assets in WeKnora",
+    "private_state": "No shared writable Hermes Home, credentials or private Memory",
+    "current_gaps": [
+      "Cross-host trusted registration/leases/capacity",
+      "Parent/task/attempt aggregation and migration",
+      "Central artifact upload/manifest/readback",
+      "Cross-host global model-call budget"
+    ],
+    "six_goal_completion_unchanged": true,
+    "native_evolution_decision_unchanged": true
+  },
+  "asset_access_and_learning_clarification": {
+    "at": "2026-10-09T02:40:50.892449+00:00",
+    "current_transport": "Hermes stdio MCP -> HTTP node Companion -> HTTP approved release service/WeKnora",
+    "current_cache": "Per-node /state/approved-cache/<skill-sha>; special package adapter, not native generic skills installation",
+    "shared_writable_hermes_home": false,
+    "current_native_learning_pipeline": "NOT_IMPLEMENTED",
+    "confirmed_design": "Private pending before operational use; final RCA/internal eval/periodic human approval -> CAS publication -> per-node approved read-only snapshot for new Run",
+    "scope": "Business knowledge/skills; node Memory/auth/session stay private",
+    "generic_native_skill_load": "PENDING_IMPLEMENTATION"
+  },
+  "accepted_asset_sharing_decision": {
+    "status": "USER_CONFIRMED_IMPLEMENTATION_PENDING",
+    "shared_transport": "MCP/HTTP controlled asset service, per-node local approved snapshots",
+    "shared_writable_home": false,
+    "business_learning": "pending before operational use, RCA/eval/periodic human review before publication",
+    "generic_native_skill_loading": "NOT_IMPLEMENTED"
+  },
+  "architecture_documents": [
+    "architecture/README.md",
+    "architecture/business-access.md",
+    "architecture/agent-manager.md",
+    "architecture/agent-core.md",
+    "architecture/knowledge-platform.md",
+    "architecture/mcp-interface.md"
+  ],
+  "repository_visibility_decision": {
+    "intent": "PUBLIC",
+    "status": "PUBLIC_VERIFIED_DELIVERY_REFER_TO_PR",
+    "scope": "This derivative only; parent repository stays private"
+  },
+  "publication": {
+    "schema": "engine-hub-architecture-pr-submission/1",
+    "at": "2026-10-09T03:16:38.568262+00:00",
+    "repository": "https://github.com/zcimon57-svj/hermes-webui-engine-hub",
+    "visibility": "PUBLIC_VERIFIED",
+    "pr_number": 1,
+    "pr_url": "https://github.com/zcimon57-svj/hermes-webui-engine-hub/pull/1",
+    "base": "main",
+    "head_branch": "docs/engine-hub-architecture-handoff-20261009",
+    "content_commit": "ea1c9a0144d9cd0ef4f2c479e30c1dfadebcabe1",
+    "observation": "PR_SUBMITTED; final merge/ref status is authoritative in linked GitHub PR and refs, not this pre-merge snapshot",
+    "continued_work_branch": "main",
+    "user_authorized_pr_merge": true,
+    "user_authorized_public_visibility": true,
+    "verification": [
+      "architecture-handoff-checks-20261009.json",
+      "publication-safety-20261009.json"
+    ],
+    "business_goals": "PARTIAL_IMPLEMENTATION_NOT_FULL_ACCEPTANCE",
+    "services_or_models_started": false,
+    "parent_repository_visibility_changed": false
+  }
+}

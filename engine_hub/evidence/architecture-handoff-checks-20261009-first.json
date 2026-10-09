@@ -1,0 +1,50 @@
+{
+  "schema": "architecture-handoff-checks/1",
+  "at": "2026-10-09T03:05:47.302652+00:00",
+  "status": "FAIL",
+  "checks": {
+    "six_goals_preserved": true,
+    "three_execution_requirements_preserved": true,
+    "no_external_evolution_dependencies": true,
+    "business_acceptance_not_claimed": true,
+    "five_modules_documented": true,
+    "json_parse": true,
+    "local_links": false,
+    "critical_markdown": true,
+    "scoped_units": true
+  },
+  "unit_tests": {
+    "run": 27,
+    "failures": 0,
+    "errors": 0
+  },
+  "critical_markdown": {
+    "exit": 0,
+    "stdout": "critical_markdown_check: 20 file(s) OK — no catastrophic Markdown issues",
+    "stderr": ""
+  },
+  "links_checked": 200,
+  "missing_links": [
+    {
+      "file": "engine_hub/reviews/2026-10-09-reassessment/isolation-implementation-analysis-v1.md",
+      "target": "../../static/hub.js:6"
+    },
+    {
+      "file": "engine_hub/reviews/2026-10-09-reassessment/isolation-implementation-analysis-v1.md",
+      "target": "../../static/index.html:2"
+    },
+    {
+      "file": "engine_hub/reviews/2026-10-09-reassessment/isolation-implementation-analysis-v1.md",
+      "target": "../../static/hub.js:15"
+    }
+  ],
+  "test_limits": {
+    "cpu_affinity": [
+      0
+    ],
+    "address_space_max_bytes": 134217728
+  },
+  "runtime_browser_models_and_internal_business": "NOT_RUN",
+  "historical_acceptance_and_versions_lock": "PRESERVED",
+  "full_upstream_pytest": "NOT_RUN_UNCHANGED_UPSTREAM_SOURCE"
+}

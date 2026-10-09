@@ -1,0 +1,394 @@
+{
+  "schema": "hermes-hub-documentation-validation/1",
+  "at": "2026-10-09T00:12:17.286079+00:00",
+  "scope": "Documentation and frozen handoff integrity only; no models, services, deployment or business acceptance",
+  "product_acceptance": "NOT_RUN",
+  "project_validator": {
+    "exit_code": 0,
+    "stdout": "{\"status\": \"PASS\", \"checks\": 71, \"authored_links\": 1385, \"errors\": [], \"missing_links\": []}",
+    "stderr": ""
+  },
+  "project_report": {
+    "status": "PASS",
+    "checked_at": "2026-10-09T00:12:17.505986+00:00",
+    "scope": "Current project navigation and baseline consistency; historical verbatim links and internal runtime acceptance are outside this check.",
+    "checks": {
+      "required_project_harness_files": true,
+      "format:README.md": true,
+      "format:index.md": true,
+      "format:AGENTS.md": true,
+      "format:.harness/README.md": true,
+      "format:.harness/STATE.md": true,
+      "format:.harness/HANDOFF.md": true,
+      "format:.harness/decisions.md": true,
+      "format:publication/README.md": true,
+      "format:planning/2026-09-20-knowledge-mcp-first/priority-change-record.md": true,
+      "format:planning/2026-09-20-knowledge-mcp-first/README.md": true,
+      "format:planning/2026-09-20-knowledge-mcp-first/r3-change-record.md": true,
+      "format:planning/2026-09-20-knowledge-mcp-first/r4-change-record.md": true,
+      "format:planning/2026-09-20-knowledge-mcp-first/STATE.md": true,
+      "format:planning/2026-09-20-knowledge-mcp-first/ownership-and-contracts.md": true,
+      "format:planning/2026-09-20-knowledge-mcp-first/schedule.md": true,
+      "format:planning/2026-09-20-knowledge-mcp-first/execution-checklist.md": true,
+      "format:planning/2026-09-20-knowledge-mcp-first/full-scope.md": true,
+      "format:planning/2026-09-20-knowledge-mcp-first/module-priorities.md": true,
+      "format:planning/2026-09-20-knowledge-mcp-first/kickoff.md": true,
+      "format:planning/2026-09-20-knowledge-mcp-first/requirements.md": true,
+      "format:planning/2026-09-20-knowledge-mcp-first/workspace/README.md": true,
+      "format:planning/2026-09-20-knowledge-mcp-first/requirements-audit/README.md": true,
+      "current_navigation_local_links": true,
+      "root_index_replaces_obsolete_local_only_claim": true,
+      "root_agents_uses_canonical_case": true,
+      "planning_complete_unique_requirements": true,
+      "planning_markdown_ids_match": true,
+      "four_long_term_engineering_owners": true,
+      "architect_and_pm_distinct": true,
+      "execution_unique_tasks": true,
+      "execution_all_parents_covered": true,
+      "execution_required_fields": true,
+      "execution_dependencies_exist": true,
+      "planning_and_execution_dependencies_acyclic": true,
+      "backlog_csv_matches_json": true,
+      "execution-checklist_csv_matches_json": true,
+      "execution_markdown_matches_json": true,
+      "complete_modules_have_priority_rules": true,
+      "user_five_architecture_modules": true,
+      "every_requirement_has_valid_submodule": true,
+      "execution_inherits_parent_hierarchy": true,
+      "all_requirement_content_preserved_after_regroup": true,
+      "all_execution_content_preserved_after_regroup": true,
+      "all_packages_have_reason_trigger_and_defer_rule": true,
+      "packages_sorted_within_modules": true,
+      "execution_tasks_sorted_within_modules": true,
+      "deferred_packages_do_not_start_prematurely": true,
+      "owner_reported_gaps_not_claimed_verified": true,
+      "r3_input_source_hashes_match": true,
+      "historical_source_hashes_unchanged": true,
+      "every_requirement_has_valid_source": true,
+      "coverage_targets_exist": true,
+      "original_38_requirements_disposed": true,
+      "v9_all_34_pages_mapped": true,
+      "full_deck_45_pages_mapped": true,
+      "summary_packages_have_functional_targets": true,
+      "r3_html_preserved": true,
+      "html_architecture_has_exactly_five_modules": true,
+      "html_submodules_match_plan": true,
+      "html_baseline_requirement_ids_match": true,
+      "html_initial_progress_not_fabricated": true,
+      "html_initial_source_hashes_match": true,
+      "html_executable_steps_present": true,
+      "html_task_module_order_and_priority_rules_match": true,
+      "html_browser_report_matches_artifact": true,
+      "html_no_remote_runtime_assets": true,
+      "r2_html_preserved_at_handoff_bytes": true,
+      "r2_browser_evidence_still_matches_old_html": true,
+      "no_nested_gitlinks": true,
+      "runtime_and_upstream_excluded": true
+    },
+    "authored_links": 1385,
+    "missing_links": [],
+    "errors": []
+  },
+  "historical_validator_outputs_restored": true,
+  "handoff_manifest": {
+    "sha256": "d50739867a8414174413245ea7a51f585892eb1b6a49d94f815d5f5d28f8b60c",
+    "entries": 33,
+    "passed": 33,
+    "checks": [
+      {
+        "path": "EXECUTION-v1.md",
+        "expected_sha256": "32ecc6f4fb920c605754cb50f1e50521a676b6afdfafc0d69ef7bcd7e1e6ebf0",
+        "actual_sha256": "32ecc6f4fb920c605754cb50f1e50521a676b6afdfafc0d69ef7bcd7e1e6ebf0",
+        "pass": true
+      },
+      {
+        "path": "requirements-v1.json",
+        "expected_sha256": "bc18a304c2ca348e6967ae81fd3339478f05e0584eb79512122c5df466d0ef02",
+        "actual_sha256": "bc18a304c2ca348e6967ae81fd3339478f05e0584eb79512122c5df466d0ef02",
+        "pass": true
+      },
+      {
+        "path": "permissions-v1.json",
+        "expected_sha256": "51070754e0be42b44f5502261f610968d64c77c94260d5d521ea3d2a8824bb41",
+        "actual_sha256": "51070754e0be42b44f5502261f610968d64c77c94260d5d521ea3d2a8824bb41",
+        "pass": true
+      },
+      {
+        "path": "acceptance-v1.json",
+        "expected_sha256": "93694b6dc3a10685438d674bd14693515dddb5272bcbb8a4520b6644a09b9e09",
+        "actual_sha256": "93694b6dc3a10685438d674bd14693515dddb5272bcbb8a4520b6644a09b9e09",
+        "pass": true
+      },
+      {
+        "path": "verified-baseline-v1.json",
+        "expected_sha256": "0fc5f2d0285b52e4cf38dbebee85e304bc72f0074c24a2c266b7a5341e33c7e0",
+        "actual_sha256": "0fc5f2d0285b52e4cf38dbebee85e304bc72f0074c24a2c266b7a5341e33c7e0",
+        "pass": true
+      },
+      {
+        "path": "NEXT-SESSION-PROMPT.md",
+        "expected_sha256": "850d1c2f20286e95dd5e55f98a2b2380281dbb311d3107abcf8c5c0b4c3f00ee",
+        "actual_sha256": "850d1c2f20286e95dd5e55f98a2b2380281dbb311d3107abcf8c5c0b4c3f00ee",
+        "pass": true
+      },
+      {
+        "path": "../validation-report.md",
+        "expected_sha256": "1f18cb729164145bbebdf771732157cc0853f20a2ed5ca4a6b565fea835589c1",
+        "actual_sha256": "1f18cb729164145bbebdf771732157cc0853f20a2ed5ca4a6b565fea835589c1",
+        "pass": true
+      },
+      {
+        "path": "../deployment.md",
+        "expected_sha256": "eda1ed2c909995ac706c845603d3a54792446eb20373f2e459b54351e688e2de",
+        "actual_sha256": "eda1ed2c909995ac706c845603d3a54792446eb20373f2e459b54351e688e2de",
+        "pass": true
+      },
+      {
+        "path": "../results/versions.json",
+        "expected_sha256": "0bccc8362c865370affa8d41f36516ec20b403d1c4a9eaf803b2ab5e4be0a48a",
+        "actual_sha256": "0bccc8362c865370affa8d41f36516ec20b403d1c4a9eaf803b2ab5e4be0a48a",
+        "pass": true
+      },
+      {
+        "path": "../results/verification.json",
+        "expected_sha256": "672dbb2927f1dccb0965637b8dd886b5406141f3e03ddf130671c7ee543582ed",
+        "actual_sha256": "672dbb2927f1dccb0965637b8dd886b5406141f3e03ddf130671c7ee543582ed",
+        "pass": true
+      },
+      {
+        "path": "../results/acceptance.json",
+        "expected_sha256": "76337245a9d3a3fa69fc9d39fcb4c8651060c67df4e10f34a0fb3fb4ef7188d1",
+        "actual_sha256": "76337245a9d3a3fa69fc9d39fcb4c8651060c67df4e10f34a0fb3fb4ef7188d1",
+        "pass": true
+      },
+      {
+        "path": "../results/controls.json",
+        "expected_sha256": "84896583407552f1ad05f1cd688e294b87f666ec22e06ae74411d1fe4969ac82",
+        "actual_sha256": "84896583407552f1ad05f1cd688e294b87f666ec22e06ae74411d1fe4969ac82",
+        "pass": true
+      },
+      {
+        "path": "../results/run-controls.json",
+        "expected_sha256": "c254fdd433f45cb7edb19e63a3855ef222426e82d9c69f287455f282126e4847",
+        "actual_sha256": "c254fdd433f45cb7edb19e63a3855ef222426e82d9c69f287455f282126e4847",
+        "pass": true
+      },
+      {
+        "path": "../results/session-run-map.json",
+        "expected_sha256": "f1e0f117a9ed8e919e705b4ce22374895b024d60a90f09a828bb84dcb88795e1",
+        "actual_sha256": "f1e0f117a9ed8e919e705b4ce22374895b024d60a90f09a828bb84dcb88795e1",
+        "pass": true
+      },
+      {
+        "path": "../results/isolation.json",
+        "expected_sha256": "7719ce29bd899a28293c685dc3adccd03527b07eb1131fab7c6564aee6700cae",
+        "actual_sha256": "7719ce29bd899a28293c685dc3adccd03527b07eb1131fab7c6564aee6700cae",
+        "pass": true
+      },
+      {
+        "path": "../results/gateway-capabilities.json",
+        "expected_sha256": "81992d29ecb05313c9d36f13ab8fc06e50647738ddfe5b9eaf35860baf8176bd",
+        "actual_sha256": "81992d29ecb05313c9d36f13ab8fc06e50647738ddfe5b9eaf35860baf8176bd",
+        "pass": true
+      },
+      {
+        "path": "../results/remote-api-surface.json",
+        "expected_sha256": "9f2f5141484a6e5126b1bb49360a61b092ab121f5f69cc1302a68d736820db4d",
+        "actual_sha256": "9f2f5141484a6e5126b1bb49360a61b092ab121f5f69cc1302a68d736820db4d",
+        "pass": true
+      },
+      {
+        "path": "../results/harness-incidents.json",
+        "expected_sha256": "6ed46d4877ff807c96faad6ed03a82db6e739f302860014a7b2da7d937777269",
+        "actual_sha256": "6ed46d4877ff807c96faad6ed03a82db6e739f302860014a7b2da7d937777269",
+        "pass": true
+      },
+      {
+        "path": "../results/final-checks.json",
+        "expected_sha256": "5b68da394df153a431a7aefcb73fff4a470e18f041c41a7b7f0076477450dc31",
+        "actual_sha256": "5b68da394df153a431a7aefcb73fff4a470e18f041c41a7b7f0076477450dc31",
+        "pass": true
+      },
+      {
+        "path": "../results/screenshots/current-pg-node-03.png",
+        "expected_sha256": "0a47a3b6762abc01e312c0f3d9663f48b639c3f34bca0dfc9ef402b621ea1052",
+        "actual_sha256": "0a47a3b6762abc01e312c0f3d9663f48b639c3f34bca0dfc9ef402b621ea1052",
+        "pass": true
+      },
+      {
+        "path": "../results/screenshots/adapted-run-management.png",
+        "expected_sha256": "fac7fa043fbf56ce64145415b218002add6d4406a7130758bcb1864aa417586a",
+        "actual_sha256": "fac7fa043fbf56ce64145415b218002add6d4406a7130758bcb1864aa417586a",
+        "pass": true
+      },
+      {
+        "path": "../results/screenshots/adapted-node-offline.png",
+        "expected_sha256": "a6e23be6c435ec85504bb2a1f04e558ee0a8a15842da0e0b6d0e9b36aa466c9b",
+        "actual_sha256": "a6e23be6c435ec85504bb2a1f04e558ee0a8a15842da0e0b6d0e9b36aa466c9b",
+        "pass": true
+      },
+      {
+        "path": "../implementation/launch_adapted.py",
+        "expected_sha256": "4dc39d6e0f9651d36077aad74ca25d99dd0b6a2dd14632a5244198afd173c96d",
+        "actual_sha256": "4dc39d6e0f9651d36077aad74ca25d99dd0b6a2dd14632a5244198afd173c96d",
+        "pass": true
+      },
+      {
+        "path": "../implementation/lab.py",
+        "expected_sha256": "c59203748ef002fd5b07fa1c1c7e5cb6028555c79cddb49fe93cc226b136fc7e",
+        "actual_sha256": "c59203748ef002fd5b07fa1c1c7e5cb6028555c79cddb49fe93cc226b136fc7e",
+        "pass": true
+      },
+      {
+        "path": "../implementation/evaluate.py",
+        "expected_sha256": "7eda9c48d267c2a0846a61af0b585338ff46e6d634998f5c307b6725465c088b",
+        "actual_sha256": "7eda9c48d267c2a0846a61af0b585338ff46e6d634998f5c307b6725465c088b",
+        "pass": true
+      },
+      {
+        "path": "../implementation/node_mcp.py",
+        "expected_sha256": "54f1c9b997ff2c799bed6fe486d2d54659fa66631396b6f5783c4fcc9a5d2a5f",
+        "actual_sha256": "54f1c9b997ff2c799bed6fe486d2d54659fa66631396b6f5783c4fcc9a5d2a5f",
+        "pass": true
+      },
+      {
+        "path": "../implementation/fixture_model.py",
+        "expected_sha256": "d194085b6887ff5a2fa300885bf7815be18fbc189602bbf76e0be9e56d6802a5",
+        "actual_sha256": "d194085b6887ff5a2fa300885bf7815be18fbc189602bbf76e0be9e56d6802a5",
+        "pass": true
+      },
+      {
+        "path": "../implementation/probe_native.cjs",
+        "expected_sha256": "d2cfc816982cf546b5f008cfe8aa07d2939cc3f81923e8871767f3c901afa110",
+        "actual_sha256": "d2cfc816982cf546b5f008cfe8aa07d2939cc3f81923e8871767f3c901afa110",
+        "pass": true
+      },
+      {
+        "path": "../implementation/probe_controls.cjs",
+        "expected_sha256": "11a446e12884d1dabd81d0304c433bd4eff3e6e6fa5e778edcb6d68df0162f67",
+        "actual_sha256": "11a446e12884d1dabd81d0304c433bd4eff3e6e6fa5e778edcb6d68df0162f67",
+        "pass": true
+      },
+      {
+        "path": "../implementation/probe_run_controls.cjs",
+        "expected_sha256": "50a1ad79c07e6097b6b9f9e4c893843498b5c010cad1b7cd812590f5e4f07577",
+        "actual_sha256": "50a1ad79c07e6097b6b9f9e4c893843498b5c010cad1b7cd812590f5e4f07577",
+        "pass": true
+      },
+      {
+        "path": "../../2026-09-20-four-engines-six-nodes-validation/implementation-map.md",
+        "expected_sha256": "32e87e52fbed73dd98c057d52f177c027ad3a08fc66825c2e6a69458078b2299",
+        "actual_sha256": "32e87e52fbed73dd98c057d52f177c027ad3a08fc66825c2e6a69458078b2299",
+        "pass": true
+      },
+      {
+        "path": "../../2026-09-20-four-engines-six-nodes-validation/results/release-governance-a.json",
+        "expected_sha256": "4697ab16524f80e6956bc73f54f93ff9b52f274ec51083392c68c2ab23652832",
+        "actual_sha256": "4697ab16524f80e6956bc73f54f93ff9b52f274ec51083392c68c2ab23652832",
+        "pass": true
+      },
+      {
+        "path": "../../2026-09-20-four-engines-six-nodes-validation/results/rollback-revocation.json",
+        "expected_sha256": "f4b149cf5a1c5f75a7273b9892299ed9d2c1eb3f6bbadaf7e9616ec0ab38e81c",
+        "actual_sha256": "f4b149cf5a1c5f75a7273b9892299ed9d2c1eb3f6bbadaf7e9616ec0ab38e81c",
+        "pass": true
+      }
+    ],
+    "manifest_unchanged_by_this_validation": true
+  },
+  "preexisting_dirty_content_preserved": [
+    {
+      "path": "README.md",
+      "pre_turn_sha256": "b35d4db6c6eb5e66146f780d274fd7be3f43b828f75c0ddc93c832352cc04b4b",
+      "current_sha256": "a157aaa3718686dffceb15e931b48499bbc3748220c2753f16a4339ab4522947",
+      "original_body_reconstruction_matches": true,
+      "separator_newlines": [
+        2
+      ],
+      "change": "Authorized additive navigation block; no prior content removed"
+    },
+    {
+      "path": "index.md",
+      "pre_turn_sha256": "8a00ea55892f20f06f3b8ac8540cff9c8f8feb840f1ddb9658a2a52413285d9b",
+      "current_sha256": "22c1636e9690bfb6a033639f263308fb157d4ef18a95cccb3aa8e89e4b9ede76",
+      "original_body_reconstruction_matches": true,
+      "separator_newlines": [
+        2
+      ],
+      "change": "Authorized additive navigation block; no prior content removed"
+    },
+    {
+      "path": ".harness/STATE.md",
+      "pre_turn_sha256": "f4cd1dacd47ea493c3ac23dcc69b578942b3c2f22423c106aa400a2fb3f9a03d",
+      "current_sha256": "e39eb388a66daddf0cc689b7d8c456495f53b45edc3bb706253d05d65bcda6c1",
+      "original_body_reconstruction_matches": true,
+      "separator_newlines": [
+        2
+      ],
+      "change": "Authorized additive navigation block; no prior content removed"
+    },
+    {
+      "path": ".harness/HANDOFF.md",
+      "pre_turn_sha256": "74dc856929446970eefccf2e9661f1dd9a149f69b688fbe44f28327db3018c9e",
+      "current_sha256": "9b0aecebfb7aa33b81c0cfe20097a35af92213a5d9a8a6ad71ea4c96ca429bf4",
+      "original_body_reconstruction_matches": true,
+      "separator_newlines": [
+        2
+      ],
+      "change": "Authorized additive navigation block; no prior content removed"
+    }
+  ],
+  "new_doc_links": {
+    "checked": 35,
+    "broken": []
+  },
+  "json_parse": [
+    {
+      "path": "engine_hub/STATE.json",
+      "pass": true
+    },
+    {
+      "path": "engine_hub/reviews/2026-10-09-reassessment/documentation-validation-v1.json",
+      "pass": true
+    },
+    {
+      "path": "engine_hub/reviews/2026-10-09-reassessment/goals-progress-v2.json",
+      "pass": true
+    },
+    {
+      "path": "engine_hub/reviews/2026-10-09-reassessment/research-sources-v1.json",
+      "pass": true
+    }
+  ],
+  "git": {
+    "mother": {
+      "branch": "main",
+      "head": "5e8fe157a04fcb0954c86d5abecab1eee5ea1434",
+      "status": "M .harness/HANDOFF.md\n M .harness/STATE.md\n M README.md\n M index.md\n?? design-docs/2026-09-21-taurus-code-analysis/\n?? explorations/2026-10-08-hermes-webui-six-node-validation/\n?? explorations/2026-10-09-hermes-hub-reassessment/"
+    },
+    "private_fork": {
+      "branch": "main",
+      "head": "74437cb77829c7b301cdab8d92722315e4ebbab4",
+      "status": "M engine_hub/README.md\n M engine_hub/STATE.json\n M engine_hub/evidence/INDEX.md\n?? engine_hub/reviews/"
+    }
+  },
+  "resource_observation": {
+    "linux_meminfo": {
+      "MemTotal": "8022392 kB",
+      "MemAvailable": "5872504 kB",
+      "SwapTotal": "2097152 kB",
+      "SwapFree": "2086476 kB"
+    },
+    "execution_affinity": [
+      0
+    ],
+    "no_new_services_or_models_started": true,
+    "windows_current_headroom": "NOT_RECHECKED_IN_DOCUMENT_ONLY_TURN",
+    "new_documents_commit_push": "NOT_RUN_LOCAL_PERSISTENCE_ONLY"
+  },
+  "status": "PASS",
+  "diff_whitespace_checks": {
+    "private_fork": "PASS",
+    "mother_authorized_navigation_paths": "PASS"
+  }
+}

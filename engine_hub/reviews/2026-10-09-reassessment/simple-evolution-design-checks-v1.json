@@ -1,0 +1,41 @@
+{
+  "schema": "simple-native-evolution-design-check/1",
+  "at": "2026-10-09T01:47:20.981017+00:00",
+  "status": "PASS",
+  "checks": {
+    "six_goals_preserved": true,
+    "three_execution_requirements_preserved": true,
+    "design_user_confirmed": true,
+    "no_external_project_dependency": true,
+    "state_and_progress_decision_match": true,
+    "goal_still_partial": true,
+    "old_external_adaptation_requirement_removed": true,
+    "contract_points_to_existing_progress": true,
+    "old_validation_outputs_restored": true,
+    "historical_file:engine_hub/versions.lock.json": true,
+    "historical_file:engine_hub/acceptance-local-r1.json": true,
+    "prior_resource_code_preserved:engine_hub/resources.py": true,
+    "prior_resource_code_preserved:engine_hub/scripts/lab.py": true,
+    "prior_resource_code_preserved:engine_hub/tests/test_resources.py": true,
+    "sealed_handoff_33_entries_preserved": true,
+    "original_dirty_body_preserved:README.md": true,
+    "original_dirty_body_preserved:index.md": true,
+    "original_dirty_body_preserved:.harness/STATE.md": true,
+    "original_dirty_body_preserved:.harness/HANDOFF.md": true,
+    "json_parse": true,
+    "local_links": true,
+    "whitespace:fork": true,
+    "whitespace:mother": true,
+    "project_validator": true
+  },
+  "project_validator": {
+    "exit": 0,
+    "summary": "{\"status\": \"PASS\", \"checks\": 71, \"authored_links\": 1385, \"errors\": [], \"missing_links\": []}",
+    "stderr": ""
+  },
+  "links_checked": 99,
+  "missing_links": [],
+  "scope": "Existing goals/progress/contract/index consistency only; no product code/model/service changes this turn",
+  "implementation_and_business_acceptance": "NOT_RUN",
+  "commit_push": "NOT_RUN"
+}

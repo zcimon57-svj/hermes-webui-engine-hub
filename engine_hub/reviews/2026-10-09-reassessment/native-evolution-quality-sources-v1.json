@@ -1,0 +1,248 @@
+{
+  "schema": "native-evolution-quality-sources/1",
+  "at": "2026-10-09T00:30:57.527754+00:00",
+  "scope": "Selected first-party sources and primary papers; no third-party package imports/install/model calls",
+  "repos": [
+    {
+      "repo": "AnimaApp/smarter-agent",
+      "sha": "d4ed80b9cb8f06aa4c9097f4e1d5ba64f5378f88",
+      "license_metadata": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "selected_files": [
+        {
+          "path": "README.md",
+          "sha256": "1bc2e551665108fce8a40039dad8c024baaac53795789a42d3549fcf7c9d196a",
+          "bytes": 5736,
+          "url": "https://github.com/AnimaApp/smarter-agent/blob/d4ed80b9cb8f06aa4c9097f4e1d5ba64f5378f88/README.md"
+        },
+        {
+          "path": "skills/smarter-agent/references/runtime-gating.md",
+          "sha256": "5bf3945b23c17fbb1b50a8b72f55654487896979eda9aca1de1e55a79b323f0c",
+          "bytes": 3136,
+          "url": "https://github.com/AnimaApp/smarter-agent/blob/d4ed80b9cb8f06aa4c9097f4e1d5ba64f5378f88/skills/smarter-agent/references/runtime-gating.md"
+        },
+        {
+          "path": "skills/smarter-agent/references/simulation-model.md",
+          "sha256": "b17bd14a3c3054fd45f2fa2f87180c043c49647c5d9a9c1e7ea97fe0407945c1",
+          "bytes": 4142,
+          "url": "https://github.com/AnimaApp/smarter-agent/blob/d4ed80b9cb8f06aa4c9097f4e1d5ba64f5378f88/skills/smarter-agent/references/simulation-model.md"
+        }
+      ],
+      "runtime": "NOT_RUN"
+    },
+    {
+      "repo": "Carlo1911/skill-evolution",
+      "sha": "cac07c5d34287df7218b8ca9308aa05b95f23179",
+      "license_metadata": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "selected_files": [
+        {
+          "path": "README.md",
+          "sha256": "e32211bb1ce31758889ab122e4c2b32f3989afda665a6764bde10f9e8228e179",
+          "bytes": 14999,
+          "url": "https://github.com/Carlo1911/skill-evolution/blob/cac07c5d34287df7218b8ca9308aa05b95f23179/README.md"
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "6dbc649e9a7860c3cf1d0477360c0d7c4e9c30f3124dc953e33638997edae6c8",
+          "bytes": 32245,
+          "url": "https://github.com/Carlo1911/skill-evolution/blob/cac07c5d34287df7218b8ca9308aa05b95f23179/SKILL.md"
+        },
+        {
+          "path": "scripts/evaluate.py",
+          "sha256": "3880bbc4ce519440a4bf707b2110ea4267862330089816208b3362c1be921b8f",
+          "bytes": 108174,
+          "url": "https://github.com/Carlo1911/skill-evolution/blob/cac07c5d34287df7218b8ca9308aa05b95f23179/scripts/evaluate.py"
+        },
+        {
+          "path": "scripts/host.py",
+          "sha256": "d9d3b4a90948f5191eb5de218e6fd17392b582475d8982416bf4b8a6d25e1dcb",
+          "bytes": 43050,
+          "url": "https://github.com/Carlo1911/skill-evolution/blob/cac07c5d34287df7218b8ca9308aa05b95f23179/scripts/host.py"
+        },
+        {
+          "path": "scripts/proposal.py",
+          "sha256": "ed648421549c7be4d420e99315bf18c3e703b1fb185600177874403dd87ae0d6",
+          "bytes": 24544,
+          "url": "https://github.com/Carlo1911/skill-evolution/blob/cac07c5d34287df7218b8ca9308aa05b95f23179/scripts/proposal.py"
+        }
+      ],
+      "runtime": "NOT_RUN"
+    },
+    {
+      "repo": "blueif16/hermes-skill-system",
+      "sha": "45369173957f247107e2f54d3a5e337ce13e1962",
+      "license_metadata": null,
+      "selected_files": [
+        {
+          "path": "README.md",
+          "sha256": "334b387cb469273297a261879a4606461df84a9ffb44909b8d44df0b2a8ddf78",
+          "bytes": 9085,
+          "url": "https://github.com/blueif16/hermes-skill-system/blob/45369173957f247107e2f54d3a5e337ce13e1962/README.md"
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "a3b4ef8d8b8770d439b4efbccb45bfe78e744ff344f2e853c1e5a085a1738e67",
+          "bytes": 11335,
+          "url": "https://github.com/blueif16/hermes-skill-system/blob/45369173957f247107e2f54d3a5e337ce13e1962/SKILL.md"
+        }
+      ],
+      "runtime": "NOT_RUN"
+    },
+    {
+      "repo": "henrymao2004/misevolve",
+      "sha": "af74ba98d1fa7c2ed1931d660022cd748bba1399",
+      "license_metadata": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "selected_files": [
+        {
+          "path": "README.md",
+          "sha256": "cef3f6362b99fab053deca841273871215a0034146eab82de49c069ddad3382b",
+          "bytes": 12945,
+          "url": "https://github.com/henrymao2004/misevolve/blob/af74ba98d1fa7c2ed1931d660022cd748bba1399/README.md"
+        },
+        {
+          "path": "src/misevolve/governance/config/safeevolve_audit_prompt.md",
+          "sha256": "8a71e9ff3a281e23757973e4bad9ddc00d8f5ca6db821ca1747d101e9ed6b1d5",
+          "bytes": 4705,
+          "url": "https://github.com/henrymao2004/misevolve/blob/af74ba98d1fa7c2ed1931d660022cd748bba1399/src/misevolve/governance/config/safeevolve_audit_prompt.md"
+        },
+        {
+          "path": "src/misevolve/governance/config/safeevolve_repair_prompt.md",
+          "sha256": "882282173d3062dbf64abc44a6637211556b9b97eb3bd2fd52479bac39ef666e",
+          "bytes": 2258,
+          "url": "https://github.com/henrymao2004/misevolve/blob/af74ba98d1fa7c2ed1931d660022cd748bba1399/src/misevolve/governance/config/safeevolve_repair_prompt.md"
+        },
+        {
+          "path": "src/misevolve/governance/safeevolve.py",
+          "sha256": "7ae2c130bca9038c9832b761b2753e3bace71f8345e5d4439c0681d5bc3dc093",
+          "bytes": 4962,
+          "url": "https://github.com/henrymao2004/misevolve/blob/af74ba98d1fa7c2ed1931d660022cd748bba1399/src/misevolve/governance/safeevolve.py"
+        },
+        {
+          "path": "src/misevolve/methods/hermes_native.py",
+          "sha256": "e10fd83d61fe4bbecfa632220f6fd14d617967daf053e793069c8b28ad1f5e7b",
+          "bytes": 7164,
+          "url": "https://github.com/henrymao2004/misevolve/blob/af74ba98d1fa7c2ed1931d660022cd748bba1399/src/misevolve/methods/hermes_native.py"
+        }
+      ],
+      "runtime": "NOT_RUN"
+    },
+    {
+      "repo": "pingchesu/hermes-curator-evolver",
+      "sha": "1aab2a9a7f80b0cd33ec4998e4067c6f355f6ffd",
+      "license_metadata": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "selected_files": [
+        {
+          "path": "README.md",
+          "sha256": "a077fb3766e522c1088d141a5f134dfe507376f73d548327cf749273ed69c07c",
+          "bytes": 29979,
+          "url": "https://github.com/pingchesu/hermes-curator-evolver/blob/1aab2a9a7f80b0cd33ec4998e4067c6f355f6ffd/README.md"
+        },
+        {
+          "path": "docs/core-algorithm.md",
+          "sha256": "8f2178cff914d857617e98693eeb14d8840dd889b6beadf65b803022b81ddfe5",
+          "bytes": 16669,
+          "url": "https://github.com/pingchesu/hermes-curator-evolver/blob/1aab2a9a7f80b0cd33ec4998e4067c6f355f6ffd/docs/core-algorithm.md"
+        },
+        {
+          "path": "hermes_curator_evolver/guarded_apply.py",
+          "sha256": "30b90011fc3936d2225a0c47492becfcc1d6f48beea4aa96ab7d4e7a38ae653e",
+          "bytes": 14851,
+          "url": "https://github.com/pingchesu/hermes-curator-evolver/blob/1aab2a9a7f80b0cd33ec4998e4067c6f355f6ffd/hermes_curator_evolver/guarded_apply.py"
+        },
+        {
+          "path": "hermes_curator_evolver/hooks.py",
+          "sha256": "b22a21f84e97c4fad6727bd4e321cb6e73fa48ba51e3f7c9b664578ccbe6316c",
+          "bytes": 2819,
+          "url": "https://github.com/pingchesu/hermes-curator-evolver/blob/1aab2a9a7f80b0cd33ec4998e4067c6f355f6ffd/hermes_curator_evolver/hooks.py"
+        },
+        {
+          "path": "hermes_curator_evolver/skill_validate.py",
+          "sha256": "6cf7ab910a509576a05d0579983f48743370cdfab8d9b2e128c46944854737f9",
+          "bytes": 4485,
+          "url": "https://github.com/pingchesu/hermes-curator-evolver/blob/1aab2a9a7f80b0cd33ec4998e4067c6f355f6ffd/hermes_curator_evolver/skill_validate.py"
+        },
+        {
+          "path": "hermes_curator_evolver/verifier.py",
+          "sha256": "0aec602ac8243109333614544ce5a8c433ef7206cf99517971760784ecb27bab",
+          "bytes": 2480,
+          "url": "https://github.com/pingchesu/hermes-curator-evolver/blob/1aab2a9a7f80b0cd33ec4998e4067c6f355f6ffd/hermes_curator_evolver/verifier.py"
+        }
+      ],
+      "runtime": "NOT_RUN"
+    }
+  ],
+  "hermes_native": {
+    "sha": "345cd2b057a452236de401d3534b8502a7465e8d",
+    "files_inspected": [
+      "tools/write_approval.py",
+      "tools/skill_manager_tool.py",
+      "tools/memory_tool.py",
+      "website/docs/user-guide/features/hooks.md",
+      "website/docs/user-guide/features/skills.md",
+      "website/docs/user-guide/features/memory.md",
+      "website/docs/user-guide/features/plugins.md"
+    ],
+    "docs": [
+      "https://hermes-agent.nousresearch.com/docs/user-guide/features/skills",
+      "https://hermes-agent.nousresearch.com/docs/user-guide/features/hooks"
+    ]
+  },
+  "papers": [
+    {
+      "url": "https://arxiv.org/abs/2608.12851v2",
+      "version": "v2 / 2026-10-07",
+      "inspected": "abstract and first-party source modules, selected only",
+      "reproduced": false
+    },
+    {
+      "url": "https://arxiv.org/abs/2608.05563",
+      "inspected": "abstract only",
+      "reproduced": false
+    }
+  ],
+  "social_originals": [
+    {
+      "url": "https://www.reddit.com/r/hermesagent/comments/1uvqmyx/hermes_should_review_its_own_skillimprovement/",
+      "opened": true,
+      "kind": "COMMUNITY_PROPOSAL_NOT_PRODUCT_PROOF"
+    },
+    {
+      "url": "https://www.reddit.com/r/hermesagent/comments/1vrna7d/how_i_improved_my_hermes_agents_skill_changes/",
+      "opened": true,
+      "kind": "AUTHOR_EXPERIENCE_NOT_DOMAIN_PROOF"
+    }
+  ],
+  "findings": {
+    "curator_builtin_semantic_correctness": "NOT_PROVEN_STRUCTURAL_ONLY",
+    "carlo_domain_replay": "NOT_FOUND_IN_DEFAULT_JUDGE_PATH",
+    "carlo_applied_status_vs_actual_write": "STATIC_STATE_WINDOW_CONFIRMED_NOT_RUNTIME_REPRODUCED",
+    "safeevolve_reject_all_flagged_candidates": "FALSE_HAS_ADMIT_FALLBACK",
+    "smarter_agent_universal_write_enforcement": "DESIGN_ONLY_NOT_INSTALLED",
+    "native_gate_covers_direct_filesystem": "NO_INDEPENDENT_OS_BOUNDARY_REQUIRED"
+  },
+  "integration": "NOT_RUN",
+  "previous_extended_sources": "research-sources-v1.json"
+}

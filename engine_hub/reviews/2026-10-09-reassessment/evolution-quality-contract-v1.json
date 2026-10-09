@@ -1,0 +1,65 @@
+{
+  "schema": "business-semantic-evolution-gates/1",
+  "status": "PROPOSED_NOT_IMPLEMENTED",
+  "at": "2026-10-09T00:30:57.527754+00:00",
+  "scope": "R03/R06 current user extension, per engine and authorized project",
+  "principles": [
+    "session trace is observation/candidate not business ground truth",
+    "candidate does not enter normal retrieval or skill discovery",
+    "facts and procedures must have scoped independent support",
+    "generator cannot approve own output",
+    "critical failures cannot be offset by aggregate score or majority vote",
+    "runtime native approval and physical write protection required"
+  ],
+  "gates": [
+    "G0 provenance/scope",
+    "G1 static/package/safety",
+    "G2 domain semantics",
+    "G3 actual behavior/regression/holdout",
+    "G4 human identity + candidate/base/eval hashes + CAS",
+    "G5 reuse monitoring/withdraw/rollback"
+  ],
+  "required_candidate_fields": [
+    "candidate_id",
+    "asset_kind",
+    "engine_id",
+    "project_scope",
+    "source_runs",
+    "source_report_revisions",
+    "observed_at",
+    "applicable_product_versions",
+    "claims",
+    "independent_sources",
+    "preconditions",
+    "exceptions",
+    "behavioral_delta",
+    "risk",
+    "base_release_revision",
+    "candidate_bundle_sha256",
+    "eval_dataset_revision",
+    "evaluator_revision",
+    "counterexamples",
+    "holdout_report",
+    "domain_reviewer_identity"
+  ],
+  "blocked_scenarios": [
+    "valid trace but wrong causal generalization",
+    "format-valid but missing preconditions",
+    "model judge high score with critical semantic failure",
+    "candidate-owned oracle or hidden failed cases",
+    "post-write verification in active shared library",
+    "proposal APPLIED with no actual write/readback",
+    "draft returned by formal retrieval",
+    "unknown or failing approval service",
+    "baseline hash change between review and apply",
+    "retired skill still reused by new Run"
+  ],
+  "owners": {
+    "Core": "isolation/native pending/candidate and hard write boundary",
+    "Domain": "independent truth/counterexamples and expert verdict",
+    "Manager": "eval/approval persistence, actor and cancellation/recovery",
+    "Knowledge": "retrieval quarantine/release pointer/manifest/CAS/readback/rollback",
+    "PM": "expert acceptance and scope coordination"
+  },
+  "remaining": "All quality gates require implementation and real domain validation; document does not satisfy R03 acceptance"
+}

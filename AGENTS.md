@@ -157,10 +157,10 @@ Do not include private machine instructions in this tracked file. Use a
 git-ignored local note for personal workflow details.
 
 
-## Private Engine Hub derivative
+## Engine Hub derivative
 
-Current user instructions and engine_hub/contracts/EXECUTION-v1.md govern this private derivative. Read engine_hub/README.md, STATE.json, acceptance-local-r1.json and versions.lock.json before work. Keep the upstream history, license and upstream remote. Never publish publicly.
+Current user instructions and engine_hub/contracts/EXECUTION-v1.md govern this derivative. Read engine_hub/README.md, STATE.json, architecture/README.md, current reviews/goals-progress-v2.md, acceptance-local-r1.json and versions.lock.json before work. Keep the upstream history, license and upstream remote. The user explicitly authorized PUBLIC repository visibility on 2026-10-09; this overrides the historical PRIVATE requirement for this derivative only. Never commit credentials, runtime data, or unrelated parent-repository materials.
 
-Resource limits are mandatory: all owned runtime, Docker and model/browser tests must stay in eh158.slice (1 GiB aggregate, 192 tasks, no swap), share one verified CPU affinity and pass host admission. Use guarded_exec for jobs; model generation has a cross-process singleton. Do not start all six nodes by default, change Windows/WSL global configuration, stop unrelated resources, clear global caches or weaken gates to make tests pass. On a trip persist/reconcile evidence and do not auto-resume. Preserve all state, failures and historical manifests.
+Resource limits are mandatory: all owned runtime, Docker and model/browser tests must stay in eh158.slice (3 GiB aggregate, 2.5 GiB high, 192 tasks, no swap; user-authorized 2026-10-09 adjustment), share one verified CPU affinity and pass host admission with 2 GiB Linux and 2 GiB Windows reserves plus the new workload reservation. Use guarded_exec for jobs; model generation has a cross-process singleton. Do not start all six nodes by default, change Windows/WSL global configuration, stop unrelated resources, clear global caches or weaken gates to make tests pass. On a trip persist/reconcile evidence and do not auto-resume. Preserve all state, failures and historical manifests.
 
 Use the opt-in engine_hub entrypoint for role/scope checks. Legacy upstream server.py is retained upstream functionality and is not the Engine Hub authorization boundary. New local unittest checks use python3 -m unittest engine_hub.tests.test_policy engine_hub.tests.test_resources; upstream pytest still follows scripts/test.sh.
