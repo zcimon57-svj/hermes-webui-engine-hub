@@ -466,6 +466,7 @@
       }
     },
     "authority": "Issues carry current progress; this file is a dated snapshot",
-    "architecture_review": "Separate open PR; not auto-merged"
+    "architecture_review": "OPEN_PENDING_EXTERNAL_REVIEW_NO_AUTO_MERGE",
+    "architecture_pr": "https://github.com/zcimon57-svj/hermes-webui-engine-hub/pull/12"
   }
 }

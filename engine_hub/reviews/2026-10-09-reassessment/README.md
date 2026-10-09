@@ -1,5 +1,7 @@
 # 当前目标、设计与证据入口
 
+**当前独立评审：[PR #12](https://github.com/zcimon57-svj/hermes-webui-engine-hub/pull/12)，保持打开、未合并；由用户转发给评审人。[目标/进度总账 #2](https://github.com/zcimon57-svj/hermes-webui-engine-hub/issues/2)。**
+
 **目标/进度已建立[Issue总账 #2](https://github.com/zcimon57-svj/hermes-webui-engine-hub/issues/2)与R01–R06/E01–E03分项；[目标架构](../../architecture/goals/README.md)另行开放PR评审。本目录文件保留为版本快照，实施进度在Issue持续更新。此前PR #1不作为架构签收。**
 
 本轮集成：[PR #1](https://github.com/zcimon57-svj/hermes-webui-engine-hub/pull/1)；后续统一在此派生仓`main`继续，合并状态以PR为准。[提交/检查记录](../../evidence/architecture-pr-submission-20261009.json)。

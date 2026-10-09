@@ -71,10 +71,18 @@
     "R05": "architecture/goals/r05-multi-node-and-artifacts.md",
     "R06": "architecture/goals/r06-assets-and-local-skills.md"
   },
-  "review_pr": "TO_BE_CREATED",
+  "review_pr": {
+    "number": 12,
+    "html_url": "https://github.com/zcimon57-svj/hermes-webui-engine-hub/pull/12",
+    "state": "open",
+    "title": "Review architecture for six functional goals and three execution requirements",
+    "head_sha": "c2ee206311eabad69c1570968cfd46831c54ec61",
+    "base": "main"
+  },
   "reviewer_assignment": "NONE_USER_WILL_SHARE",
   "auto_merge_authorized": false,
   "previous_pr_1": "Already merged baseline; not independent architectural signoff",
   "code_preserved_main": "6e6c4e897c62078ff1f14f072abe3fd7d7c461b3",
-  "runtime_started": false
+  "runtime_started": false,
+  "review_state": "OPEN_PENDING_EXTERNAL_REVIEW"
 }

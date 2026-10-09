@@ -158,9 +158,10 @@
       "E03": "https://github.com/zcimon57-svj/hermes-webui-engine-hub/issues/11"
     },
     "architecture_index": "architecture/goals/README.md",
-    "architecture_review": "OPEN_PR_PENDING_CREATION",
+    "architecture_review": "OPEN_PENDING_EXTERNAL_REVIEW",
     "reviewers": "User shares links; no automatic assignment",
     "auto_merge": false,
-    "baseline_code_preserved": "evidence/code-preservation-review-20261009.json"
+    "baseline_code_preserved": "evidence/code-preservation-review-20261009.json",
+    "architecture_pr": "https://github.com/zcimon57-svj/hermes-webui-engine-hub/pull/12"
   }
 }

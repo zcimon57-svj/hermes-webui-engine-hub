@@ -1,5 +1,7 @@
 # 六个功能目标的架构评审
 
+**当前独立评审：[PR #12](https://github.com/zcimon57-svj/hermes-webui-engine-hub/pull/12)，保持打开、未合并；由用户转发给评审人。[目标/进度总账 #2](https://github.com/zcimon57-svj/hermes-webui-engine-hub/issues/2)。**
+
 [目标/进度总账 #2](https://github.com/zcimon57-svj/hermes-webui-engine-hub/issues/2)。本目录按R01–R06组织架构，便于对应Issue逐项评论，不新增一级模块。五个一级模块仍是业务接入、Agent Manager、Agent Core、知识平台、MCP接口，见[模块职责总览](../README.md)。
 
 用户已确认的方向与本PR需要评审的接口/状态/边界分开标注；文档通过不意味着实现或领域验收通过。此前PR #1为已合入基线；本轮PR保持打开，用户转发，不指定评审人、不自动合并。
