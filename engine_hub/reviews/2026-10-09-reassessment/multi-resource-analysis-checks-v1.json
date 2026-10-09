@@ -1,0 +1,23 @@
+{
+  "schema": "multi-resource-design-check/1",
+  "at": "2026-10-09T02:14:44.382607+00:00",
+  "status": "PASS",
+  "checks": {
+    "project_validator": true,
+    "historical_validation_files_preserved": true,
+    "local_links": true,
+    "json_parse": true,
+    "goals_and_execution_requirements_preserved": true,
+    "native_evolution_no_external_dependency_preserved": true,
+    "new_design_only_proposed": true,
+    "product_source_unchanged": true,
+    "whitespace": true,
+    "original_handoff_preserved": true
+  },
+  "project_summary": "{\"status\": \"PASS\", \"checks\": 71, \"authored_links\": 1385, \"errors\": [], \"missing_links\": []}",
+  "project_stderr": "",
+  "links_checked": 148,
+  "missing_links": [],
+  "runtime_acceptance": "NOT_RUN",
+  "deployment_code_models_and_services_changed": false
+}

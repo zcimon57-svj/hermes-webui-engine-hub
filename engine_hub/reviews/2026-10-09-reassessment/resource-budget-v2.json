@@ -1,0 +1,33 @@
+{
+  "schema": "hermes-hub-resource-recommendation/2",
+  "at": "2026-10-09T00:20:09.015820+00:00",
+  "status": "RECOMMENDED_NOT_APPLIED",
+  "authorization": "User permits revising the prior 1GiB budget; resource exhaustion remains prohibited",
+  "effective_guard_bytes": 1073741824,
+  "recommended_memory_max": 3221225472,
+  "recommended_memory_high": 2684354560,
+  "recommended_windows_reserve": 2147483648,
+  "recommended_linux_reserve": 2147483648,
+  "swap_max": 0,
+  "cpu_affinity_cores": 1,
+  "tasks_max": 192,
+  "classification_models_resident": 1,
+  "classification_concurrency": 1,
+  "candidate_layout": "Two isolated Hermes nodes share one stateless classification service; no shared node Memory, workspace or management keys",
+  "activation_condition": "Verify cgroup hard containment, host Linux and Windows reserve plus conservative incremental load reservation, measured load peak and absence of prior unresolved trip before startup",
+  "current_start_verdict": "REFUSE_HEAVY_START_WINDOWS_HEADROOM",
+  "snapshot": {
+    "at": 1791505207.3503833,
+    "linux_total": 8214929408,
+    "linux_available": 5710131200,
+    "swap_used": 13357056,
+    "windows_total": 16952647680,
+    "windows_available": 2362761216,
+    "owned_bytes": 0,
+    "owned_tasks": 0,
+    "memory_psi": "some avg10=0.00 avg60=0.00 avg300=0.00 total=2616074\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=1066746\n"
+  },
+  "runtime_changed": false,
+  "local_model_load": "NOT_RUN",
+  "two_node_memory_peak": "NOT_RUN"
+}

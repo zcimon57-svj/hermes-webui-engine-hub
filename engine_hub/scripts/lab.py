@@ -37,7 +37,7 @@ def live(r):
 def limits():
     resource.setrlimit(resource.RLIMIT_NOFILE,(256,256))
     # Virtual mappings are not resident RAM. The shared cgroup, not RLIMIT_AS,
-    # owns the 1 GiB physical budget; this allows legitimate interpreter stacks.
+    # owns the aggregate physical budget; this allows legitimate interpreter stacks.
     resource.setrlimit(resource.RLIMIT_AS,(3*1024**3,3*1024**3))
     resource.setrlimit(resource.RLIMIT_CORE,(0,0))
     # RLIMIT_NPROC is per host UID: it would affect all sibling labs, so not used.

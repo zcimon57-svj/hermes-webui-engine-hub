@@ -1,0 +1,160 @@
+{
+  "schema": "business-semantic-evolution-gates/2",
+  "status": "USER_CONFIRMED_SIMPLE_DESIGN_IMPLEMENTATION_PENDING",
+  "at": "2026-10-09T01:17:42.319476+00:00",
+  "scope": "R03/R06 current user extension, per engine and authorized project",
+  "principles": [
+    "session trace is observation/candidate not business ground truth",
+    "candidate does not enter normal retrieval or skill discovery",
+    "facts and procedures must have scoped independent support",
+    "generator cannot approve own output",
+    "critical failures cannot be offset by aggregate score or majority vote",
+    "runtime native approval and physical write protection required"
+  ],
+  "gates": [
+    "G0 provenance/scope",
+    "G1 static/package/safety",
+    "G2 domain semantics",
+    "G3 actual behavior/regression/holdout",
+    "G4 human identity + candidate/base/eval hashes + CAS",
+    "G5 reuse monitoring/withdraw/rollback"
+  ],
+  "required_candidate_fields": [
+    "candidate_id",
+    "asset_kind",
+    "engine_id",
+    "project_scope",
+    "source_runs",
+    "source_report_revisions",
+    "observed_at",
+    "applicable_product_versions",
+    "claims",
+    "independent_sources",
+    "preconditions",
+    "exceptions",
+    "behavioral_delta",
+    "risk",
+    "base_release_revision",
+    "candidate_bundle_sha256",
+    "eval_dataset_revision",
+    "evaluator_revision",
+    "counterexamples",
+    "holdout_report",
+    "domain_reviewer_identity"
+  ],
+  "blocked_scenarios": [
+    "valid trace but wrong causal generalization",
+    "format-valid but missing preconditions",
+    "model judge high score with critical semantic failure",
+    "candidate-owned oracle or hidden failed cases",
+    "post-write verification in active shared library",
+    "proposal APPLIED with no actual write/readback",
+    "draft returned by formal retrieval",
+    "unknown or failing approval service",
+    "baseline hash change between review and apply",
+    "retired skill still reused by new Run",
+    "Final RCA copied from agent without independent confirmation",
+    "Holdout final RCA leaked into model prompt/RAG/tool snapshots",
+    "Related alerts from one incident counted as independent examples",
+    "Root-cause category match with unsafe remediation action",
+    "Single incident promoted to universal procedure without counterexamples",
+    "Root cause text used as executable evaluator instructions"
+  ],
+  "owners": {
+    "Core": "isolation/native pending/candidate and hard write boundary",
+    "Domain": "independent truth/counterexamples and expert verdict",
+    "Manager": "eval/approval persistence, actor and cancellation/recovery",
+    "Knowledge": "retrieval quarantine/release pointer/manifest/CAS/readback/rollback",
+    "PM": "expert acceptance and scope coordination"
+  },
+  "remaining": "All quality gates require implementation and real domain validation; document does not satisfy R03 acceptance",
+  "supersedes": "evolution-quality-contract-v1.json for preferred business truth source, while preserving the original static/safety/human/release gates",
+  "recommended_route": "Hermes native candidate generation + confirmed final RCA + lightweight internal eval + periodic human pre-merge approval + existing CAS publication",
+  "user_route_selection": "CONFIRMED_NATIVE_RCA_NO_EXTERNAL_PROJECTS",
+  "truth_source": {
+    "kind": "FINAL_BUSINESS_RCA",
+    "existence": "USER_REPORTED",
+    "systems": [
+      "ticket",
+      "alert",
+      "war room"
+    ],
+    "records_schema_access_and_quality": "NOT_INSPECTED",
+    "required_confirmation": [
+      "responsible reviewer",
+      "confirmed status",
+      "RCA revision",
+      "confirmation time",
+      "scope and evidence"
+    ],
+    "model_generated_or_unconfirmed_RCA": "NOT_INDEPENDENT_TRUTH"
+  },
+  "required_incident_links": [
+    "incident_id",
+    "ticket_ids",
+    "alert_ids",
+    "warroom_ids",
+    "business_run_ids",
+    "report_revisions",
+    "engine_id",
+    "instance_id",
+    "project_scope"
+  ],
+  "proposed_evolution_lifecycle": [
+    "PRIVATE_PENDING",
+    "WAITING_RCA_CONFIRMATION",
+    "CANDIDATE_SEALED",
+    "STATIC_CHECKED",
+    "DOMAIN_REPLAY_EVALUATED",
+    "WAITING_PERIODIC_HUMAN_REVIEW",
+    "APPROVED_FOR_EXACT_HASH",
+    "CAS_PUBLISHED_AND_READ_BACK"
+  ],
+  "replay_policy": {
+    "input": "Only evidence available at the diagnostic checkpoint",
+    "expected_answer": "RCA available to evaluator only",
+    "split": "By incident family and time; related alerts/tickets/sessions in one split",
+    "holdout": "Not used for candidate generation, rule tuning or normal RAG retrieval",
+    "no_tool_snapshots": "Report evaluation only, do not claim full tool replay",
+    "business_outcome": "Root category + affected object + causal chain + conditions; not string similarity alone"
+  },
+  "periodic_review": {
+    "default": "All behavior-changing business knowledge/skill candidates stay pending until reviewed",
+    "cadence": "Periodic domain review; exact cadence pending team decision, no scheduler created",
+    "high_impact": "Dedicated domain/permission/rollback review",
+    "review_bundle": [
+      "candidate diff and hash",
+      "base release revision",
+      "RCA references and versions",
+      "positive/negative/holdout results",
+      "actual behavior difference",
+      "scope/preconditions/exceptions",
+      "risk and rollback"
+    ],
+    "post_merge_sample_review": "Complementary, not substitute for pre-merge approval"
+  },
+  "causal_revision_handling": [
+    "Corrected/retracted RCA invalidates derived assessments and marks dependent assets pending review",
+    "New Runs must not retain invalid current release pointer",
+    "Active Run pinned versions retain auditable history"
+  ],
+  "optional_components": {},
+  "production_dependencies_not_recommended": [
+    "small community evolution plugins as sole publication authority"
+  ],
+  "runtime_acceptance": "NOT_RUN",
+  "updated_at": "2026-10-09T01:46:20.330454+00:00",
+  "reference_only_projects": [
+    "GEPA",
+    "Promptfoo",
+    "Langfuse",
+    "hermes-agent-self-evolution",
+    "hermes-curator-evolver",
+    "skill-evolution",
+    "smarter-agent",
+    "MisEvolve/SafeEvolve"
+  ],
+  "external_project_integration_allowed_for_this_design": false,
+  "simple_design_in": "goals-progress-v2.md",
+  "implementation": "PENDING_IMPLEMENTATION"
+}

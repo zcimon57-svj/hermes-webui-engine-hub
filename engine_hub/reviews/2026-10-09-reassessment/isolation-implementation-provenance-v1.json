@@ -1,0 +1,132 @@
+{
+  "schema": "engine-hub-isolation-provenance/1",
+  "at": "2026-10-09T01:59:41.933631+00:00",
+  "scope": "Current source and existing evidence read-only analysis; no imports that start services, no deployment or attack tests",
+  "head": "74437cb77829c7b301cdab8d92722315e4ebbab4",
+  "upstream_baseline": "4a0639397d1d4eb14965d9e88f39aecffa9ef345",
+  "legacy_webui_comparison": {
+    "server.py": {
+      "unchanged_vs_baseline": true,
+      "diff": "",
+      "command_exit": 0
+    },
+    "api": {
+      "unchanged_vs_baseline": true,
+      "diff": "",
+      "command_exit": 0
+    },
+    "static": {
+      "unchanged_vs_baseline": true,
+      "diff": "",
+      "command_exit": 0
+    },
+    "index.html": {
+      "unchanged_vs_baseline": true,
+      "diff": "",
+      "command_exit": 0
+    }
+  },
+  "source_files": [
+    {
+      "path": "engine_hub/server.py",
+      "sha256": "8e5fe581bdaf92d1d13f9d46ea7a95b0b26b0e8f26b213d7264f91af31eefba4",
+      "ownership": "Added Engine Hub"
+    },
+    {
+      "path": "engine_hub/service.py",
+      "sha256": "d524febfb5ddb5828a234a94e60c3b6a13c9b21cb6ac20fbf43d2c8f4972c71b",
+      "ownership": "Added Engine Hub"
+    },
+    {
+      "path": "engine_hub/static/index.html",
+      "sha256": "89b72ae9ba3b86998e38249ad28e15ba0e921f23b6f21340d454ba60315d579d",
+      "ownership": "Added Engine Hub"
+    },
+    {
+      "path": "engine_hub/static/hub.js",
+      "sha256": "5475f81635713c9221acb2aecc6cfbc438d53647a36cc4fbc262b94ebead6411",
+      "ownership": "Added Engine Hub"
+    },
+    {
+      "path": "engine_hub/auth.py",
+      "sha256": "4eb5298c1f3dba50f87816682090639b5d5bca1f2f6eaf3236bf0fcd64d99e31",
+      "ownership": "Added Engine Hub"
+    },
+    {
+      "path": "engine_hub/routing.py",
+      "sha256": "34ba5d116ebb32a1bb867479605ae4200545c0a6aa90e3b9ecba91ecd4b4cfd7",
+      "ownership": "Added Engine Hub"
+    },
+    {
+      "path": "engine_hub/manager.py",
+      "sha256": "58cb6eea531a85ab7caa6f1bbaf9795a2e15295c464471e165b0fdd4e96e73ae",
+      "ownership": "Added Engine Hub"
+    },
+    {
+      "path": "engine_hub/supervisor.py",
+      "sha256": "aeee23c70da233705c67f81b79c874e29221322a1b3af07c395d3f8632e674fe",
+      "ownership": "Added Engine Hub"
+    },
+    {
+      "path": "engine_hub/scripts/lab.py",
+      "sha256": "878f55b39d5702f4417f552a7955734e02cb139be17807bee9cbc89ac60407d2",
+      "ownership": "Added Engine Hub"
+    },
+    {
+      "path": "engine_hub/scripts/seed.py",
+      "sha256": "b36392fbf158a4f37122af32561f16e46a2f74b9ea3f1c7029501343f19c8181",
+      "ownership": "Added Engine Hub"
+    },
+    {
+      "path": "engine_hub/companion.py",
+      "sha256": "80f1c91ae122fb453d1258fb7ad58abddda980b227251f90b5e3751baa4ba406",
+      "ownership": "Added Engine Hub"
+    },
+    {
+      "path": "engine_hub/node_mcp.py",
+      "sha256": "88068daabff6b5100b5d62ab12215a8876915b4743d3fb3c1a9b1fa2d9fd3df9",
+      "ownership": "Added Engine Hub"
+    },
+    {
+      "path": "engine_hub/assets.py",
+      "sha256": "9723b39649a027151b84a2b238a331bd7e9c4830c0551af13f08c9f15d28e2dc",
+      "ownership": "Added Engine Hub"
+    },
+    {
+      "path": "engine_hub/resources.py",
+      "sha256": "3667c8f1914e1bd1759bf6380aada844263bfc496af1b6617e55372de03b77db",
+      "ownership": "Added Engine Hub"
+    },
+    {
+      "path": "api/profiles.py",
+      "sha256": "71dba8b36398b9c1f6a24994532d169c1d4c08b52ad45161e88360122b64da1d",
+      "ownership": "Unchanged upstream WebUI"
+    },
+    {
+      "path": "api/workspace.py",
+      "sha256": "27cc2539c7bf1132329c8305b231792838335d485f7db02b43c66eb622ed5587",
+      "ownership": "Unchanged upstream WebUI"
+    }
+  ],
+  "current_route": {
+    "ui": "engine_hub.static/index.html + hub.js + Hub, independent entrypoint",
+    "webui_direct_reuse": "static/style.css served as upstream.css; history/license retained",
+    "upstream_profile_api_in_current_hub_route": false,
+    "hermes_runtime": "Actual hermes_cli.main gateway run per node, independent HERMES_HOME/workspace/key/port",
+    "isolation": "New launcher composes Bubblewrap namespaces/mounts, key and scope enforcement, project resource cgroup",
+    "manager": "New ManagerClient contract and local ReferenceManager; internal manager NOT_RUN",
+    "asset": "Existing WeKnora via new release/CAS and cache adapters"
+  },
+  "limitations": [
+    "Shared host kernel and network; no --unshare-net",
+    "Companion approved script sees companion control mount including state_admin_key; attack NOT_RUN",
+    "One warm Gateway policy; explicit launcher at most two; simultaneous two-node current acceptance NOT_RUN",
+    "Per-node state boundary; not per-Issue untrusted-code isolation",
+    "New UI does not inherit full upstream profile/workspace/SSO/rich-renderer behavior"
+  ],
+  "historical_runtime_evidence": {
+    "file": "engine_hub/evidence/guarded-hub-20261008T170041.json",
+    "boundary": "Final code, actual Gateway/MCP/remote WeKnora, one warm node at a time; fixture model. Simultaneous six-node claims are not inferred."
+  },
+  "new_runtime_or_validation_started": false
+}

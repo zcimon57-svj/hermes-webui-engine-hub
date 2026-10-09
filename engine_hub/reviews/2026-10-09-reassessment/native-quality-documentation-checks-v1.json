@@ -1,0 +1,52 @@
+{
+  "schema": "native-evolution-quality-documentation-check/1",
+  "at": "2026-10-09T00:31:50.539234+00:00",
+  "domain_evaluation": "NOT_RUN",
+  "quality_gate_integration": "NOT_RUN",
+  "project_validator": {
+    "exit": 0,
+    "summary": "{\"status\": \"PASS\", \"checks\": 71, \"authored_links\": 1385, \"errors\": [], \"missing_links\": []}",
+    "stderr": ""
+  },
+  "historical_validation_outputs_preserved": true,
+  "links": {
+    "count": 77,
+    "broken": []
+  },
+  "json_parse": {
+    "engine_hub/reviews/2026-10-09-reassessment/documentation-validation-v1.json": true,
+    "engine_hub/reviews/2026-10-09-reassessment/goals-progress-v2.json": true,
+    "engine_hub/reviews/2026-10-09-reassessment/resource-budget-v3-applied.json": true,
+    "engine_hub/reviews/2026-10-09-reassessment/resource-budget-v3-checks.json": true,
+    "engine_hub/reviews/2026-10-09-reassessment/native-evolution-quality-sources-v1.json": true,
+    "engine_hub/reviews/2026-10-09-reassessment/resource-budget-v2.json": true,
+    "engine_hub/reviews/2026-10-09-reassessment/research-sources-v1.json": true,
+    "engine_hub/reviews/2026-10-09-reassessment/evolution-quality-contract-v1.json": true,
+    "engine_hub/STATE.json": true
+  },
+  "handoff_manifest": {
+    "count": 33,
+    "pass": true
+  },
+  "preexisting_root_content_preserved": {
+    "README.md": true,
+    "index.md": true,
+    ".harness/STATE.md": true,
+    ".harness/HANDOFF.md": true
+  },
+  "old_implementation_evidence_preserved": {
+    "engine_hub/versions.lock.json": true,
+    "engine_hub/acceptance-local-r1.json": true
+  },
+  "whitespace_checks": {
+    "fork": {
+      "exit": 0,
+      "output": ""
+    },
+    "mother_authored_navigation": {
+      "exit": 0,
+      "output": ""
+    }
+  },
+  "status": "PASS"
+}

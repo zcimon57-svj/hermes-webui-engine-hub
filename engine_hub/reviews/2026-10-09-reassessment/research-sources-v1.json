@@ -1,0 +1,796 @@
+{
+  "schema": "hermes-hub-research-sources/1",
+  "researched_at": "2026-10-09T00:10:48.967804+00:00",
+  "scope": "Public first-party small-source and metadata review plus original public social discussions; no weights/install/model calls/services",
+  "repos": [
+    {
+      "repo": "Knowledgator/GLiClass",
+      "url": "https://github.com/Knowledgator/GLiClass",
+      "sha": "68132def761c2dccc20d1a71c04abdc5db35463f",
+      "license_metadata": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "fork": false,
+      "parent": null,
+      "files_fetched": [
+        {
+          "path": "README.md",
+          "sha256": "c58e3eaf8020ea4d8ce12b1c1ba7ede55e0ebd6ce94b98a82e1965c8e867a7bd",
+          "bytes": 12165,
+          "url": "https://github.com/Knowledgator/GLiClass/blob/68132def761c2dccc20d1a71c04abdc5db35463f/README.md"
+        }
+      ],
+      "boundary": "Selected small sources only; no clone/install/execution. Source review scope stated in analyses."
+    },
+    {
+      "repo": "NandhaKishorM/laya",
+      "url": "https://github.com/NandhaKishorM/laya",
+      "sha": "1adc59f7e371deb601fcfa18a14e25db238addcc",
+      "license_metadata": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "fork": null,
+      "parent": null,
+      "files_fetched": [
+        {
+          "path": "LOCAL_SETUP.md",
+          "sha256": "a6787eca49313e3f373d0a3c4f3d8897142ace4a1ddcfd7b6e0c0e6aedaca07f",
+          "bytes": 15182,
+          "url": "https://github.com/NandhaKishorM/laya/blob/1adc59f7e371deb601fcfa18a14e25db238addcc/LOCAL_SETUP.md"
+        },
+        {
+          "path": "README.md",
+          "sha256": "83bad4b419ab3ad9131ec5ac4f0d53a8a1a61d5ab1360047f50f387fff71185f",
+          "bytes": 110598,
+          "url": "https://github.com/NandhaKishorM/laya/blob/1adc59f7e371deb601fcfa18a14e25db238addcc/README.md"
+        },
+        {
+          "path": "docs/guardrail-limitations.md",
+          "sha256": "82c6a1fd71613fe1a6ccb64212cfe701b6d853a1b6789844ea705265af93893e",
+          "bytes": 4845,
+          "url": "https://github.com/NandhaKishorM/laya/blob/1adc59f7e371deb601fcfa18a14e25db238addcc/docs/guardrail-limitations.md"
+        },
+        {
+          "path": "laya/router.py",
+          "sha256": "e543d573f75a6a3bd465bd0dc00906b1df5eb9abd0a0d2adc88c3baaf27e2c13",
+          "bytes": 98714,
+          "url": "https://github.com/NandhaKishorM/laya/blob/1adc59f7e371deb601fcfa18a14e25db238addcc/laya/router.py"
+        },
+        {
+          "path": "pyproject.toml",
+          "sha256": "616816d2f2c279b6ad97b2dcdcd6216df357580f5aaf81894ae67357395dfad4",
+          "bytes": 3956,
+          "url": "https://github.com/NandhaKishorM/laya/blob/1adc59f7e371deb601fcfa18a14e25db238addcc/pyproject.toml"
+        }
+      ],
+      "boundary": "Selected small sources only; no clone/install/execution. Source review scope stated in analyses."
+    },
+    {
+      "repo": "NousResearch/hermes-agent-self-evolution",
+      "url": "https://github.com/NousResearch/hermes-agent-self-evolution",
+      "sha": "0a929e3aa20e15cf04dc7c28492a7d41a5139125",
+      "license_metadata": null,
+      "fork": null,
+      "parent": null,
+      "files_fetched": [
+        {
+          "path": "PLAN.md",
+          "sha256": "5928030b470710480a4c0fd7e702af1b2352c9470adddc437c3bc965a23a71f8",
+          "bytes": 40694,
+          "url": "https://github.com/NousResearch/hermes-agent-self-evolution/blob/0a929e3aa20e15cf04dc7c28492a7d41a5139125/PLAN.md"
+        },
+        {
+          "path": "README.md",
+          "sha256": "ebecc0a1f483e655041b9aa531ef7535ee0165f7058b65420896d6e89c7acc92",
+          "bytes": 3561,
+          "url": "https://github.com/NousResearch/hermes-agent-self-evolution/blob/0a929e3aa20e15cf04dc7c28492a7d41a5139125/README.md"
+        },
+        {
+          "path": "evolution/core/config.py",
+          "sha256": "d7ada3aef336109f6045206119d17c174f39a57d01369d439a94f1c5faca0384",
+          "bytes": 3548,
+          "url": "https://github.com/NousResearch/hermes-agent-self-evolution/blob/0a929e3aa20e15cf04dc7c28492a7d41a5139125/evolution/core/config.py"
+        },
+        {
+          "path": "evolution/core/constraints.py",
+          "sha256": "d1b60fd178210a7906c8eaaa984838b9159af886971c80cfc7c3a3fab7d0cb12",
+          "bytes": 6176,
+          "url": "https://github.com/NousResearch/hermes-agent-self-evolution/blob/0a929e3aa20e15cf04dc7c28492a7d41a5139125/evolution/core/constraints.py"
+        },
+        {
+          "path": "evolution/core/dataset_builder.py",
+          "sha256": "7817095bd06e160825a257a68623b6cf5355d954f9ee3bd8bbdc461949b4cfbb",
+          "bytes": 7437,
+          "url": "https://github.com/NousResearch/hermes-agent-self-evolution/blob/0a929e3aa20e15cf04dc7c28492a7d41a5139125/evolution/core/dataset_builder.py"
+        },
+        {
+          "path": "evolution/core/fitness.py",
+          "sha256": "e3e6ac5cd8129fc41994c310172f24bc4acadb9ea173bb829a49da0bd5139bda",
+          "bytes": 5641,
+          "url": "https://github.com/NousResearch/hermes-agent-self-evolution/blob/0a929e3aa20e15cf04dc7c28492a7d41a5139125/evolution/core/fitness.py"
+        },
+        {
+          "path": "evolution/skills/evolve_skill.py",
+          "sha256": "54067fff8d78592918593067f15b5c490b1acef8c036a3ab482c9d190b83dc79",
+          "bytes": 13904,
+          "url": "https://github.com/NousResearch/hermes-agent-self-evolution/blob/0a929e3aa20e15cf04dc7c28492a7d41a5139125/evolution/skills/evolve_skill.py"
+        },
+        {
+          "path": "evolution/skills/skill_module.py",
+          "sha256": "ead45034696edb3ff0aef906c305489a2bb552f83c51b3d288f44d2593f1f46a",
+          "bytes": 4011,
+          "url": "https://github.com/NousResearch/hermes-agent-self-evolution/blob/0a929e3aa20e15cf04dc7c28492a7d41a5139125/evolution/skills/skill_module.py"
+        },
+        {
+          "path": "pyproject.toml",
+          "sha256": "73eeb3e688a7a46880d7c5ab596671eb92f7ccfbf414701fb7c8a4172a3dcfad",
+          "bytes": 1080,
+          "url": "https://github.com/NousResearch/hermes-agent-self-evolution/blob/0a929e3aa20e15cf04dc7c28492a7d41a5139125/pyproject.toml"
+        }
+      ],
+      "boundary": "Selected small sources only; no clone/install/execution. Source review scope stated in analyses."
+    },
+    {
+      "repo": "TianyuCodings/NanoJev",
+      "url": "https://github.com/TianyuCodings/NanoJev",
+      "sha": "76fdfc9ecdca45a9bcef17991a07d3041a87685a",
+      "license_metadata": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "fork": false,
+      "parent": null,
+      "files_fetched": [
+        {
+          "path": "README.md",
+          "sha256": "4536f6769de55391a83a2282632f5ad66f16966a7204cf3278242fe5d2892809",
+          "bytes": 9366,
+          "url": "https://github.com/TianyuCodings/NanoJev/blob/76fdfc9ecdca45a9bcef17991a07d3041a87685a/README.md"
+        }
+      ],
+      "boundary": "Selected small sources only; no clone/install/execution. Source review scope stated in analyses."
+    },
+    {
+      "repo": "bladedevoff/stuntd",
+      "url": "https://github.com/bladedevoff/stuntd",
+      "sha": "1aae88278b637944b28c0bcad2b58a0f5ee80653",
+      "license_metadata": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "fork": false,
+      "parent": null,
+      "files_fetched": [
+        {
+          "path": "README.md",
+          "sha256": "a55c6ada3b38eef257475bb2dcba4f1ac6761c611077a6d6265653ff33efc65b",
+          "bytes": 46231,
+          "url": "https://github.com/bladedevoff/stuntd/blob/1aae88278b637944b28c0bcad2b58a0f5ee80653/README.md"
+        },
+        {
+          "path": "pyproject.toml",
+          "sha256": "365a8fa68c3725be42fdfdfb8bac7e1101f69bdae49efc9c3f1962723dad42b6",
+          "bytes": 2922,
+          "url": "https://github.com/bladedevoff/stuntd/blob/1aae88278b637944b28c0bcad2b58a0f5ee80653/pyproject.toml"
+        }
+      ],
+      "boundary": "Selected small sources only; no clone/install/execution. Source review scope stated in analyses."
+    },
+    {
+      "repo": "gepa-ai/gepa",
+      "url": "https://github.com/gepa-ai/gepa",
+      "sha": "462e437a09be67d2acb59564cc0ea59132f5777c",
+      "license_metadata": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "fork": false,
+      "parent": null,
+      "files_fetched": [
+        {
+          "path": "README.md",
+          "sha256": "10d7f30035b21bb38fde51fb3ccc0fc64d5e8b64ab51c09731606132782a57b2",
+          "bytes": 39867,
+          "url": "https://github.com/gepa-ai/gepa/blob/462e437a09be67d2acb59564cc0ea59132f5777c/README.md"
+        },
+        {
+          "path": "pyproject.toml",
+          "sha256": "e244032a50d44ad7d033298a0a05ef4e0085207632c6a32cf032ae512cb64e6d",
+          "bytes": 5691,
+          "url": "https://github.com/gepa-ai/gepa/blob/462e437a09be67d2acb59564cc0ea59132f5777c/pyproject.toml"
+        }
+      ],
+      "boundary": "Selected small sources only; no clone/install/execution. Source review scope stated in analyses."
+    },
+    {
+      "repo": "jaredpalmer/kev",
+      "url": "https://github.com/jaredpalmer/kev",
+      "sha": "5e42a7a03f28134853dd3ff77461457e921e5ec1",
+      "license_metadata": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "fork": false,
+      "parent": null,
+      "files_fetched": [
+        {
+          "path": "README.md",
+          "sha256": "19c9d7d30cd723b9f112f1f68d0b415a28c5ee616dbc21b358fc29bd07a66311",
+          "bytes": 42304,
+          "url": "https://github.com/jaredpalmer/kev/blob/5e42a7a03f28134853dd3ff77461457e921e5ec1/README.md"
+        }
+      ],
+      "boundary": "Selected small sources only; no clone/install/execution. Source review scope stated in analyses."
+    },
+    {
+      "repo": "lkarlslund/laya.cpp",
+      "url": "https://github.com/lkarlslund/laya.cpp",
+      "sha": "e632da0428236be56978e53ddc92cdcd565fb493",
+      "license_metadata": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "fork": false,
+      "parent": null,
+      "files_fetched": [
+        {
+          "path": "README.md",
+          "sha256": "5217a6ad76467550a548e74dbddfbf05522f54eafd3e1ac5d38f5cd9ab326772",
+          "bytes": 5239,
+          "url": "https://github.com/lkarlslund/laya.cpp/blob/e632da0428236be56978e53ddc92cdcd565fb493/README.md"
+        }
+      ],
+      "boundary": "Selected small sources only; no clone/install/execution. Source review scope stated in analyses."
+    },
+    {
+      "repo": "metalagman/layajev",
+      "url": "https://github.com/metalagman/layajev",
+      "sha": "9a5e1c138e8f8e782b7e1e354607362a63fa15b2",
+      "license_metadata": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "fork": false,
+      "parent": null,
+      "files_fetched": [
+        {
+          "path": "README.md",
+          "sha256": "47d2b63df641771473725ea15c24779e197f94303ca3e9fe0fa50a7b8b852acc",
+          "bytes": 9118,
+          "url": "https://github.com/metalagman/layajev/blob/9a5e1c138e8f8e782b7e1e354607362a63fa15b2/README.md"
+        }
+      ],
+      "boundary": "Selected small sources only; no clone/install/execution. Source review scope stated in analyses."
+    },
+    {
+      "repo": "mizorewww/laya-mlx",
+      "url": "https://github.com/mizorewww/laya-mlx",
+      "sha": "ca5940aa9286dbbdfaacbecbdb7b337295ad36a2",
+      "license_metadata": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "fork": false,
+      "parent": null,
+      "files_fetched": [
+        {
+          "path": "README.md",
+          "sha256": "52d1530e0ac09c06197b0f95769aea4accd38fe5db9b8c276450193f6c64029e",
+          "bytes": 19784,
+          "url": "https://github.com/mizorewww/laya-mlx/blob/ca5940aa9286dbbdfaacbecbdb7b337295ad36a2/README.md"
+        },
+        {
+          "path": "pyproject.toml",
+          "sha256": "7115bc45fee1df4d397abe94c6a36c81fdcba63c54910da0ddebc39fbe70e7b9",
+          "bytes": 1822,
+          "url": "https://github.com/mizorewww/laya-mlx/blob/ca5940aa9286dbbdfaacbecbdb7b337295ad36a2/pyproject.toml"
+        }
+      ],
+      "boundary": "Selected small sources only; no clone/install/execution. Source review scope stated in analyses."
+    },
+    {
+      "repo": "ollaya-dev/ollaya",
+      "url": "https://github.com/ollaya-dev/ollaya",
+      "sha": "e352e0ff7086e85f7f115487f77310c13203a7a6",
+      "license_metadata": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "fork": false,
+      "parent": null,
+      "files_fetched": [
+        {
+          "path": "README.md",
+          "sha256": "7ff9b2155e6609b0cda2cb102fd2ff1cc3f7b300e12d58aa3dc1f835d6373c0c",
+          "bytes": 14454,
+          "url": "https://github.com/ollaya-dev/ollaya/blob/e352e0ff7086e85f7f115487f77310c13203a7a6/README.md"
+        }
+      ],
+      "boundary": "Selected small sources only; no clone/install/execution. Source review scope stated in analyses."
+    },
+    {
+      "repo": "pingchesu/hermes-curator-evolver",
+      "url": "https://github.com/pingchesu/hermes-curator-evolver",
+      "sha": "1aab2a9a7f80b0cd33ec4998e4067c6f355f6ffd",
+      "license_metadata": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "fork": false,
+      "parent": null,
+      "files_fetched": [
+        {
+          "path": "README.md",
+          "sha256": "a077fb3766e522c1088d141a5f134dfe507376f73d548327cf749273ed69c07c",
+          "bytes": 29979,
+          "url": "https://github.com/pingchesu/hermes-curator-evolver/blob/1aab2a9a7f80b0cd33ec4998e4067c6f355f6ffd/README.md"
+        },
+        {
+          "path": "pyproject.toml",
+          "sha256": "0b87cf6d8c6e73e5c5119beb7e9e83d9ffb5ca43a98f177e963e2c7557a028b7",
+          "bytes": 1550,
+          "url": "https://github.com/pingchesu/hermes-curator-evolver/blob/1aab2a9a7f80b0cd33ec4998e4067c6f355f6ffd/pyproject.toml"
+        }
+      ],
+      "boundary": "Selected small sources only; no clone/install/execution. Source review scope stated in analyses."
+    },
+    {
+      "repo": "receptron/laya",
+      "url": "https://github.com/receptron/laya",
+      "sha": "6478649e723122ca24bbf5fb69ed1010023c9750",
+      "license_metadata": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "fork": null,
+      "parent": null,
+      "files_fetched": [
+        {
+          "path": "README.md",
+          "sha256": "630512522e90a5eb139d8b7a5d26b09a93a6ba1014cc1bd8105631ee95e53178",
+          "bytes": 5088,
+          "url": "https://github.com/receptron/laya/blob/6478649e723122ca24bbf5fb69ed1010023c9750/README.md"
+        },
+        {
+          "path": "src/download.ts",
+          "sha256": "9c1d5ebdcf22faed1171f0d4b574fb71074c17036e1f96a8eeb76d0065c62405",
+          "bytes": 4054,
+          "url": "https://github.com/receptron/laya/blob/6478649e723122ca24bbf5fb69ed1010023c9750/src/download.ts"
+        }
+      ],
+      "boundary": "Selected small sources only; no clone/install/execution. Source review scope stated in analyses."
+    },
+    {
+      "repo": "sentient-agi/EvoSkill",
+      "url": "https://github.com/sentient-agi/EvoSkill",
+      "sha": "36f6f04952293d7054145550c2b9f0b0411bff1c",
+      "license_metadata": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "fork": false,
+      "parent": null,
+      "files_fetched": [
+        {
+          "path": "README.md",
+          "sha256": "47fc136a6ff491a5d2d0a2979ac2ae70e65bbeb5be4b1b4136462b9b33f32217",
+          "bytes": 24125,
+          "url": "https://github.com/sentient-agi/EvoSkill/blob/36f6f04952293d7054145550c2b9f0b0411bff1c/README.md"
+        },
+        {
+          "path": "pyproject.toml",
+          "sha256": "2d4f329ba9251a35889c895a7bc144d98489a67ca96017403b39e5f0b49ebd0f",
+          "bytes": 1734,
+          "url": "https://github.com/sentient-agi/EvoSkill/blob/36f6f04952293d7054145550c2b9f0b0411bff1c/pyproject.toml"
+        }
+      ],
+      "boundary": "Selected small sources only; no clone/install/execution. Source review scope stated in analyses."
+    },
+    {
+      "repo": "urchade/GLiClass",
+      "url": "https://github.com/urchade/GLiClass",
+      "sha": "ecd9dba0dbbb88049666e9c6438985d51ca0aacb",
+      "license_metadata": null,
+      "fork": true,
+      "parent": "Knowledgator/GLiClass",
+      "files_fetched": [
+        {
+          "path": "README.md",
+          "sha256": "0ce6a0caee4cb3f3666e194c310f7eeed6bfd517d851f4b49dfc98f64168eec1",
+          "bytes": 1379,
+          "url": "https://github.com/urchade/GLiClass/blob/ecd9dba0dbbb88049666e9c6438985d51ca0aacb/README.md"
+        },
+        {
+          "path": "pyproject.toml",
+          "sha256": "924402c5077a6738aa60cd4647a080ec41b3edaaeb0cd8098c1ba4aa17e2009f",
+          "bytes": 395,
+          "url": "https://github.com/urchade/GLiClass/blob/ecd9dba0dbbb88049666e9c6438985d51ca0aacb/pyproject.toml"
+        }
+      ],
+      "boundary": "Selected small sources only; no clone/install/execution. Source review scope stated in analyses."
+    }
+  ],
+  "model_metadata": [
+    {
+      "model_id": "Cloudflare/clef-flash",
+      "url": "https://huggingface.co/Cloudflare/clef-flash",
+      "revision": "fde727a287004204b7518dcc983fe64379776712",
+      "license_metadata": "apache-2.0",
+      "card_sha256": "9036da69502d2888f54cdee8bff832e534f74e164e7a02124c4bc511b18dc821",
+      "weights_downloaded": false,
+      "deployment": "NOT_RUN",
+      "files_seen": [
+        ".gitattributes",
+        "LICENSE",
+        "README.md",
+        "chat_template.jinja",
+        "config.json",
+        "generation_config.json",
+        "joint_head.safetensors",
+        "joint_head_config.json",
+        "joint_schema_model.py",
+        "model-00001-of-00004.safetensors",
+        "model-00002-of-00004.safetensors",
+        "model-00003-of-00004.safetensors",
+        "model-00004-of-00004.safetensors",
+        "model.safetensors.index.json",
+        "processor_config.json",
+        "tokenizer.json",
+        "tokenizer_config.json"
+      ]
+    },
+    {
+      "model_id": "EldanRing/Winnow-E4B",
+      "url": "https://huggingface.co/EldanRing/Winnow-E4B",
+      "revision": "ed891438b340bb60e2962e335fe100b2796c2124",
+      "license_metadata": "apache-2.0",
+      "card_sha256": "d7a3c225785445086178f62aa3b0b2fef5e0aec744e9969d13f00c3a136282b7",
+      "weights_downloaded": false,
+      "deployment": "NOT_RUN",
+      "files_seen": [
+        ".gitattributes",
+        "LICENSE",
+        "NOTICE",
+        "README.md",
+        "SHA256SUMS",
+        "assets/IBM-Plex-Mono-LICENSE.txt",
+        "assets/Instrument-Sans-LICENSE.txt",
+        "assets/e4b-01-reasoning-outcomes.png",
+        "assets/e4b-01-reasoning-outcomes.svg",
+        "assets/e4b-02-reasoning-latency.png",
+        "assets/e4b-02-reasoning-latency.svg",
+        "assets/e4b-03-vision-footprint.png",
+        "assets/e4b-03-vision-footprint.svg",
+        "assets/e4b-profiles.png",
+        "assets/e4b-profiles.svg",
+        "assets/e4b-quality.png",
+        "assets/e4b-quality.svg",
+        "assets/e4b-speed-memory.png",
+        "assets/e4b-speed-memory.svg",
+        "docs/BENCHMARKS.md",
+        "docs/QUICKSTART.md",
+        "docs/REASONING.md",
+        "docs/RUNTIME-PROFILES.md",
+        "docs/assistants/LICENSE-APACHE-2.0.txt",
+        "docs/assistants/NOTICE.txt",
+        "docs/assistants/README.md",
+        "docs/assistants/UPSTREAM-README.md",
+        "docs/assistants/provenance.json",
+        "gguf/Gemma-4-E4B-IT-Assistant-BF16.gguf",
+        "gguf/Winnow-E4B-BF16.gguf",
+        "gguf/Winnow-E4B-Q8_0.gguf",
+        "gguf/mmproj-Winnow-E4B.gguf",
+        "release-manifest.json"
+      ]
+    },
+    {
+      "model_id": "Mapika/decider-0.8b",
+      "url": "https://huggingface.co/Mapika/decider-0.8b",
+      "revision": "a0a01d6f8135298f400a8c856b355793012ae971",
+      "license_metadata": "apache-2.0",
+      "card_sha256": "d0826b3199cd92c8024e42727f2ba5266bbe6db8c2b6f48e86b6e8561cb2fa32",
+      "weights_downloaded": false,
+      "deployment": "NOT_RUN",
+      "files_seen": [
+        ".gitattributes",
+        "README.md",
+        "chat_template.jinja",
+        "config.json",
+        "decider/__init__.py",
+        "decider/engine.py",
+        "decider/fp8.py",
+        "decider/infer.py",
+        "decider/metrics.py",
+        "decider/model.py",
+        "decider/prompt.py",
+        "decider/schema_engine.py",
+        "decider/serve.py",
+        "decider/systemone.py",
+        "decider_config.json",
+        "generation_config.json",
+        "model.safetensors",
+        "tokenizer.json",
+        "tokenizer_config.json"
+      ]
+    },
+    {
+      "model_id": "convaiinnovations/laya-multilingual",
+      "url": "https://huggingface.co/convaiinnovations/laya-multilingual",
+      "revision": "1720e3e3357cfe1e281542e223f8273b0890ca34",
+      "license_metadata": "apache-2.0",
+      "card_sha256": null,
+      "weights_downloaded": false,
+      "deployment": "NOT_RUN",
+      "files_seen": [
+        ".gitattributes",
+        "README.md",
+        "config.json",
+        "encoder/config.json",
+        "model.safetensors",
+        "rl_agent_config.json",
+        "tokenizer/tokenizer.json",
+        "tokenizer/tokenizer_config.json"
+      ]
+    },
+    {
+      "model_id": "convaiinnovations/laya",
+      "url": "https://huggingface.co/convaiinnovations/laya",
+      "revision": "7b928d828b7b0e022f929d9bd2e44165aa270148",
+      "license_metadata": "apache-2.0",
+      "card_sha256": null,
+      "weights_downloaded": false,
+      "deployment": "NOT_RUN",
+      "files_seen": [
+        ".gitattributes",
+        "README.md",
+        "assets/laya_benchmark.png",
+        "assets/laya_benchmark_common.png",
+        "assets/laya_vs_jev.png",
+        "assets/laya_vs_jev_full.png",
+        "assets/logo-lockup-dark.png",
+        "assets/logo-lockup-dark.svg",
+        "assets/logo-lockup.png",
+        "assets/logo-lockup.svg",
+        "assets/logo-mark-ink.png",
+        "assets/logo-mark-ink.svg",
+        "assets/logo-mark-mono.svg",
+        "assets/logo-mark.png",
+        "assets/logo-mark.svg",
+        "config.json",
+        "email_utils.py",
+        "encoder/config.json",
+        "eval/benchmark_comparison.png",
+        "eval/reliability_eval_in.png",
+        "eval/reliability_eval_zs.png",
+        "eval/results.json",
+        "eval/results.md",
+        "model.safetensors",
+        "multilingual/encoder/config.json",
+        "multilingual/model.safetensors",
+        "multilingual/rl_agent_config.json",
+        "multilingual/tokenizer/tokenizer.json",
+        "multilingual/tokenizer/tokenizer_config.json",
+        "rl_agent_api.py",
+        "rl_agent_config.json",
+        "rl_common.py",
+        "tokenizer/tokenizer.json",
+        "tokenizer/tokenizer_config.json",
+        "typed-decisions/encoder/config.json",
+        "typed-decisions/model.safetensors",
+        "typed-decisions/rl_agent_config.json",
+        "typed-decisions/tokenizer/tokenizer.json",
+        "typed-decisions/tokenizer/tokenizer_config.json"
+      ]
+    },
+    {
+      "model_id": "jaredpalmer/kev-0.8b",
+      "url": "https://huggingface.co/jaredpalmer/kev-0.8b",
+      "revision": "bf75a6a8848ea6960ff2ed108d9ed44c2941174f",
+      "license_metadata": "apache-2.0",
+      "card_sha256": "96df0121af5e6097916920c1c3a119600cddfe0af8cd0d90b2f16de7d1f2e185",
+      "weights_downloaded": false,
+      "deployment": "NOT_RUN",
+      "files_seen": [
+        ".gitattributes",
+        "README.md",
+        "adapter_config.json",
+        "adapter_model.safetensors",
+        "head.pt",
+        "provenance.json",
+        "result.json",
+        "tokenizer.json",
+        "tokenizer_config.json",
+        "train.log",
+        "training_config.json",
+        "training_metrics.json"
+      ]
+    },
+    {
+      "model_id": "knowledgator/gliclass-x-base",
+      "url": "https://huggingface.co/knowledgator/gliclass-x-base",
+      "revision": "4599a431a1b25b4eb076b46ae97c9ba61f82f416",
+      "license_metadata": "apache-2.0",
+      "card_sha256": "a0cfc67f451c9d10b01f4bf9a51fce8ba1bbe5003720fac3641c533f91d03f84",
+      "weights_downloaded": false,
+      "deployment": "NOT_RUN",
+      "files_seen": [
+        ".gitattributes",
+        "README.md",
+        "added_tokens.json",
+        "config.json",
+        "model.safetensors",
+        "special_tokens_map.json",
+        "spm.model",
+        "tokenizer.json",
+        "tokenizer_config.json"
+      ]
+    }
+  ],
+  "commercial_comparator": {
+    "name": "Jev",
+    "official_urls": [
+      "https://typesafe.ai/",
+      "https://docs.typesafe.ai/introduction"
+    ],
+    "official_local_weights": "NOT_FOUND_IN_THIS_SEARCH",
+    "enterprise_onprem": "UNKNOWN"
+  },
+  "social": [
+    {
+      "id": "S01",
+      "title": "Laya作者发布",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wjieap/made_the_horizontal_opensource_model_for_jev_with/",
+      "display_date": "2026-09-18",
+      "date_basis": "search/page indication, not API timestamp",
+      "evidence_type": "AUTHOR_REPORT",
+      "finding": "本地模型、checkpoint和社区实现入口；超过Jev的标题不是领域验收。",
+      "opened": true,
+      "reproduced": false
+    },
+    {
+      "id": "S02",
+      "title": "Jev/Laya独立对比",
+      "url": "https://www.reddit.com/r/LocalLLM/comments/1wmm8ql/jev_vs_laya_head_to_head_benchmark/",
+      "display_date": "2026-09-21",
+      "date_basis": "search/page indication, not API timestamp",
+      "evidence_type": "COMMUNITY_EXPERIMENT_NOT_REPRODUCED",
+      "finding": "合成题集/版本/硬件与本任务不同，不能直接迁移准确率。",
+      "opened": true,
+      "reproduced": false
+    },
+    {
+      "id": "S03",
+      "title": "Laya作者HN讨论",
+      "url": "https://news.ycombinator.com/item?id=49765348",
+      "display_date": null,
+      "date_basis": "page relative date, exact timestamp not verified",
+      "evidence_type": "AUTHOR_THREAD_WITH_OPPOSING_FEEDBACK",
+      "finding": "用户讨论措辞敏感和校准；早期销售模型泄漏争议须区分当前Laya。",
+      "opened": true,
+      "reproduced": false
+    },
+    {
+      "id": "S04",
+      "title": "laya.cpp作者发布",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wlmkm9/layacpp_optimized_laya_nearinstant_decision_making/",
+      "display_date": "2026-09-20",
+      "date_basis": "search/page indication, not API timestamp",
+      "evidence_type": "AUTHOR_REPORT",
+      "finding": "C++/后端/速度线索，作者大显存GPU并非当前本机。",
+      "opened": true,
+      "reproduced": false
+    },
+    {
+      "id": "S05",
+      "title": "stuntd作者发布",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wnt7kv/stuntd_a_local_jevcompatible_server_on_laya_that/",
+      "display_date": null,
+      "date_basis": "search date and relative page age disagree",
+      "evidence_type": "AUTHOR_REPORT",
+      "finding": "作者承认使用规则/oracle等teacher，teacher一致率不等于真实领域正确。",
+      "opened": true,
+      "reproduced": false
+    },
+    {
+      "id": "S06",
+      "title": "Nous self-evolution社区讨论",
+      "url": "https://www.reddit.com/r/hermesagent/comments/1t5ifvg/nous_research_just_dropped_hermes_agent/",
+      "display_date": "2026-05-06",
+      "date_basis": "search/page indication, not API timestamp",
+      "evidence_type": "COMMUNITY_REPORT_WITH_OPPOSING_FEEDBACK",
+      "finding": "Skill变长不是效果；旧讨论的提交数/阶段不能替代当前源码。",
+      "opened": true,
+      "reproduced": false
+    },
+    {
+      "id": "S07",
+      "title": "Curator Evolver作者发布",
+      "url": "https://www.reddit.com/r/hermesagent/comments/1t7wzy6/i_built_a_localfirst_hermes_plugin_that_evolves/",
+      "display_date": null,
+      "date_basis": "exact publish timestamp not verified",
+      "evidence_type": "AUTHOR_REPORT",
+      "finding": "候选/来源/rollback线索，回到README核对默认与bootstrap行为。",
+      "opened": true,
+      "reproduced": false
+    },
+    {
+      "id": "S08",
+      "title": "EvoSkill发布讨论",
+      "url": "https://www.reddit.com/r/LLMDevs/comments/1sugu5z/evoskill_automatic_selfimprovement_tool_for_ai/",
+      "display_date": null,
+      "date_basis": "exact publish timestamp not verified",
+      "evidence_type": "PROJECT_DISCUSSION",
+      "finding": "基于benchmark的自动Skill发现线索，回到Sentient第一方仓库核对。",
+      "opened": true,
+      "reproduced": false
+    }
+  ],
+  "search_boundaries": {
+    "x": "Public indexed query attempted; no verified relevant original status post",
+    "private_communities": "NOT_ACCESSED",
+    "exhaustive_ecosystem_census": false
+  },
+  "hermes_native": {
+    "repo": "NousResearch/hermes-agent",
+    "sha": "345cd2b057a452236de401d3534b8502a7465e8d",
+    "files_inspected": [
+      "tools/memory_tool.py",
+      "tools/skill_manager_tool.py",
+      "agent/curator.py",
+      "website/docs/user-guide/features/curator.md"
+    ],
+    "hub_native_learning_enabled": false
+  },
+  "external_first_party_urls": [
+    "https://blog.cloudflare.com/clef-decision-models/"
+  ],
+  "not_run": [
+    "offline_deployment",
+    "local_classification",
+    "quantization_parity",
+    "domain_quality",
+    "evolution_runtime",
+    "simultaneous_two_nodes"
+  ]
+}

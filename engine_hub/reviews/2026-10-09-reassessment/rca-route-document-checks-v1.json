@@ -1,0 +1,50 @@
+{
+  "schema": "rca-route-document-check/1",
+  "at": "2026-10-09T01:18:17.618604+00:00",
+  "implementation_and_domain_runtime": "NOT_RUN",
+  "project": {
+    "exit": 0,
+    "summary": "{\"status\": \"PASS\", \"checks\": 71, \"authored_links\": 1385, \"errors\": [], \"missing_links\": []}",
+    "stderr": ""
+  },
+  "historical_validator_outputs_restored": true,
+  "local_links": {
+    "count": 84,
+    "broken": []
+  },
+  "json": {
+    "engine_hub/reviews/2026-10-09-reassessment/documentation-validation-v1.json": true,
+    "engine_hub/reviews/2026-10-09-reassessment/goals-progress-v2.json": true,
+    "engine_hub/reviews/2026-10-09-reassessment/resource-budget-v3-applied.json": true,
+    "engine_hub/reviews/2026-10-09-reassessment/native-quality-documentation-checks-v1.json": true,
+    "engine_hub/reviews/2026-10-09-reassessment/resource-budget-v3-checks.json": true,
+    "engine_hub/reviews/2026-10-09-reassessment/native-evolution-quality-sources-v1.json": true,
+    "engine_hub/reviews/2026-10-09-reassessment/evolution-quality-contract-v2.json": true,
+    "engine_hub/reviews/2026-10-09-reassessment/rca-evolution-route-sources-v1.json": true,
+    "engine_hub/reviews/2026-10-09-reassessment/resource-budget-v2.json": true,
+    "engine_hub/reviews/2026-10-09-reassessment/research-sources-v1.json": true,
+    "engine_hub/reviews/2026-10-09-reassessment/evolution-quality-contract-v1.json": true,
+    "engine_hub/STATE.json": true
+  },
+  "whitespace": {
+    "fork": {
+      "exit": 0,
+      "output": ""
+    },
+    "mother": {
+      "exit": 0,
+      "output": ""
+    }
+  },
+  "handoff": {
+    "entries": 33,
+    "matched": 33
+  },
+  "preexisting_body_preserved": {
+    "README.md": true,
+    "index.md": true,
+    ".harness/STATE.md": true,
+    ".harness/HANDOFF.md": true
+  },
+  "status": "PASS"
+}

@@ -14,11 +14,11 @@ from .common import Fault
 ROOT=pathlib.Path(__file__).parent
 LOCAL=ROOT/'.local'
 SLICE='eh158.slice'
-MAX_BYTES=1024**3
-HIGH_BYTES=896*1024**2
+MAX_BYTES=3*1024**3
+HIGH_BYTES=2560*1024**2
 MAX_TASKS=192
 RESERVE_LINUX=2*1024**3
-RESERVE_WINDOWS=512*1024**2
+RESERVE_WINDOWS=2*1024**3
 CGROUP=pathlib.Path('/sys/fs/cgroup')
 CPU=min(os.sched_getaffinity(0))
 

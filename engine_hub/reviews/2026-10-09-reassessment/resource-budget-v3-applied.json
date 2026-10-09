@@ -1,0 +1,49 @@
+{
+  "schema": "resource-budget-application/3",
+  "at": "2026-10-09T00:27:05.018192+00:00",
+  "scope": "User-authorized reconfiguration of empty dedicated eh158.slice only; no Windows/WSL global settings or other services changed",
+  "code_configured": true,
+  "kernel_verified": true,
+  "cgroup": "/sys/fs/cgroup/user.slice/user-1001.slice/user@1001.service/eh158.slice",
+  "kernel_values": {
+    "memory.max": "3221225472",
+    "memory.high": "2684354560",
+    "memory.swap.max": "0",
+    "pids.max": "192",
+    "cpu_enforcement": "single_core_sched_affinity; cpu controller unavailable"
+  },
+  "owned_bytes": 0,
+  "owned_tasks": 0,
+  "host_before": {
+    "linux_available": 5684039680,
+    "linux_total": 8214929408,
+    "windows_available": 2236084224,
+    "windows_total": 16952647680,
+    "swap_used": 14995456
+  },
+  "example_two_gib_new_model_admission": [
+    "windows_headroom"
+  ],
+  "services_or_models_started": false,
+  "cpu_affinity_for_workloads": "still required by resource scope; CPU cgroup availability recorded above",
+  "prior_trip_not_reconciled_or_removed": true,
+  "model_load_and_two_node_peak": "NOT_RUN",
+  "source_changes": [
+    {
+      "path": "engine_hub/resources.py",
+      "prior_delivery_sha256": "837ddadda4c03acd5d7e7c2bfada3bfc20bb07976e2034bf711076813f875e79",
+      "current_sha256": "3667c8f1914e1bd1759bf6380aada844263bfc496af1b6617e55372de03b77db"
+    },
+    {
+      "path": "engine_hub/scripts/lab.py",
+      "prior_delivery_sha256": null,
+      "current_sha256": "878f55b39d5702f4417f552a7955734e02cb139be17807bee9cbc89ac60407d2"
+    },
+    {
+      "path": "engine_hub/tests/test_resources.py",
+      "prior_delivery_sha256": null,
+      "current_sha256": "cdc9e679fb02f9f8f37fb4ef12ab16e68917d89405b8519e96d1bf7c4bc59220"
+    }
+  ],
+  "historical_versions_lock_preserved": true
+}

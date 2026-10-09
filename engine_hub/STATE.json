@@ -1,7 +1,6 @@
 {
-  "status": "LOCAL_FUNCTIONAL_VERIFIED_PRIVATE_DELIVERED",
+  "status": "REASSESSED_PARTIAL_IMPLEMENTATION_NOT_FULL_ACCEPTANCE",
   "upstream": "4a0639397d1d4eb14965d9e88f39aecffa9ef345",
-  "private_remote_created_and_verified": true,
   "local_checks": {
     "service": 49,
     "governance_recovery": 18,
@@ -10,28 +9,130 @@
   },
   "luna_hermes": "Real retry completed with actual MCP evidence before resource incident; evidence/luna-hermes-retry-run.json",
   "needs_input": [
-    "F11: domain truth/replay set and independent expert review",
+    "F11: final RCA source user-reported; incident mapping/read access, confirmed labels, replay snapshots/splits and expert thresholds not yet verified",
     "F21: second physical host",
     "F30: internal Manager environment"
   ],
-  "next": "Continue only against provided domain/second-host/internal inputs; preserve resource envelope and existing state",
-  "updated_at": "2026-10-08T17:49:57.460353+00:00",
-  "runtime": "Stopped by WSL restart; evidence and state retained",
+  "next": "First fix I01; implement confirmed native pending/RCA/internal eval/periodic human approval design using existing publication chain. External evolution/eval projects reference only. RCA access and two-node acceptance remain pending; no automatic restart.",
+  "updated_at": "2026-10-09T03:03:39.701097+00:00",
+  "runtime": "All owned services stopped by Windows headroom protection; no restart this turn",
   "resource_diagnosis": "evidence/resource-diagnosis-20261009.json",
   "resource_policy": {
-    "aggregate_memory_bytes": 1073741824,
+    "aggregate_memory_bytes": 3221225472,
     "swap_max": 0,
     "tasks_max": 192,
     "cpu": "one-core verified affinity; kernel CPU quota unavailable",
-    "cold_worker_rotation": true
+    "cold_worker_rotation": true,
+    "memory_high_bytes": 2684354560,
+    "reserve_windows_bytes": 2147483648,
+    "reserve_linux_bytes": 2147483648,
+    "evidence": "reviews/2026-10-09-reassessment/resource-budget-v3-applied.json"
   },
   "acceptance": "acceptance-local-r1.json",
   "pending": [
-    "F11",
-    "F21",
-    "F30"
+    "I01 script/control credential isolation",
+    "I02 simultaneous two-node local validation",
+    "I03 automatic learning/evaluation implementation",
+    "I04 permissions/configuration coverage",
+    "I05 local classifier and multi-space selection",
+    "I06 generic Skill/retrieval management",
+    "F11 domain quality",
+    "F21 second physical host",
+    "F30 internal integration"
   ],
-  "current_runtime": "UI/reference/assets and guarded WeKnora; Gateway nodes cold and activated only within admission",
-  "content_commit": "cb17e3364f58f4fbd53ccb2d78c82d39b4d38543",
-  "private_repo": "https://github.com/zcimon57-svj/hermes-webui-engine-hub"
+  "current_runtime": "All owned services stopped by Windows headroom protection; no restart this turn",
+  "private_repo": "https://github.com/zcimon57-svj/hermes-webui-engine-hub",
+  "prior_completion_claim": "WITHDRAWN_AS_TOO_BROAD",
+  "current_review": "reviews/2026-10-09-reassessment/README.md",
+  "current_progress": "reviews/2026-10-09-reassessment/goals-progress-v2.json",
+  "production_classifier_requirement": "Local/on-prem open model, Laya and alternatives under analysis; Jev commercial comparison; no production dependency on Codex Luna required",
+  "research_status": "SOURCE_AND_SOCIAL_REVIEW_COMPLETE_IMPLEMENTATION_DEPLOYMENT_NOT_RUN",
+  "research_documents": [
+    "reviews/2026-10-09-reassessment/local-classifier-analysis-v1.md",
+    "reviews/2026-10-09-reassessment/self-evolution-analysis-v1.md",
+    "reviews/2026-10-09-reassessment/social-evidence-v1.md",
+    "reviews/2026-10-09-reassessment/research-sources-v1.json"
+  ],
+  "runtime_history": "Stopped by WSL restart; evidence and state retained",
+  "resource_budget_followup": {
+    "user_allows_adjustment": true,
+    "recommended_max_bytes": 3221225472,
+    "recommended_high_bytes": 2684354560,
+    "applied": true,
+    "windows_current_available_bytes": 2362761216,
+    "reason_for_no_start": "Windows reserve plus conservative new load cannot be met",
+    "evidence": "reviews/2026-10-09-reassessment/resource-budget-v3-applied.json",
+    "kernel_verified_empty_slice": true
+  },
+  "quality_gate_requirement": {
+    "status": "USER_CONFIRMED_SIMPLE_DESIGN_DOCUMENTED_IMPLEMENTATION_PENDING",
+    "artifact": "reviews/2026-10-09-reassessment/goals-progress-v2.md",
+    "contract": "reviews/2026-10-09-reassessment/evolution-quality-contract-v2.json",
+    "trace_is_not_ground_truth": true,
+    "automatic_business_knowledge_promotion": false,
+    "final_rca_truth_source": "USER_REPORTED_NOT_INSPECTED",
+    "recommended_route": "Hermes native candidate generation + confirmed final RCA + lightweight internal eval + periodic human pre-merge approval + existing CAS publication",
+    "external_projects": "REFERENCE_ONLY"
+  },
+  "evolution_design_decision": {
+    "status": "USER_CONFIRMED_DESIGN_RECORDED_IMPLEMENTATION_PENDING",
+    "at": "2026-10-09T01:46:20.330454+00:00",
+    "route": "Hermes native candidate generation + confirmed final RCA + lightweight internal eval + periodic human pre-merge approval + existing CAS publication",
+    "external_evolution_and_eval_projects": "REFERENCE_ONLY_NO_INTEGRATION_OR_DEPENDENCIES",
+    "scope": "R03/R06 evolution only; R02 local classifier selection unchanged",
+    "design_in": "goals-progress-v2.md",
+    "implementation": "NOT_IMPLEMENTED",
+    "domain_and_two_node_acceptance": "NOT_RUN"
+  },
+  "implementation_provenance": {
+    "status": "SOURCE_VERIFIED_RUNTIME_NOT_RERUN",
+    "at": "2026-10-09T02:00:58.804649+00:00",
+    "analysis": "reviews/2026-10-09-reassessment/isolation-implementation-analysis-v1.md",
+    "evidence": "reviews/2026-10-09-reassessment/isolation-implementation-provenance-v1.json",
+    "webui_reused_directly": "Upstream static/style.css; upstream history/license retained",
+    "new_layer": "Engine Hub UI/auth/routing/ManagerClient + local ReferenceManager/Companion/release adapters/launcher/resource controls",
+    "runtime_reused": "Hermes Gateway native Run/Session/MCP; existing WeKnora APIs",
+    "legacy_webui_route_integrated": false,
+    "original_server_api_static_unchanged_vs_baseline": true,
+    "kernel_network_shared": true,
+    "simultaneous_two_node_acceptance": "NOT_RUN",
+    "script_control_credential_gap": "STATIC_CONFIRMED_ATTACK_NOT_RUN",
+    "goal_completion_unchanged": true
+  },
+  "multi_resource_analysis": {
+    "status": "ANALYSIS_PROPOSED_IMPLEMENTATION_AND_RUNTIME_NOT_RUN",
+    "at": "2026-10-09T02:13:12.732931+00:00",
+    "document": "reviews/2026-10-09-reassessment/multi-resource-routing-artifacts-v1.md",
+    "scope": "Hypothetical same-engine multi-VM/container worker pools, multiple targets and bounded parent/subtasks; not a new implementation commitment",
+    "routing_owner": "Existing business Manager",
+    "artifact_owner": "business Run/task/attempt metadata in Manager; selected payloads in existing internal storage; approved reusable assets in WeKnora",
+    "private_state": "No shared writable Hermes Home, credentials or private Memory",
+    "current_gaps": [
+      "Cross-host trusted registration/leases/capacity",
+      "Parent/task/attempt aggregation and migration",
+      "Central artifact upload/manifest/readback",
+      "Cross-host global model-call budget"
+    ],
+    "six_goal_completion_unchanged": true,
+    "native_evolution_decision_unchanged": true
+  },
+  "asset_access_and_learning_clarification": {
+    "at": "2026-10-09T02:40:50.892449+00:00",
+    "current_transport": "Hermes stdio MCP -> HTTP node Companion -> HTTP approved release service/WeKnora",
+    "current_cache": "Per-node /state/approved-cache/<skill-sha>; special package adapter, not native generic skills installation",
+    "shared_writable_hermes_home": false,
+    "current_native_learning_pipeline": "NOT_IMPLEMENTED",
+    "confirmed_design": "Private pending before operational use; final RCA/internal eval/periodic human approval -> CAS publication -> per-node approved read-only snapshot for new Run",
+    "scope": "Business knowledge/skills; node Memory/auth/session stay private",
+    "generic_native_skill_load": "PENDING_IMPLEMENTATION",
+    "design_status": "USER_CONFIRMED_IMPLEMENTATION_PENDING"
+  },
+  "architecture_index": "architecture/README.md",
+  "repository_visibility_intent": "PUBLIC_USER_AUTHORIZED_2026-10-09",
+  "repository_visibility_before_publication": "PRIVATE_HISTORICAL",
+  "private_remote_created_and_verified_historical": true,
+  "repository_visibility": "PUBLIC_VERIFIED",
+  "repository_visibility_evidence": "evidence/publication-safety-20261009.json + GitHub repository metadata",
+  "historical_content_commit": "cb17e3364f58f4fbd53ccb2d78c82d39b4d38543",
+  "current_source_overrides": "reviews/2026-10-09-reassessment/resource-budget-v3-applied.json"
 }
