@@ -1,0 +1,650 @@
+{
+  "schema": "engine-hub-review-readiness/1",
+  "status": "STATIC_DOCUMENT_REVIEW_COMPLETE_RENDER_NOT_RUN",
+  "review_date": "2026-10-09",
+  "checked_at_utc": "2026-10-09T04:39:54.682557+00:00",
+  "repository": "https://github.com/zcimon57-svj/hermes-webui-engine-hub",
+  "pull_request": "https://github.com/zcimon57-svj/hermes-webui-engine-hub/pull/12",
+  "issue_numbers": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "scope": "Pre-publication source-grounded documentation, prepared PR/Issue bodies, navigation and historical-evidence interpretation. This is not a runtime acceptance result or a GitHub rendering receipt.",
+  "base_source_sha": "6e6c4e897c62078ff1f14f072abe3fd7d7c461b3",
+  "original_pr_head_sha": "faf6321077067da1585fb40a71c0d420bab5ee01",
+  "original_pr_tree_sha": "7a623e59e72b28e1198340871ebb75acb33c232c",
+  "source_provenance": "Relevant repository files were read at the fixed PR head and checked against Git blob SHA; unchanged runtime files match the fixed source baseline. Historical fixed-line citations use preserved baseline bytes when their navigation wrapper is now edited.",
+  "review_contents": {
+    "goal_designs": 6,
+    "execution_requirements": 3,
+    "cross_goal_decisions": 12,
+    "goal_and_execution_decisions": 41,
+    "given_when_then_acceptance_scenarios": 80,
+    "source_findings": 8,
+    "repository_design_diagrams": 23
+  },
+  "critical_markdown": {
+    "script_source": "scripts/critical_markdown_check.py at faf6321077067da1585fb40a71c0d420bab5ee01",
+    "files": 35,
+    "exit_code": 0,
+    "output": "critical_markdown_check: 35 file(s) OK — no catastrophic Markdown issues\n",
+    "method": "Audited copy of the repository standard-library checker; no application imports. Checked all changed Markdown plus the ten prepared Issue bodies and PR body."
+  },
+  "goals_and_bodies_link_check": {
+    "summary": {
+      "files": 24,
+      "links": 859,
+      "repository_links": 644,
+      "source_line_ranges_checked": 195,
+      "mermaid_diagrams": 46,
+      "historical_blobs_read_from_preserved_baseline": 1,
+      "sequence_diagrams": 17,
+      "max_sequence_participants": 5,
+      "errors": 0,
+      "warnings": 0,
+      "pending": 0
+    },
+    "methods": [
+      "Markdown fences and balanced inline/reference destinations",
+      "Repository file targets against preserved full Git tree plus new documentation files",
+      "Heading and explicit ASCII anchors",
+      "Fixed source line ranges and Git blob equality",
+      "PR #12 and Issues #2-#11 required mutual links",
+      "At least two embedded diagrams for every goal document and its Issue; sequence participant limit of five"
+    ],
+    "errors": [],
+    "warnings": [],
+    "pending": [],
+    "external_url_limitation": "External URL online availability was not bulk-crawled. Primary research sources were separately retrieved and version-qualified in architecture/goals/research.md."
+  },
+  "new_navigation_link_check": {
+    "summary": {
+      "navigation_files": 11,
+      "new_links_checked": 57,
+      "errors": 0,
+      "warnings": 0,
+      "pending": 0,
+      "changed_repository_files": 26,
+      "preserved_local_baseline_blobs": 103
+    },
+    "scope": "New links in changed navigation/historical index Markdown outside goals; unchanged upstream links are excluded.",
+    "errors": [],
+    "warnings": [],
+    "pending": []
+  },
+  "mermaid": {
+    "version": "11.12.0 (downloaded bundle filename; content hash recorded below)",
+    "bundle_source": "https://cdn.jsdelivr.net/npm/mermaid@11.12.0/dist/mermaid.min.js",
+    "bundle_sha256": "07e37dfa97b337ccc85365d57eddf99b9706f09db3b59b260d0333b23b343c4b",
+    "total_instances": 46,
+    "unique_diagrams": 27,
+    "counts": {
+      "parse_pass": 10,
+      "parse_syntax_fail": 0,
+      "parse_environment_blocked": 17,
+      "parse_other_fail": 0
+    },
+    "structural_check": "PASS",
+    "native_parser_status": "PARTIAL_PARSE_ENVIRONMENT_BLOCKED",
+    "configuration": "Original mermaid.parse with securityLevel=strict, pure Node VM; no DOM emulation or sanitizer replacement. Official loose/htmlLabels:false probe remained environment-blocked.",
+    "manual_review": "Reviewed graph/sequence responsibilities and failures; quoted punctuation-bearing labels; checked node IDs, delimiters and visible connections. This is not complete grammar or layout proof.",
+    "render": "NOT_RUN",
+    "reason": "AGENTS.md requires browser tests to use the guarded eh158.slice resource envelope; this review environment did not establish that condition. No browser was launched. Pure Node flowchart parsing was blocked by missing DOM/DOMPurify initialization.",
+    "browser_started": false,
+    "application_or_model_started": false
+  },
+  "repository_integrity": {
+    "changed_files": 26,
+    "changed_markdown_files": 24,
+    "changed_json_files": 2,
+    "json_parse": "PASS",
+    "git_diff_check": {
+      "exit_code": 0,
+      "output": ""
+    },
+    "preserved_downloaded_baseline_blobs": 103,
+    "unexpected_product_changes": [],
+    "preserved_runtime_manifest": [
+      {
+        "path": "engine_hub/__init__.py",
+        "git_blob_sha": "ddd2b1b459a08139af31527c23c6175e5c2bf769"
+      },
+      {
+        "path": "engine_hub/assets.py",
+        "git_blob_sha": "1dbdd5ca1f66a3e52e97f059064f6a9cfa69a7ac"
+      },
+      {
+        "path": "engine_hub/auth.py",
+        "git_blob_sha": "fa3684b0705096d44fe94a759e139eb1fb983e94"
+      },
+      {
+        "path": "engine_hub/codex_luna.py",
+        "git_blob_sha": "73a71d11d52befba35387c09e387d34dd33c6e8d"
+      },
+      {
+        "path": "engine_hub/common.py",
+        "git_blob_sha": "1c2bc9271362a4668de7f6102491d83bebd64d85"
+      },
+      {
+        "path": "engine_hub/companion.py",
+        "git_blob_sha": "6b1fae16fd289e8a5a34bfb7c49bc115fbab6b37"
+      },
+      {
+        "path": "engine_hub/luna_bridge.py",
+        "git_blob_sha": "8a1b3d61a5919bdfdb65477d74aea74b216b3f08"
+      },
+      {
+        "path": "engine_hub/manager.py",
+        "git_blob_sha": "941f6e71c7964e8d432a2c7b7cddd624d099a9a0"
+      },
+      {
+        "path": "engine_hub/node_mcp.py",
+        "git_blob_sha": "4efd83eaa1e80cecffa6c7fa4ee360d9c0ab2124"
+      },
+      {
+        "path": "engine_hub/resources.py",
+        "git_blob_sha": "752cec7d0d81b07161e8913090a77970979a11b6"
+      },
+      {
+        "path": "engine_hub/routing.py",
+        "git_blob_sha": "7f8452aa93753253cfdc3fe1e8f41c5cb86fa59a"
+      },
+      {
+        "path": "engine_hub/scripts/embedding_fixture.py",
+        "git_blob_sha": "b69de150181f461f0778425617c90ddc5853af73"
+      },
+      {
+        "path": "engine_hub/scripts/guarded_exec.py",
+        "git_blob_sha": "a083deb21c9b54f3900cd89bdc9b7292126c7699"
+      },
+      {
+        "path": "engine_hub/scripts/infra.py",
+        "git_blob_sha": "6737502c949b50f1c2741eb2deba250179af1757"
+      },
+      {
+        "path": "engine_hub/scripts/lab.py",
+        "git_blob_sha": "6d0b0f5fe0882b4c230f8b7438825ff941b445a2"
+      },
+      {
+        "path": "engine_hub/scripts/model_fixture.py",
+        "git_blob_sha": "482083c7ee6a9c71903a71bc984ec3bc624dfd6f"
+      },
+      {
+        "path": "engine_hub/scripts/model_mode.py",
+        "git_blob_sha": "1658f55603e756194f4cf7ad6b6a93d9ab087221"
+      },
+      {
+        "path": "engine_hub/scripts/seed.py",
+        "git_blob_sha": "37b8217c2c11639cb2dd365ef66651b03c45c13a"
+      },
+      {
+        "path": "engine_hub/scripts/verify_final_edges.py",
+        "git_blob_sha": "9f06e923c3dca243014ad51bf6345db0bb2b10bb"
+      },
+      {
+        "path": "engine_hub/scripts/verify_governance_recovery.py",
+        "git_blob_sha": "b74e10d0936e0bdd1c6fa77cd95db547c29f3457"
+      },
+      {
+        "path": "engine_hub/scripts/verify_guarded_hub.py",
+        "git_blob_sha": "a2b05aef309719f250e05abda27682cef955f1b7"
+      },
+      {
+        "path": "engine_hub/scripts/verify_guarded_luna.py",
+        "git_blob_sha": "dc9fdfd21de80d11b24a1c1e1f9edab6705cce34"
+      },
+      {
+        "path": "engine_hub/scripts/verify_live.py",
+        "git_blob_sha": "08da8d6c8d1319a081fe8ac707012205a02afcbf"
+      },
+      {
+        "path": "engine_hub/scripts/verify_luna.py",
+        "git_blob_sha": "433007666691cd3330001f58881cf8acc1b30129"
+      },
+      {
+        "path": "engine_hub/scripts/verify_resource_limits.py",
+        "git_blob_sha": "5bb0557dbca27ad09aa293cf438f140aeed48d8e"
+      },
+      {
+        "path": "engine_hub/server.py",
+        "git_blob_sha": "c2a7518f3b47f23193b4ff6c6dbab2b530c280a6"
+      },
+      {
+        "path": "engine_hub/service.py",
+        "git_blob_sha": "e1c609bfcb51e67f5cfb4ca69c40da06c9df5226"
+      },
+      {
+        "path": "engine_hub/supervisor.py",
+        "git_blob_sha": "6e4657358a3da0cf89484955c931e4121d509c8d"
+      },
+      {
+        "path": "engine_hub/tests/test_policy.py",
+        "git_blob_sha": "c735e5faaa4ef3f5a68006b835495443284975ce"
+      },
+      {
+        "path": "engine_hub/tests/test_resources.py",
+        "git_blob_sha": "6845a1b11ee926c96186d5494cbea08a378625a3"
+      }
+    ]
+  },
+  "historical_acceptance": {
+    "path": "engine_hub/acceptance-local-r1.json",
+    "git_blob_sha": "8f7041b4d98cae4089608dd7657785d4357a8bfd",
+    "counts": {
+      "PASS": 29,
+      "NOT_RUN": 3
+    },
+    "not_run_ids": [
+      "F11",
+      "F21",
+      "F30"
+    ],
+    "rewritten": false,
+    "new_functional_passes": 0,
+    "interpretation": "Historical PASS retains original version, input and scope; 29/32 is not the completion percentage of the six goals."
+  },
+  "version_lock": {
+    "path": "engine_hub/versions.lock.json",
+    "git_blob_sha": "6d3d1cd2f762ff7b17c8d58cfdf5d6509f08d6d7",
+    "rewritten": false
+  },
+  "runtime_verification": {
+    "status": "NOT_RUN_THIS_REVIEW",
+    "runtime_changes": false,
+    "not_run": [
+      "Application/Gateway/WeKnora/container startup",
+      "Business-model calls or downloads",
+      "Runtime isolation attacks, failure injection or concurrent-node acceptance",
+      "pytest/unittest",
+      "Browser UI or GitHub rendered-layout checks",
+      "Internal Manager/RCA/provider integration and host live-resource sampling"
+    ]
+  },
+  "publication": {
+    "target_branch": "docs/goal-architecture-review-20261009",
+    "method": "Append documentation commit to the original PR branch with the full original tree as base; require expected head and a non-force fast-forward. Replace only the original Issue/PR bodies and selected descriptive titles.",
+    "live_authority": "GitHub PR/commit and Issue metadata are the post-publication authority. This artifact records the prepared body digests and pre-publication checks; it does not claim its own future commit SHA.",
+    "merge_or_close_authorized_by_this_audit": false,
+    "reviewer_assignments": false
+  },
+  "changed_file_manifest": [
+    {
+      "path": "README.md",
+      "previous_git_blob_sha": "1f9d02a7c99b2f3a1551766f6a92100e79cbe3b9",
+      "utf8_bytes": 66633,
+      "sha256": "9bb7e4a050242b4f33f85b5d7daa8bc86df8a2160f8533c998d560a8e2adb63a",
+      "git_blob_sha": "575aa5ef6890b22c73cd7723e4b645f1c661f507"
+    },
+    {
+      "path": "engine_hub/README.md",
+      "previous_git_blob_sha": "19c49b18b659a1b0ca88fafe75702263ec5f0263",
+      "utf8_bytes": 12658,
+      "sha256": "f0c4273cdc9fd1b240ed7cc88fb69097012532907e20402add36f80d8fe474b3",
+      "git_blob_sha": "59925733e5dc270d2ee8e592b21c6bb59e183b0e"
+    },
+    {
+      "path": "engine_hub/STATE.json",
+      "previous_git_blob_sha": "deab957e4780bea842c07ef84dbd634b42bb1183",
+      "utf8_bytes": 10986,
+      "sha256": "51bf59c51b2bfd0d599416a703d9788e6d263e022ed72159f7d738f4a668ae46",
+      "git_blob_sha": "43598c59f24e4a7139b9aa02d533628014502caf"
+    },
+    {
+      "path": "engine_hub/architecture/README.md",
+      "previous_git_blob_sha": "c6b157ba0b5b9b067a533e99702ccd5b5c24aa00",
+      "utf8_bytes": 3448,
+      "sha256": "099c65f4a0ced0201b5a10558e48b7833975e310d9ac94dd5bac29be0945a148",
+      "git_blob_sha": "3a878e2954af8dbcc6187cca9d793e4c52a808ce"
+    },
+    {
+      "path": "engine_hub/architecture/agent-core.md",
+      "previous_git_blob_sha": "f23e1aea3c200d893f5ac834305ca141412d1b3d",
+      "utf8_bytes": 2848,
+      "sha256": "6dd4db88051ce88fba3bef1290cc2d6794260eeb9713076566257716e0719181",
+      "git_blob_sha": "5cc8d760f302d11048660088117c8f52cd20216c"
+    },
+    {
+      "path": "engine_hub/architecture/agent-manager.md",
+      "previous_git_blob_sha": "5b03e4ddf0b649dba89d70a75f8a4b0a20007608",
+      "utf8_bytes": 2573,
+      "sha256": "72f95e6c2fa2a4ec88298545748063df4d43698d13de4f29269c6aedf921a1fb",
+      "git_blob_sha": "a97a5aeec460d19e3a81a264400f952b154415ea"
+    },
+    {
+      "path": "engine_hub/architecture/business-access.md",
+      "previous_git_blob_sha": "f04b4f45ed17402db78d75ae93eb7e135aefaf27",
+      "utf8_bytes": 2167,
+      "sha256": "d82031796c0dfa8ab0cfd0f9606f228b9d26b5e95addb7d8389150fda05297b2",
+      "git_blob_sha": "4579dfcabcaf6f23103c1389b2e3e1464b84bfef"
+    },
+    {
+      "path": "engine_hub/architecture/goals/README.md",
+      "previous_git_blob_sha": "604a5940769db8db87858432be40ea071dd7bc17",
+      "utf8_bytes": 4777,
+      "sha256": "a0db6a041766c289ba412e0c17aff029d8632f179a302c0ac79ceb3d68238ceb",
+      "git_blob_sha": "9b807f91860ba4d6363f8eaf66bd61e53d1d8138"
+    },
+    {
+      "path": "engine_hub/architecture/goals/acceptance-matrix.md",
+      "previous_git_blob_sha": null,
+      "utf8_bytes": 12995,
+      "sha256": "f6898f5fd745fb7765a699d22fb46d9611b52ace9a9c1f97d72d7c44296868ee",
+      "git_blob_sha": "dc1ee30305024a7840b4d156ea0d2e6af68ee4de"
+    },
+    {
+      "path": "engine_hub/architecture/goals/decisions.md",
+      "previous_git_blob_sha": null,
+      "utf8_bytes": 8047,
+      "sha256": "cad0ac638d95224f92ff28fa6a6b898deb751b3b614c34df17bd1f6bb118f035",
+      "git_blob_sha": "a8cf57d959e24da8950dab19906794baa41c9283"
+    },
+    {
+      "path": "engine_hub/architecture/goals/execution-requirements.md",
+      "previous_git_blob_sha": null,
+      "utf8_bytes": 13092,
+      "sha256": "9b01ecfa014fe334cb8b5399eeef2b1fc70d1faa5cbd738a73ac322d54e7b07d",
+      "git_blob_sha": "59e7f6d51779575394da58f83ccdc0ead7054e3c"
+    },
+    {
+      "path": "engine_hub/architecture/goals/overview.md",
+      "previous_git_blob_sha": null,
+      "utf8_bytes": 16688,
+      "sha256": "ed0bd67f70436104b84c4bbd23caef785b4cee2db3054e5c268bd79b235ab252",
+      "git_blob_sha": "f42992d6bec2f1a85e0150497a8cae6227d8dcfd"
+    },
+    {
+      "path": "engine_hub/architecture/goals/r01-isolation-and-ui.md",
+      "previous_git_blob_sha": "4e9c847c820324a5a9123ab2c4a9d1619ab5bad0",
+      "utf8_bytes": 23803,
+      "sha256": "52308e01f51130db56a8d24ca81e71ed7dd1cbabd86710e2df33e3eb8862a9e5",
+      "git_blob_sha": "949a9b74b6c0f9bb4ac5d8351646fa93611bfb85"
+    },
+    {
+      "path": "engine_hub/architecture/goals/r02-local-routing.md",
+      "previous_git_blob_sha": "838794c1640e4aae51ac3f6df7509baa0b41c9c9",
+      "utf8_bytes": 22720,
+      "sha256": "9888f4bd34a4e0939c5da9727a8d61200f77cd3ee6d20b8142a19c3d504b6434",
+      "git_blob_sha": "522c9c1a6a7dd0b1b9d207c5ca8f0ec072e19481"
+    },
+    {
+      "path": "engine_hub/architecture/goals/r03-native-evolution.md",
+      "previous_git_blob_sha": "092020b528b96284358e31e50486110be8c58465",
+      "utf8_bytes": 24413,
+      "sha256": "0518cf61a44cde4df9fff05bd9b1e7c816ef8855b2ff2bebacdc49e98a05e76d",
+      "git_blob_sha": "7d2e3ee917f515d0009f4444e1a4fd57f7ba73f4"
+    },
+    {
+      "path": "engine_hub/architecture/goals/r04-access-control.md",
+      "previous_git_blob_sha": "143652f5ec226e95fac6ce069fe4d1ab534b0447",
+      "utf8_bytes": 21595,
+      "sha256": "7878420632a33d96ba7eb1d8799f58a02f2ef5525b19195d769a8fb39683c228",
+      "git_blob_sha": "9f62493cf019b8582a88d948e41458b9fec5716e"
+    },
+    {
+      "path": "engine_hub/architecture/goals/r05-multi-node-and-artifacts.md",
+      "previous_git_blob_sha": "0e2bd7edd80a9dc7cd76924b06fbcb918b1b7eb3",
+      "utf8_bytes": 24728,
+      "sha256": "9faee592bdb2afbc22e6e2d7987136731c35c9770c78da36a736941155fc19dc",
+      "git_blob_sha": "03899a2f98de2a8ca40df40bae1526b8fae778db"
+    },
+    {
+      "path": "engine_hub/architecture/goals/r06-assets-and-local-skills.md",
+      "previous_git_blob_sha": "1e097c4454c8c5e422ba7c762161ed58112aa83c",
+      "utf8_bytes": 25720,
+      "sha256": "911ff0d6183c1fe849bbb7fb94bd455ffe2c563d0ec2533f6e97e9eae5c0170b",
+      "git_blob_sha": "a00efcf94f0c3bad9726c86431e4091d57b6434e"
+    },
+    {
+      "path": "engine_hub/architecture/goals/research.md",
+      "previous_git_blob_sha": null,
+      "utf8_bytes": 12994,
+      "sha256": "c094f3bb307b56f04a54f658a58a635d66a0154e2780526a12f370ceecfca6fa",
+      "git_blob_sha": "a5b94e9a673017659a32c6165f27401639e46070"
+    },
+    {
+      "path": "engine_hub/architecture/goals/review-findings.md",
+      "previous_git_blob_sha": null,
+      "utf8_bytes": 11326,
+      "sha256": "224fc97af277202269774a3130dedd8552263fe81a3b4c33efd0a7313df8fb67",
+      "git_blob_sha": "024b2b267796e3cabd13eaead7aee8ad09f4f309"
+    },
+    {
+      "path": "engine_hub/architecture/knowledge-platform.md",
+      "previous_git_blob_sha": "cdb343b809a667c02f2f74cdf394497cf56748de",
+      "utf8_bytes": 2397,
+      "sha256": "abb3a4973ef5064d7e40de547908fd164c8d7eea6d2d8d6ef1c3345e35176151",
+      "git_blob_sha": "b6ed1c525baaf46bdceb5678a0eeb904fd251cd3"
+    },
+    {
+      "path": "engine_hub/architecture/mcp-interface.md",
+      "previous_git_blob_sha": "b497845dbc5cb238c24c34a41033d46ca18030fa",
+      "utf8_bytes": 2406,
+      "sha256": "99f02bc86750052cfc00003f5c7014a4bf084bfbd50974718ad622bec6fa36da",
+      "git_blob_sha": "935fb183555d543d09cf891269ffd3312c1d6aa0"
+    },
+    {
+      "path": "engine_hub/evidence/INDEX.md",
+      "previous_git_blob_sha": "789f95f5846f36d4de1c1ac06dc8d615229da812",
+      "utf8_bytes": 5064,
+      "sha256": "d40531606c5d263ab79ac88989823e8c9efae772e504f05af9b4aba45e989205",
+      "git_blob_sha": "e24cd8f50da69d486f0f7c4a3bde25576ec3342c"
+    },
+    {
+      "path": "engine_hub/evidence/review-readiness-checks-20261009.json",
+      "previous_git_blob_sha": null,
+      "content_digest": "Omitted for this evidence file to avoid a recursive self-digest."
+    },
+    {
+      "path": "engine_hub/reviews/2026-10-09-reassessment/README.md",
+      "previous_git_blob_sha": "4bf0112b900580d20ac54ac9ca77c3622a30a9d1",
+      "utf8_bytes": 4094,
+      "sha256": "3e6cced1822ec69b149c51de77df47802b4e31ae683525dbfecb1916a6f6dfb7",
+      "git_blob_sha": "6cfa4533bd25696f13b4599ed3047bc57614fbed"
+    },
+    {
+      "path": "engine_hub/reviews/2026-10-09-reassessment/goals-progress-v2.md",
+      "previous_git_blob_sha": "6b0bb00087a130bc00b18610b2eeb1b886252270",
+      "utf8_bytes": 14232,
+      "sha256": "5669b62129db835a6a8aa7a544a4831a257b94f0ea56ace1f18be9d8078cc7d6",
+      "git_blob_sha": "2c9b79861e1f1aa5348403ad85ca79e8d40b2a92"
+    }
+  ],
+  "prepared_github_bodies": [
+    {
+      "url": "https://github.com/zcimon57-svj/hermes-webui-engine-hub/issues/2",
+      "prepared_body_sha256": "23a3213fe46499a46d2168235f2c0a9e4ad0793cd888e6db7230a6cbcdecac39",
+      "utf8_bytes": 25185,
+      "characters": 15655
+    },
+    {
+      "url": "https://github.com/zcimon57-svj/hermes-webui-engine-hub/issues/3",
+      "prepared_body_sha256": "cec4bbfd3ff8b301d40fe88eb8b089a33f735a74f52a304868a78e3d1e6e15cd",
+      "utf8_bytes": 25455,
+      "characters": 14864
+    },
+    {
+      "url": "https://github.com/zcimon57-svj/hermes-webui-engine-hub/issues/4",
+      "prepared_body_sha256": "92b5b8f303cece3881acef19673c9ac30bbbd860c6eda32fdc4a7c32caa8ba00",
+      "utf8_bytes": 24805,
+      "characters": 13984
+    },
+    {
+      "url": "https://github.com/zcimon57-svj/hermes-webui-engine-hub/issues/5",
+      "prepared_body_sha256": "ac632769245c3ab949296abd8465055b6903924cbf32944da6fc6ab434fb5173",
+      "utf8_bytes": 26711,
+      "characters": 14903
+    },
+    {
+      "url": "https://github.com/zcimon57-svj/hermes-webui-engine-hub/issues/6",
+      "prepared_body_sha256": "fb059ab8fd84f57f12d2c22ac72a645eefb89dcade670cfa0806fc2030c2646d",
+      "utf8_bytes": 23259,
+      "characters": 13949
+    },
+    {
+      "url": "https://github.com/zcimon57-svj/hermes-webui-engine-hub/issues/7",
+      "prepared_body_sha256": "b63673e98cb01f0e2ae9ffd438669a14900eb183326824e60f3dee07541e1d24",
+      "utf8_bytes": 26438,
+      "characters": 15271
+    },
+    {
+      "url": "https://github.com/zcimon57-svj/hermes-webui-engine-hub/issues/8",
+      "prepared_body_sha256": "b1b718797ec8b2e4f80adb8a7905f518fb7653892af37328bd454e52c213303e",
+      "utf8_bytes": 28308,
+      "characters": 16328
+    },
+    {
+      "url": "https://github.com/zcimon57-svj/hermes-webui-engine-hub/issues/9",
+      "prepared_body_sha256": "04e2ace7b19e63d76ffc700e9d44894269fdce30c388f6017a056f7d4288bef2",
+      "utf8_bytes": 6762,
+      "characters": 4337
+    },
+    {
+      "url": "https://github.com/zcimon57-svj/hermes-webui-engine-hub/issues/10",
+      "prepared_body_sha256": "95b13c5738a7c9cf4749d9f677948381a52066e559e576e093cea162a58e5c3e",
+      "utf8_bytes": 8070,
+      "characters": 5307
+    },
+    {
+      "url": "https://github.com/zcimon57-svj/hermes-webui-engine-hub/issues/11",
+      "prepared_body_sha256": "8e77c345b1ff038399eff60163a72a8d6134ca8f113464f82e1c77a2ac26921c",
+      "utf8_bytes": 9112,
+      "characters": 5895
+    },
+    {
+      "url": "https://github.com/zcimon57-svj/hermes-webui-engine-hub/pull/12",
+      "prepared_body_sha256": "71cd790c153acb0703b69ac1d76f44df25f30e09dc60228e724802c82eadf850",
+      "utf8_bytes": 28412,
+      "characters": 16948
+    }
+  ],
+  "checked_input_manifest": [
+    {
+      "target": "engine_hub/architecture/goals/README.md",
+      "sha256": "a0db6a041766c289ba412e0c17aff029d8632f179a302c0ac79ceb3d68238ceb",
+      "mermaid_instances": 0
+    },
+    {
+      "target": "engine_hub/architecture/goals/acceptance-matrix.md",
+      "sha256": "f6898f5fd745fb7765a699d22fb46d9611b52ace9a9c1f97d72d7c44296868ee",
+      "mermaid_instances": 0
+    },
+    {
+      "target": "engine_hub/architecture/goals/decisions.md",
+      "sha256": "cad0ac638d95224f92ff28fa6a6b898deb751b3b614c34df17bd1f6bb118f035",
+      "mermaid_instances": 0
+    },
+    {
+      "target": "engine_hub/architecture/goals/execution-requirements.md",
+      "sha256": "9b01ecfa014fe334cb8b5399eeef2b1fc70d1faa5cbd738a73ac322d54e7b07d",
+      "mermaid_instances": 6
+    },
+    {
+      "target": "engine_hub/architecture/goals/overview.md",
+      "sha256": "ed0bd67f70436104b84c4bbd23caef785b4cee2db3054e5c268bd79b235ab252",
+      "mermaid_instances": 4
+    },
+    {
+      "target": "engine_hub/architecture/goals/r01-isolation-and-ui.md",
+      "sha256": "52308e01f51130db56a8d24ca81e71ed7dd1cbabd86710e2df33e3eb8862a9e5",
+      "mermaid_instances": 2
+    },
+    {
+      "target": "engine_hub/architecture/goals/r02-local-routing.md",
+      "sha256": "9888f4bd34a4e0939c5da9727a8d61200f77cd3ee6d20b8142a19c3d504b6434",
+      "mermaid_instances": 2
+    },
+    {
+      "target": "engine_hub/architecture/goals/r03-native-evolution.md",
+      "sha256": "0518cf61a44cde4df9fff05bd9b1e7c816ef8855b2ff2bebacdc49e98a05e76d",
+      "mermaid_instances": 2
+    },
+    {
+      "target": "engine_hub/architecture/goals/r04-access-control.md",
+      "sha256": "7878420632a33d96ba7eb1d8799f58a02f2ef5525b19195d769a8fb39683c228",
+      "mermaid_instances": 2
+    },
+    {
+      "target": "engine_hub/architecture/goals/r05-multi-node-and-artifacts.md",
+      "sha256": "9faee592bdb2afbc22e6e2d7987136731c35c9770c78da36a736941155fc19dc",
+      "mermaid_instances": 3
+    },
+    {
+      "target": "engine_hub/architecture/goals/r06-assets-and-local-skills.md",
+      "sha256": "911ff0d6183c1fe849bbb7fb94bd455ffe2c563d0ec2533f6e97e9eae5c0170b",
+      "mermaid_instances": 2
+    },
+    {
+      "target": "engine_hub/architecture/goals/research.md",
+      "sha256": "c094f3bb307b56f04a54f658a58a635d66a0154e2780526a12f370ceecfca6fa",
+      "mermaid_instances": 0
+    },
+    {
+      "target": "engine_hub/architecture/goals/review-findings.md",
+      "sha256": "224fc97af277202269774a3130dedd8552263fe81a3b4c33efd0a7313df8fb67",
+      "mermaid_instances": 0
+    },
+    {
+      "target": "https://github.com/zcimon57-svj/hermes-webui-engine-hub/issues/10",
+      "sha256": "95b13c5738a7c9cf4749d9f677948381a52066e559e576e093cea162a58e5c3e",
+      "mermaid_instances": 2
+    },
+    {
+      "target": "https://github.com/zcimon57-svj/hermes-webui-engine-hub/issues/11",
+      "sha256": "8e77c345b1ff038399eff60163a72a8d6134ca8f113464f82e1c77a2ac26921c",
+      "mermaid_instances": 2
+    },
+    {
+      "target": "https://github.com/zcimon57-svj/hermes-webui-engine-hub/issues/2",
+      "sha256": "23a3213fe46499a46d2168235f2c0a9e4ad0793cd888e6db7230a6cbcdecac39",
+      "mermaid_instances": 2
+    },
+    {
+      "target": "https://github.com/zcimon57-svj/hermes-webui-engine-hub/issues/3",
+      "sha256": "cec4bbfd3ff8b301d40fe88eb8b089a33f735a74f52a304868a78e3d1e6e15cd",
+      "mermaid_instances": 2
+    },
+    {
+      "target": "https://github.com/zcimon57-svj/hermes-webui-engine-hub/issues/4",
+      "sha256": "92b5b8f303cece3881acef19673c9ac30bbbd860c6eda32fdc4a7c32caa8ba00",
+      "mermaid_instances": 2
+    },
+    {
+      "target": "https://github.com/zcimon57-svj/hermes-webui-engine-hub/issues/5",
+      "sha256": "ac632769245c3ab949296abd8465055b6903924cbf32944da6fc6ab434fb5173",
+      "mermaid_instances": 2
+    },
+    {
+      "target": "https://github.com/zcimon57-svj/hermes-webui-engine-hub/issues/6",
+      "sha256": "fb059ab8fd84f57f12d2c22ac72a645eefb89dcade670cfa0806fc2030c2646d",
+      "mermaid_instances": 2
+    },
+    {
+      "target": "https://github.com/zcimon57-svj/hermes-webui-engine-hub/issues/7",
+      "sha256": "b63673e98cb01f0e2ae9ffd438669a14900eb183326824e60f3dee07541e1d24",
+      "mermaid_instances": 3
+    },
+    {
+      "target": "https://github.com/zcimon57-svj/hermes-webui-engine-hub/issues/8",
+      "sha256": "b1b718797ec8b2e4f80adb8a7905f518fb7653892af37328bd454e52c213303e",
+      "mermaid_instances": 2
+    },
+    {
+      "target": "https://github.com/zcimon57-svj/hermes-webui-engine-hub/issues/9",
+      "sha256": "04e2ace7b19e63d76ffc700e9d44894269fdce30c388f6017a056f7d4288bef2",
+      "mermaid_instances": 2
+    },
+    {
+      "target": "https://github.com/zcimon57-svj/hermes-webui-engine-hub/pull/12",
+      "sha256": "71cd790c153acb0703b69ac1d76f44df25f30e09dc60228e724802c82eadf850",
+      "mermaid_instances": 2
+    }
+  ]
+}

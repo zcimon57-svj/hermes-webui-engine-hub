@@ -1,39 +1,27 @@
-# Engine Hub 架构与后续工作入口
+# Engine Hub 五模块架构与评审入口
 
-**当前独立评审：[PR #12](https://github.com/zcimon57-svj/hermes-webui-engine-hub/pull/12)，保持打开、未合并；由用户转发给评审人。[目标/进度总账 #2](https://github.com/zcimon57-svj/hermes-webui-engine-hub/issues/2)。**
+**当前评审：[PR #12](https://github.com/zcimon57-svj/hermes-webui-engine-hub/pull/12) · [总账 #2](https://github.com/zcimon57-svj/hermes-webui-engine-hub/issues/2)。**
 
-**新的独立评审入口：[按六个目标组织的架构](goals/README.md)。目标/进度在[Issue #2](https://github.com/zcimon57-svj/hermes-webui-engine-hub/issues/2)跟踪；PR #1仅是基线交付，不代表独立评审通过。本轮架构PR保持打开，用户自行转发，无指定评审人。**
+完整材料见[六目标评审入口](goals/README.md)：先读[系统现状/目标架构与端到端流程](goals/overview.md)，再看[审查发现](goals/review-findings.md)、目标设计、[待决策表](goals/decisions.md)和[验收解释](goals/acceptance-matrix.md)。原PR保持打开，由用户转发给他人；文档通过不等于实现或领域验收。
 
-本轮集成：[PR #1](https://github.com/zcimon57-svj/hermes-webui-engine-hub/pull/1)；后续统一在此派生仓`main`继续，合并状态以PR为准。[提交/检查记录](../evidence/architecture-pr-submission-20261009.json)。
+## 固定的五个一级模块
 
-2026-10-09。五个一级模块固定为业务接入、Agent Manager、Agent Core、知识平台、MCP接口。本目录是当前架构说明；[目标与进度](../reviews/2026-10-09-reassessment/goals-progress-v2.md)、[结构化状态](../STATE.json)决定实现/验收状态。整体仍部分实现，文档合入不等于业务上线。
+| 模块 | 职责与边界 | 详细入口 |
+|---|---|---|
+| 业务接入 | 身份/对象权限、目录与业务目标路由、输入修订、会话/报告投影；模型只建议 | [模块摘要](business-access.md) · [R01](goals/r01-isolation-and-ui.md) · [R02](goals/r02-local-routing.md) · [R04](goals/r04-access-control.md) |
+| Agent Manager | 唯一Run/尝试/worker分配、取消/恢复与产物权威；内部接口仍待验 | [模块摘要](agent-manager.md) · [R05](goals/r05-multi-node-and-artifacts.md) |
+| Agent Core | Hermes执行、按scope私有状态、隔离候选/评测、批准本地快照 | [模块摘要](agent-core.md) · [R01](goals/r01-isolation-and-ui.md) · [R03](goals/r03-native-evolution.md) |
+| 知识平台 | WeKnora内容；单一release协调与批准消费/检索资格；节点缓存不成为权威 | [模块摘要](knowledge-platform.md) · [R06](goals/r06-assets-and-local-skills.md) |
+| MCP接口 | 在可信Run/目标上下文中访问业务证据与批准资产；不取代业务授权 | [模块摘要](mcp-interface.md) · [R04](goals/r04-access-control.md) · [R06](goals/r06-assets-and-local-skills.md) |
 
-用户已确认：Hermes原生自进化采用简单受控改造，最终RCA门禁＋周期人审，外部项目仅参考；正式知识/Skill通过接口发布分发，各节点读取本地批准副本，不共享可写Home。用户本轮进一步授权该派生仓公开；旧PRIVATE要求和交付记录按历史时间解释，母仓不在公开范围内。
+WebUI为交互面，评测器/发布协调/伴随服务属于相应模块内部职责，图中存在一个框不意味着必须新增独立平台。当前新增Hub只直接复用上游样式、保留上游代码并调用Hermes Gateway；原Profile/API/SSO/工作区全套能力未整合。[源码归属](../reviews/2026-10-09-reassessment/isolation-implementation-analysis-v1.md)与[固定版本](../versions.lock.json)给出基线。
 
-| 模块 | 当前职责与入口 |
-|---|---|
-| 业务接入 | [身份、业务范围、工单与RCA关联](business-access.md) |
-| Agent Manager | [Run、节点路由、产物与审批状态](agent-manager.md) |
-| Agent Core | [Hermes执行、私有状态、受控学习和本地Skill](agent-core.md) |
-| 知识平台 | [WeKnora、批准版本、共享与撤回](knowledge-platform.md) |
-| MCP接口 | [Agent取证/资产消费与服务API边界](mcp-interface.md) |
+## 当前事实和待实施边界
 
-```mermaid
-flowchart LR
-  B[业务接入：工单/告警/war room] --> M[Agent Manager：Run/资源/产物/审批]
-  M --> C[Agent Core：独立Hermes节点]
-  C --> X[MCP接口：授权证据/批准资产]
-  X --> K[知识平台：WeKnora正式版本]
-  B --> R[最终RCA确认]
-  R --> M
-  C --> P[私有学习候选]
-  P --> M
-  M --> G[RCA评测与周期人审]
-  G --> K
-```
+本地ReferenceManager仅用于开发合同验证；单热Gateway自动轮换与手工最多两个节点不证明当前版本同时双节点容量。内部Manager、RCA与真实业务交付F30未验，第二物理主机F21未验，真实领域学习F11未验。
 
-当前执行与隔离来自新增Engine Hub控制/交互层、真实Hermes Gateway、Bubblewrap与资源封装；原WebUI页面/API未整合，仅直接复用样式，见[源码归属](../reviews/2026-10-09-reassessment/isolation-implementation-analysis-v1.md)。本地ReferenceManager只用于开发合同验证，内部Manager接口及上线F30 NOT_RUN。
+本轮静态审查还发现读取下游触发派发/stop、脚本继承管理权限、同引擎换实例被旧绑定提前返回、评测只记录布尔值、远端发布与本地CAS事务分离等具体问题；对应修法、来源和关闭条件均在[审查发现](goals/review-findings.md)，没有因文档更新而宣称修复。
 
-同引擎跨VM/容器的节点池、有限子任务、集中产物与迁移见[扩展分析](../reviews/2026-10-09-reassessment/multi-resource-routing-artifacts-v1.md)：仍为讨论建议，不把租约/汇聚等记为已实现，也不新引入外部框架。
+执行仍受[三个要求](goals/execution-requirements.md)约束：保留历史/许可证/失败证据，生产分类选用经核实的内部本地方案，3GiB聚合max/2.5GiB high/0swap/192tasks与双宿主准入。CPU是亲和性降级限制，不是已生效cpu.max；当前用户宿主状态未在本轮探测。
 
-下一步顺序：I01脚本管理凭据隔离 → I02真实同时双节点 → I03原生pending/RCA/实际评测/周期人审 → I04管理权限覆盖 → I05本地分类及多空间选择 → I06通用Skill/检索/状态适配。各项责任、通过条件和F11/F21/F30输入见目标文件。保持本机3GiB硬上限/2.5GiB高水位、0swap、192tasks和宿主准入，不自动恢复已停止资源。
+原PR #1作为历史合入基线保留；实现进度在[总账](https://github.com/zcimon57-svj/hermes-webui-engine-hub/issues/2)及分项Issue更新，[历史进度快照](../reviews/2026-10-09-reassessment/goals-progress-v2.md)和[STATE](../STATE.json)保持可追溯。

@@ -163,5 +163,24 @@
     "auto_merge": false,
     "baseline_code_preserved": "evidence/code-preservation-review-20261009.json",
     "architecture_pr": "https://github.com/zcimon57-svj/hermes-webui-engine-hub/pull/12"
+  },
+  "documentation_review": {
+    "at": "2026-10-09T04:37:27+00:00",
+    "status": "REVISED_PENDING_INDEPENDENT_REVIEW",
+    "baseline_main": "6e6c4e897c62078ff1f14f072abe3fd7d7c461b3",
+    "original_pr_head": "faf6321077067da1585fb40a71c0d420bab5ee01",
+    "index": "architecture/goals/README.md",
+    "findings": "architecture/goals/review-findings.md",
+    "decisions": "architecture/goals/decisions.md",
+    "acceptance_interpretation": "architecture/goals/acceptance-matrix.md",
+    "research": "architecture/goals/research.md",
+    "execution_requirements": "architecture/goals/execution-requirements.md",
+    "checks": "evidence/review-readiness-checks-20261009.json",
+    "runtime_changes": false,
+    "new_functional_passes": 0,
+    "runtime_observation": "NOT_RUN_THIS_REVIEW; existing runtime fields are historical observations",
+    "issues": "#2-#11 body revisions; no auto close or reviewer assignment",
+    "pr": "https://github.com/zcimon57-svj/hermes-webui-engine-hub/pull/12",
+    "checks_scope": "Source-grounded documentation and link checks; partial Mermaid parsing; browser rendering and runtime tests not run"
   }
 }

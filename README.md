@@ -1,16 +1,16 @@
 # Hermes WebUI Engine Hub
 
-**当前独立评审：[PR #12](https://github.com/zcimon57-svj/hermes-webui-engine-hub/pull/12)，保持打开、未合并；由用户转发给评审人。[目标/进度总账 #2](https://github.com/zcimon57-svj/hermes-webui-engine-hub/issues/2)。**
+**当前独立评审：[PR #12](https://github.com/zcimon57-svj/hermes-webui-engine-hub/pull/12) · [目标/进度总账 #2](https://github.com/zcimon57-svj/hermes-webui-engine-hub/issues/2)。**
 
-目标与进度：[Issue总账 #2](https://github.com/zcimon57-svj/hermes-webui-engine-hub/issues/2)。架构评审：[六目标设计](engine_hub/architecture/goals/README.md)，新PR保持打开供转发；既有代码已在main，PR #1为已合入基线。
+2026-10-09 已补全评审资料：[完整阅读入口](engine_hub/architecture/goals/README.md) · [系统架构与流程](engine_hub/architecture/goals/overview.md) · [详细审查发现](engine_hub/architecture/goals/review-findings.md) · [待决策问题](engine_hub/architecture/goals/decisions.md) · [验收证据解释](engine_hub/architecture/goals/acceptance-matrix.md)。六项目标及三个执行要求都能从文档与对应Issue直接评审。
 
-本轮集成：[PR #1](https://github.com/zcimon57-svj/hermes-webui-engine-hub/pull/1)；后续统一在此派生仓`main`继续，合并状态以PR为准。[提交/检查记录](engine_hub/evidence/architecture-pr-submission-20261009.json)。
+当前仍为部分实现，架构待独立评审；本轮修正文档和Issue，没有把运行缺口写成已修复。原生RCA门禁/周期人审和本地批准副本共享方向已确认，完整实现仍待验。PR #12保持打开，由用户自行转发；不自动合并或关闭目标Issue。
 
-**后续工作入口：[目标与进度](engine_hub/reviews/2026-10-09-reassessment/README.md) · [五模块架构](engine_hub/architecture/README.md) · [当前STATE](engine_hub/STATE.json)。整体未完成验收；原生RCA门禁/周期人审和本地批准副本共享方式已确认，仍待实现。**
+历史 [PR #1](https://github.com/zcimon57-svj/hermes-webui-engine-hub/pull/1)已合入代码/资料基线，不代表本轮架构已获他人签收。现有代码和失败证据保留；本轮继续原评审分支。[旧提交记录](engine_hub/evidence/architecture-pr-submission-20261009.json)按其时间解释。
 
-当前派生仓交付入口：[Engine Hub 运行、权限、版本和验收](engine_hub/README.md)。固定上游历史、保留许可证；用户已明确授权此派生仓公开，母资料仓不在公开范围内。本轮采用硬资源总预算和按需节点，不使用实验 monkeypatch。验收分开报告本地功能、真实模型小样本、领域学习和内部部署。
+运行与源码入口：[Engine Hub](engine_hub/README.md) · [五模块索引](engine_hub/architecture/README.md) · [当前STATE](engine_hub/STATE.json) · [历史进度](engine_hub/reviews/2026-10-09-reassessment/README.md)。此派生仓公开已获用户授权，保留上游历史/许可证；母资料仓不在公开范围内。本地功能、真实模型小样本、领域质量和内部部署分别计证。
 
-以下保留上游 README，原单用户启动方式和能力说明按其版本解释。Engine Hub 的授权部署使用上面的独立入口。
+以下保留上游 README，原单用户启动方式和能力说明按其版本解释。Engine Hub 的授权部署和当前能力以上面独立入口为准。
 
 # Hermes Web UI
 

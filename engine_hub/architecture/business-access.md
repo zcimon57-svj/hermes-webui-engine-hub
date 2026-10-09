@@ -1,6 +1,8 @@
 # 业务接入
 
-职责：将工单、告警、war room输入与业务身份转换成授权引擎/项目/实例上下文；展示报告和待审学习，不接管执行或发布权威。
+**2026-10-09 评审补充（待审、未改变实现状态）：** 目录和业务路由由接入侧裁决，模型仅建议。当前conversation快捷分支会先于新instance返回，完整换目标/Memory边界仍待补。内部RCA只为用户报告，尚未读取其字段/权限；详细合同与场景见[R02](goals/r02-local-routing.md)和[R04](goals/r04-access-control.md)。 [完整评审入口](goals/README.md)。
+
+目标职责：将工单、告警、war room输入与业务身份转换成授权引擎/项目/实例上下文；展示报告和待审学习，不接管执行或发布权威。
 
 当前新增Hub实现本地身份、Admin/Viewer/Chat能力、会话owner与部分engine/space检查、实例规则路由和歧义澄清：[auth.py](../auth.py)、[routing.py](../routing.py)、[server.py](../server.py)。原WebUI完整Profile/SSO/工作区交互未接入，管理列表范围和配置能力仍有缺口。
 

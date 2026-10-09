@@ -1,8 +1,12 @@
 # 可复查证据索引
 
+## 当前文档评审与证据解释
+
+[原 PR #12](https://github.com/zcimon57-svj/hermes-webui-engine-hub/pull/12) · [完整评审入口](../architecture/goals/README.md) · [源码审查发现](../architecture/goals/review-findings.md) · [F01–F32 逐项解释](../architecture/goals/acceptance-matrix.md) · [本轮文档检查](review-readiness-checks-20261009.json)。本轮只核对并补充评审资料，没有新增功能 PASS；下方实验和资源状态均按记录中的时间、版本与输入阅读。
+
 当前自进化决定已确认：[原生简单设计与目标进度](../reviews/2026-10-09-reassessment/goals-progress-v2.md)。外部项目仅参考，不作为实施依赖；实现/业务验收未完成。
 
-## 当前优先入口（2026-10-09）
+## 历史重审与运行证据（2026-10-09）
 
 [严格重审与目标进度](../reviews/2026-10-09-reassessment/README.md)。当前实施未满足全部目标；以下保留旧检查，不用汇总数量代替目标验收。
 
