@@ -375,7 +375,29 @@
   ],
   "repository_visibility_decision": {
     "intent": "PUBLIC",
-    "status": "PUBLIC_VERIFIED_PR_DELIVERY_IN_PROGRESS",
+    "status": "PUBLIC_VERIFIED_DELIVERY_REFER_TO_PR",
     "scope": "This derivative only; parent repository stays private"
+  },
+  "publication": {
+    "schema": "engine-hub-architecture-pr-submission/1",
+    "at": "2026-10-09T03:16:38.568262+00:00",
+    "repository": "https://github.com/zcimon57-svj/hermes-webui-engine-hub",
+    "visibility": "PUBLIC_VERIFIED",
+    "pr_number": 1,
+    "pr_url": "https://github.com/zcimon57-svj/hermes-webui-engine-hub/pull/1",
+    "base": "main",
+    "head_branch": "docs/engine-hub-architecture-handoff-20261009",
+    "content_commit": "ea1c9a0144d9cd0ef4f2c479e30c1dfadebcabe1",
+    "observation": "PR_SUBMITTED; final merge/ref status is authoritative in linked GitHub PR and refs, not this pre-merge snapshot",
+    "continued_work_branch": "main",
+    "user_authorized_pr_merge": true,
+    "user_authorized_public_visibility": true,
+    "verification": [
+      "architecture-handoff-checks-20261009.json",
+      "publication-safety-20261009.json"
+    ],
+    "business_goals": "PARTIAL_IMPLEMENTATION_NOT_FULL_ACCEPTANCE",
+    "services_or_models_started": false,
+    "parent_repository_visibility_changed": false
   }
 }

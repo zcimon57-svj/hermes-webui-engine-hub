@@ -1,5 +1,7 @@
 # Engine Hub 架构与后续工作入口
 
+本轮集成：[PR #1](https://github.com/zcimon57-svj/hermes-webui-engine-hub/pull/1)；后续统一在此派生仓`main`继续，合并状态以PR为准。[提交/检查记录](../evidence/architecture-pr-submission-20261009.json)。
+
 2026-10-09。五个一级模块固定为业务接入、Agent Manager、Agent Core、知识平台、MCP接口。本目录是当前架构说明；[目标与进度](../reviews/2026-10-09-reassessment/goals-progress-v2.md)、[结构化状态](../STATE.json)决定实现/验收状态。整体仍部分实现，文档合入不等于业务上线。
 
 用户已确认：Hermes原生自进化采用简单受控改造，最终RCA门禁＋周期人审，外部项目仅参考；正式知识/Skill通过接口发布分发，各节点读取本地批准副本，不共享可写Home。用户本轮进一步授权该派生仓公开；旧PRIVATE要求和交付记录按历史时间解释，母仓不在公开范围内。

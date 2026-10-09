@@ -1,5 +1,7 @@
 # 当前目标、设计与证据入口
 
+本轮集成：[PR #1](https://github.com/zcimon57-svj/hermes-webui-engine-hub/pull/1)；后续统一在此派生仓`main`继续，合并状态以PR为准。[提交/检查记录](../../evidence/architecture-pr-submission-20261009.json)。
+
 2026-10-09。整体功能仍部分实现；本轮将目标、进度、已确认设计和架构提交PR作为后续工作基线。仓库公开已由用户明确授权，公开检查与PR/合并核对见交付记录；历史PRIVATE记录只表示当时状态。
 
 - [五模块架构总览](../../architecture/README.md)与各模块文档。

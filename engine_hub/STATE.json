@@ -134,5 +134,13 @@
   "repository_visibility": "PUBLIC_VERIFIED",
   "repository_visibility_evidence": "evidence/publication-safety-20261009.json + GitHub repository metadata",
   "historical_content_commit": "cb17e3364f58f4fbd53ccb2d78c82d39b4d38543",
-  "current_source_overrides": "reviews/2026-10-09-reassessment/resource-budget-v3-applied.json"
+  "current_source_overrides": "reviews/2026-10-09-reassessment/resource-budget-v3-applied.json",
+  "publication": {
+    "repository": "https://github.com/zcimon57-svj/hermes-webui-engine-hub",
+    "visibility": "PUBLIC_VERIFIED",
+    "pr_url": "https://github.com/zcimon57-svj/hermes-webui-engine-hub/pull/1",
+    "content_commit": "ea1c9a0144d9cd0ef4f2c479e30c1dfadebcabe1",
+    "integration_branch": "main",
+    "merge_status_authority": "Linked GitHub PR and remote refs; submission receipt is pre-merge snapshot"
+  }
 }

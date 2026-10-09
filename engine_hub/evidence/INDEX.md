@@ -37,3 +37,5 @@
 [多引擎/节点隔离源码归属](../reviews/2026-10-09-reassessment/isolation-implementation-analysis-v1.md)与[文件SHA/基线差异](../reviews/2026-10-09-reassessment/isolation-implementation-provenance-v1.json)：静态核对，未重跑运行验收；旧串行证据不证明当前同时双节点。
 
 [同引擎跨VM/容器路由与产物分析](../reviews/2026-10-09-reassessment/multi-resource-routing-artifacts-v1.md)：静态现状与架构建议，跨VM注册/租约/汇聚/产物上传等NOT_RUN。
+
+[公开架构/目标交付PR #1](https://github.com/zcimon57-svj/hermes-webui-engine-hub/pull/1)、[提交记录](architecture-pr-submission-20261009.json)、[检查结果](architecture-handoff-checks-20261009.json)、[公开检查](publication-safety-20261009.json)。PR/ref是最终合并权威；提交记录不证明业务验收。
